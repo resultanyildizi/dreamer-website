@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dreamer - Travelling Agency</title>
+</head>
+<body>
+	<button type="button">Resul</button>
+	<button type="button">Click Me</button>
+</body>
+</html>
