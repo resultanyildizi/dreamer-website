@@ -6,6 +6,7 @@
 </head>
 <body>
 	<button type="button">Resul</button>
+	<button type="button">Ebru</button>
 	<button type="button">Click Me</button>
 </body>
 </html>
