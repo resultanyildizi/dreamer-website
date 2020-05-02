@@ -5,7 +5,9 @@
 	<title>Dreamer - Travelling Agency</title>
 </head>
 <body>
+
 	<button type="button">Mali</button>
+	<button type="button">Kubra</button>
 	<button type="button">Resul</button>
 	<button type="button">Click Me</button>
 </body>
