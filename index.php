@@ -5,11 +5,12 @@
 	<title>Dreamer - Travelling Agency</title>
 </head>
 <body>
+	<?php
+		include("classes/data_access.php");
 
-	<button type="button">Mali</button>
-	<button type="button">Kubra</button>
-	<button type="button">Resul</button>
-	<button type="button">Ebru</button>
-	<button type="button">Click Me</button>
+		DataAccess::CreateTables();
+
+
+	?>
 </body>
 </html>
