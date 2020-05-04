@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+.city-cards-area {
+	box-sizing: border-box;
+	height: 700px;
+	backdrop-filter: blur(5px);
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 50px 100px;
+	overflow-y: scroll;
+}
+
+.city-cards-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.city-card {
+	box-sizing: border-box;
+	min-width: 280px;
+	max-width: 280px;
+	height: 380px;
+	display: inline-block;
+	float: left;
+	padding: 0;
+	border: 2px solid white;
+	margin: 0 60px 80px 60px;
+	-webkit-box-shadow: 14px 16px 38px -5px rgba(0,0,0,0.45);
+	-moz-box-shadow: 14px 16px 38px -5px rgba(0,0,0,0.45);
+	box-shadow: 14px 16px 38px -5px rgba(0,0,0,0.45);
+	background-image: linear-gradient(rgba(0, 0,0, 0), rgba(0,0,0, 0.8)), url("../resources/city_images/istanbul.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	padding: 220px 10px 10px 10px;
+}
+
+
+.city-card-title {
+	margin: 0 0 5px 0;
+	padding: 0;
+	font-size: 2.6em;
+	font-family: "Dancing Script";
+}
+
+.city-card-p {
+	padding: 0;
+	margin: 0 0 10px 0;
+	font-family: "Century Gothic";
+	font-size: 1.2em;
+}
+
+.city-card-price , .city-card-purchase {
+	font-family: "Century Gothic";
+	display: inline;
+	padding: 0;
+	margin: 0;
+	font-size: 1.6em;
+}
+.city-card-price {
+	margin-left: 5px;
+	margin-right: 120px;
+}
+
+.city-card-purchase {
+	text-decoration: none;
+	color: white;
+}
+
+
+.city-card-purchase:hover {
+	font-weight: bold;
+	border-bottom: 1px solid white;
+}

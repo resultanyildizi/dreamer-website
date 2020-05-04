@@ -107,7 +107,7 @@
 	 	$password = "";
  		$db_name = $dbname;
  		
- 		CreateDatabase($db_name);
+ 		DataAccess::CreateDatabase($db_name);
  		
  		try {
  			$conn = new PDO("mysql:host=$server_name;dbname=$db_name", $user_name, $password);
