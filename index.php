@@ -9,6 +9,7 @@
 
 	<?php
 		include("classes/data_access.php");
+		include("classes/city.php");
 		DataAccess::CreateTables();
 	?>
 </head>
@@ -32,79 +33,9 @@
 			<h1 class="title-1">Explore & Travel</h1>
 			<hr>
 			<div class="city-cards-area">
-				
-				<div class="clearfix">
-
-					<div class="city-cards-row">
-						<div class="city-card">
-							<h1 class="city-card-title">Istanbul</h1>
-							<p  class="city-card-p">Istanbul is a great city to travel...</p>
-							<h2 class="city-card-price">70$</h2>
-							<a class="city-card-purchase" href="#">Travel</a>
-							
-						</div>
-
-						<div class="city-card">
-							<h1 class="city-card-title">Istanbul</h1>
-							<p  class="city-card-p">Istanbul is a great city to travel...</p>
-							<h2 class="city-card-price">70$</h2>
-							<a class="city-card-purchase" href="#">Travel</a>
-							
-						</div>
-
-						<div class="city-card">
-							<h1 class="city-card-title">Istanbul</h1>
-							<p  class="city-card-p">Istanbul is a great city to travel...</p>
-							<h2 class="city-card-price">70$</h2>
-							<a class="city-card-purchase" href="#">Travel</a>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="clearfix">
-						<div class="city-cards-row">
-						<div class="city-card">
-					
-
-						</div>
-
-						<div class="city-card">
-					
-
-						</div>
-
-						<div class="city-card">
-					
-
-						</div>
-
-					</div>
-				</div>
-			
-				<div class="clearfix">
-						<div class="city-cards-row">
-						<div class="city-card">
-					
-
-						</div>
-
-						<div class="city-card">
-					
-
-						</div>
-
-						<div class="city-card">
-					
-
-						</div>
-
-					</div>
-				</div>
-			
-
-
-
+				<?php 
+					echo City::CShowAllCities();
+				?>
 			</div>
 		</div>
 	</section>
