@@ -1,0 +1,4455 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Soyut kanvas tablolar - Kanvas tablo galerisi - PlusCanvas</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="En &amp;ccedil;ok tercih edilen ve beğenilen soyut desenli kanvas tablolar&amp;nbsp;ile renklerin&amp;nbsp;ve desenlerin muhteşem uyumunu yaşam alanlarınıza taşıyın.
+&amp;Ouml;zg&amp;uuml;r ruhun temsili olarak g&amp;ouml;r" />
+    <meta name="keywords" content=",Soyut"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="next" href="https://www.pluscanvas.com/soyut-tablolar?pagenumber=2" />
+
+    <script type="text/javascript">"document"in self&&("classList"in document.createElement("_")?!function(){"use strict";var a=document.createElement("_");if(a.classList.add("c1","c2"),!a.classList.contains("c2")){var b=function(a){var b=DOMTokenList.prototype[a];DOMTokenList.prototype[a]=function(a){var c,d=arguments.length;for(c=0;c<d;c++)a=arguments[c],b.call(this,a)}};b("add"),b("remove")}if(a.classList.toggle("c3",!1),a.classList.contains("c3")){var c=DOMTokenList.prototype.toggle;DOMTokenList.prototype.toggle=function(a,b){return 1 in arguments&&!this.contains(a)==!b?b:c.call(this,a)}}a=null}():!function(a){"use strict";if("Element"in a){var b="classList",c="prototype",d=a.Element[c],e=Object,f=String[c].trim||function(){return this.replace(/^\s+|\s+$/g,"")},g=Array[c].indexOf||function(a){for(var b=0,c=this.length;b<c;b++)if(b in this&&this[b]===a)return b;return-1},h=function(a,b){this.name=a,this.code=DOMException[a],this.message=b},i=function(a,b){if(""===b)throw new h("SYNTAX_ERR","An invalid or illegal string was specified");if(/\s/.test(b))throw new h("INVALID_CHARACTER_ERR","String contains an invalid character");return g.call(a,b)},j=function(a){for(var b=f.call(a.getAttribute("class")||""),c=b?b.split(/\s+/):[],d=0,e=c.length;d<e;d++)this.push(c[d]);this._updateClassName=function(){a.setAttribute("class",this.toString())}},k=j[c]=[],l=function(){return new j(this)};if(h[c]=Error[c],k.item=function(a){return this[a]||null},k.contains=function(a){return a+="",i(this,a)!==-1},k.add=function(){var a,b=arguments,c=0,d=b.length,e=!1;do a=b[c]+"",i(this,a)===-1&&(this.push(a),e=!0);while(++c<d);e&&this._updateClassName()},k.remove=function(){var a,b,c=arguments,d=0,e=c.length,f=!1;do for(a=c[d]+"",b=i(this,a);b!==-1;)this.splice(b,1),f=!0,b=i(this,a);while(++d<e);f&&this._updateClassName()},k.toggle=function(a,b){a+="";var c=this.contains(a),d=c?b!==!0&&"remove":b!==!1&&"add";return d&&this[d](a),b===!0||b===!1?b:!c},k.toString=function(){return this.join(" ")},e.defineProperty){var m={get:l,enumerable:!0,configurable:!0};try{e.defineProperty(d,b,m)}catch(a){a.number===-2146823252&&(m.enumerable=!1,e.defineProperty(d,b,m))}}else e[c].__defineGetter__&&d.__defineGetter__(b,l)}}(self)),function(a){"use strict";function b(a,b){var c={width:a.clientWidth&&a.clientWidth>0?a.clientWidth:a.offsetWidth};if("auto"===b.orientation?c.height=a.clientHeight&&a.clientHeight>0?a.clientHeight:a.offsetHeight:"square"===b.orientation&&(c.height=c.width),b.pixelRatio&&b.pixelRatio>1){var d=parseInt(b.pixelRatio);c.width=d*c.width,c.height&&(c.height=d*c.height)}return c}var c,d=function(c){function d(){return l=h.getAttribute("data-src")||c.getAttribute("data-src")}function e(a,b){var c=d();if(m.noResize)return c;var e=a.width,f=a.height;return 0!==e&&c&&(c.indexOf("?")===-1&&(c+="?"),c+="&width="+parseInt(e),f&&(c+="&height="+parseInt(f)),b&&(c+="&retry="+b)),c}function f(a){var b=e(a);if(b){var c={imgUrl:b,beforeLoad:function(a){h.classList.add("loading")},complete:function(a){},success:function(a){h.src=a.imageElem.src,h.classList.add("loaded"),h.classList.add("in")}};return c.error=function(d){console.log("loadImage error: "+b,d),b=e(a,1),console.info("Retrying...",b),c.imgUrl=b,c.error=function(a){console.log("loadImage error 2: "+b,a),h.classList.remove("in")},i(c)},i(c),!0}return!1}function g(){return j(c)&&d()}var h=c.querySelector("img"),i=function(a){var b=new Image;return"object"!=typeof a||null===a?void(window.console&&console.log("loadImage(): Please pass valid options")):("function"==typeof a.beforeLoad&&a.beforeLoad({imgUrl:a.imgUrl,customData:a.customData}),b.onload=function(){b.onload=null;var c={success:!0,url:a.imgUrl,imageElem:b,customData:a.customData};"function"==typeof a.complete&&a.complete(c),"function"==typeof a.success&&a.success(c)},b.onerror=function(){b.onerror=null;var c={success:!1,url:a.imgUrl,imageElem:b,customData:a.customData};"function"==typeof a.complete&&a.complete(c),"function"==typeof a.error&&a.error(c)},b.src=a.imgUrl,void(b.complete&&(b.onload&&b.onload(),b.onload=null,b.onerror=null)))},j=function(a){return!!(a.offsetWidth||a.offsetHeight||a.getClientRects().length)};if(!h||0===h.length){var k=a.createElement("img");c.appendChild(k)}h=c.querySelector("img"),h.classList.contains("fade")||h.classList.add("fade");var l,m={orientation:c.getAttribute("orientation"),noResize:c.getAttribute("no-resize"),discardVisible:c.getAttribute("discard-visible"),pixelRatio:c.getAttribute("pixel-ratio")||window.devicePixelRatio||1};if(g()){var n=b(c,m);if(n.width)return f(n)}return!1},e=function(b){return b?a.querySelectorAll("[prbl-image]"):a.querySelectorAll("[prbl-image]:not([prbl-image-completed])")},f=function(){var a=e();if(a.length>0)for(var b=0;b<a.length;b++){var c=a[b];d(c)&&c.setAttribute("prbl-image-completed",!0)}},g=function(){clearTimeout(c),c=setTimeout(function(){console.info("resize detected. reseting all images");var a=e(!0);if(a.length>0)for(var b=0;b<a.length;b++)a[b].removeAttribute("prbl-image-completed")},500)};f(),setTimeout(function(){setInterval(function(){f()},50)},1e3),window.onresize=g}(window.document),function(a,b){function c(){if(!f){f=!0;for(var a=0;a<e.length;a++)e[a].fn.call(window,e[a].ctx);e=[]}}function d(){"complete"===document.readyState&&c()}a=a||"docReady",b=b||window;var e=[],f=!1,g=!1;b[a]=function(a,b){return f?void setTimeout(function(){a(b)},1):(e.push({fn:a,ctx:b}),void("complete"===document.readyState?setTimeout(c,1):g||(document.addEventListener?(document.addEventListener("DOMContentLoaded",c,!1),window.addEventListener("load",c,!1)):(document.attachEvent("onreadystatechange",d),window.attachEvent("onload",c)),g=!0)))}}("r",window);
+//# sourceMappingURL=inline.js.map</script>
+ 
+    <meta name="p:domain_verify" content="e7d74553518de736e5259ff1e53d450a"/>
+    
+    
+
+
+
+<script>
+    dataLayer = [{'pageType': 'category'}];
+</script>
+
+
+
+
+
+
+    <script>
+        var ecommerceLayer = {
+            'currencyCode': 'TRY'
+        };
+    </script>
+        <script>
+            var impressions = [{"name":"Yağlıboya Soyut Liman","id":3609,"price":89.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Renkli Soyut Ağaçlar","id":2977,"price":49.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Yağlıboya Soyut Liman","id":3611,"price":89.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Soyut Yağlı Boya","id":3514,"price":49.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Metropol Soyut","id":1904,"price":119.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Buzlu","id":3782,"price":49.90,"category":"","list":"category"},{"name":"Butterfly Effect","id":10437,"price":49.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Turquoise Rustic Beach Cottage","id":9901,"price":49.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Soyut Yağlı Boya","id":3728,"price":49.90,"category":"","list":"category"},{"name":"Ice","id":10461,"price":89.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Violet Ağaç","id":3338,"price":49.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Sisli Sabah","id":10531,"price":89.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Soyut Yağlı Boya","id":3615,"price":49.90,"category":"","list":"category"},{"name":"The Band Played","id":1772,"price":49.90,"category":"Jazz ve Tango","list":"category"},{"name":"Liquid Harmony of Colors","id":2657,"price":49.90,"category":"","list":"category"},{"name":"Yağlıboya Soyut Şehir","id":3610,"price":89.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"No 5 - No 22","id":3871,"price":49.90,"category":"Mark Rothko","list":"category"},{"name":"Nautilus","id":1248,"price":49.90,"category":"Close-up","list":"category"},{"name":"Ocean","id":10466,"price":49.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Renkli dijital alevler","id":2175,"price":119.90,"category":"Üç boyutlu","list":"category"},{"name":"Soyut Yağlı Boya","id":3517,"price":49.90,"category":"","list":"category"},{"name":"Çizgisel Boyalar","id":3764,"price":49.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Turuncu Siyah Doğaçlama","id":3756,"price":89.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"İsimsiz","id":3868,"price":49.90,"category":"Mark Rothko","list":"category"},{"name":"Mor ve Mavi Doğaçlama","id":3759,"price":49.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Baloncuklar","id":3825,"price":89.90,"category":"","list":"category"},{"name":"Yumuşak Esinti","id":3761,"price":49.90,"category":"","list":"category"},{"name":"Creature","id":10439,"price":49.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Floral Pattern","id":2520,"price":49.90,"category":"","list":"category"},{"name":"Magic Night","id":10524,"price":49.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Loop","id":2820,"price":49.90,"category":"","list":"category"},{"name":"Figure I","id":2518,"price":49.90,"category":"","list":"category"},{"name":"Soyut Yağlı Boya","id":3519,"price":49.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Old School","id":3897,"price":49.90,"category":"","list":"category"},{"name":"Yumuşak Esinti","id":3763,"price":49.90,"category":"","list":"category"},{"name":"Blue Thumb","id":9900,"price":49.90,"category":"Jan Riske","list":"category"},{"name":"No 3 - No 13","id":3870,"price":49.90,"category":"Mark Rothko","list":"category"},{"name":"Glasy","id":10460,"price":119.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"No 14 1960","id":10706,"price":49.90,"category":"Mark Rothko","list":"category"},{"name":"Çizgisel Boyalar","id":3765,"price":49.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Orpheo","id":10467,"price":89.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Renkli Doğaçlama","id":3757,"price":49.90,"category":"","list":"category"},{"name":"Soyut Yağlı Boya","id":3703,"price":49.90,"category":"","list":"category"},{"name":"Circles in Squares","id":2524,"price":49.90,"category":"","list":"category"},{"name":"Soyut Çizgiler","id":3953,"price":119.90,"category":"","list":"category"},{"name":"Caleb","id":1826,"price":119.90,"category":"","list":"category"},{"name":"Amazon III","id":3124,"price":49.90,"category":"","list":"category"},{"name":"No 14 1951","id":3872,"price":49.90,"category":"Mark Rothko","list":"category"},{"name":"Buzlu","id":3783,"price":49.90,"category":"","list":"category"},{"name":"Dairesel İzler","id":3781,"price":49.90,"category":"","list":"category"},{"name":"Soyut Yağlı Boya","id":3617,"price":49.90,"category":"","list":"category"},{"name":"Kristal Desenler","id":3435,"price":49.90,"category":"","list":"category"},{"name":"Soyut Yağlı Boya","id":3618,"price":49.90,"category":"","list":"category"},{"name":"Cubex","id":10440,"price":89.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Amazon","id":3123,"price":49.90,"category":"","list":"category"},{"name":"İsimsiz","id":3875,"price":49.90,"category":"Mark Rothko","list":"category"},{"name":"Çizgisel Boyalar","id":3766,"price":49.90,"category":"Yağlı boya reprodüksiyon","list":"category"},{"name":"Cats","id":10726,"price":49.90,"category":"Natalia Goncharova","list":"category"},{"name":"İsimsiz 1957","id":3874,"price":49.90,"category":"Mark Rothko","list":"category"},{"name":"Fire in Colors","id":2944,"price":89.90,"category":"","list":"category"}];
+            ecommerceLayer["impressions"] = {
+                'products': impressions
+            };
+        </script>
+        <script>
+            r(function() {
+                $('.product-grid .product-item a').click(function(e) {
+
+                    var productId = $(this).parents('.product-item').data('productid');
+                    var url = $(this).attr('href');
+
+                    var product;
+                    for (var i = 0; i < impressions.length; i++) {
+                        if (impressions[i].id === productId) {
+                            product = impressions[i];
+                        }
+                    }
+
+                    console.log('gtm plugin product click', productId, url);
+
+                    if (product) {
+                        dataLayer.push({
+                            'event': 'productClick',
+                            'ecommerce': {
+                                'click': {
+                                    'actionField': { 'list': product.list },
+                                    'products': [product]
+                                }
+                            },
+                            'eventCallback': function() {
+                                console.log('gtm plugin product click callback');
+                                //document.location = url;
+                            }
+                        });
+                    }
+                });
+            });
+        </script>
+    <script>
+        dataLayer.push({ 'ecommerce': ecommerceLayer });
+    </script>
+
+ 
+    
+    <!-- Google Tag Manager --> 
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PFDJ7K');</script>
+<!-- End Google Tag Manager -->
+    <link href="https://cdn.pluscanvas.com/assets/1.20.17129.1/Themes/PlusCanvas/Content/style.css" rel="stylesheet" type="text/css" />
+
+    
+    <link rel="canonical" href="https://www.pluscanvas.com/soyut-tablolar" />
+
+    
+
+
+
+    <link rel="alternate" hreflang="tr-TR" href="https://www.pluscanvas.com/soyut-tablolar" />
+    <link rel="alternate" hreflang="en-GB" href="https://www.pluscanvas.co.uk/abstract-canvas-prints" />
+
+    
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="https://cdn.pluscanvas.com/Themes/PlusCanvas/Content/images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://cdn.pluscanvas.com/Themes/PlusCanvas/Content/images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://cdn.pluscanvas.com/Themes/PlusCanvas/Content/images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://cdn.pluscanvas.com/Themes/PlusCanvas/Content/images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://cdn.pluscanvas.com/Themes/PlusCanvas/Content/images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://cdn.pluscanvas.com/Themes/PlusCanvas/Content/images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://cdn.pluscanvas.com/Themes/PlusCanvas/Content/images/favicon/apple-icon-144x144.png)">
+<link rel="apple-touch-icon" sizes="152x152" href="https://cdn.pluscanvas.com/Themes/PlusCanvas/Content/images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.pluscanvas.com/Themes/PlusCanvas/Content/images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://cdn.pluscanvas.com/Themes/PlusCanvas/Content/images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.pluscanvas.com/Themes/PlusCanvas/Content/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://cdn.pluscanvas.com/Themes/PlusCanvas/Content/images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.pluscanvas.com/Themes/PlusCanvas/Content/images/favicon/favicon-16x16.png">
+<meta name="theme-color" content="#333333"/>
+</head>
+<body itemscope itemtype="http://schema.org/WebSite" ng-app="mainModule" ng-controller="mainController">
+
+    
+      <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PFDJ7K"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+    
+
+<div id="outdated">
+    <h6>Tarayıcınız güncel değil!</h6>
+    <p>Sitemizin tüm özelliklerinden yararlanabilmek için tarayıcınızı güncelleyin.<a id="btnUpdateBrowser" target="_blank" href="http://outdatedbrowser.com/tr">Şimdi Güncelle</a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Kapat">&times;</a></p>
+</div>
+<script>
+    r(function() {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'transform'
+        });
+    });
+</script>
+<div design-upload-widget="designUploadData">
+    
+
+
+
+    
+
+
+
+
+<meta itemprop="url" content="https://www.pluscanvas.com/" />
+
+<nav class="header" ng-controller="headerController" scroll-pinner selector="#header-panel-1">
+    <div class="container-xl container visible-lg" scroll-top>
+        <button type="button" ng-click="scrollTop()" class="btn-scroll-top fade" ng-class="{in: scrollTopShown}" ng-style="scrollTopButtonCssRight"><span class="icon icon-arrow-up"></span></button>
+    </div>
+    <div id="header-panel-2" class="header-panel header-panel-2">
+        <div class="header-panel-inner">
+
+            
+<div class="header-content header-logo">
+<div class="dropdown" ng-class="{open: mainCategoryId == 'logo' }" ng-mouseover="menuOpenCategory($event, 'logo')" ng-mouseout="menuClose()" ng-click="menuClose()"><a class="navbar-brand-link" href="/"> <img title="PlusCanvas" alt="PlusCanvas" src="https://cdn.pluscanvas.com/themes/pluscanvas/content/images/logo.png" width="219" height="41" /> </a>
+<ul class="dropdown-menu dropdown-logo" role="menu" aria-labelledby="navbar-brand-link">
+<li class="hidden-xs hidden-sm">
+<div class="dropdown-menu-content header-megamenu">
+<div class="about-container col-xs-100 col-xs-offset-10">
+<h3 class="header-megamenu-title">Kanvas tablo mağazası</h3>
+<a class="col-xs-30" href="/hakkimizda"> <span class="icon icon-featured icon-people"></span> Biz kimiz? </a> <a class="col-xs-30" href="/pluscanvas-garantisi" prbl-popup="" prbl-popup-size="lg"> <span class="icon icon-featured icon-thumbs-up"></span> Garanti </a> <a class="col-xs-30" href="/teslimat-bilgileri" prbl-popup="" prbl-popup-size="lg"> <span class="icon icon-featured icon-truck"></span> Teslimat </a> <a class="col-xs-30" href="/contactus" prbl-popup="" prbl-popup-size="lg"> <span class="icon icon-featured icon-contact"></span> Bize ulaşın </a></div>
+<div class="social-media-container col-xs-100 col-xs-offset-10">
+<h3 class="header-megamenu-title">Sosyal medyada bizi takip et</h3>
+<div class="col-xs-20"><a class="icon icon-featured active icon-facebook icon-featured-sm" href="https://www.facebook.com/PlusCanvas" target="_blank" title="Facebook">&nbsp;</a></div>
+<div class="col-xs-20"><a class="icon icon-featured active icon-twitter icon-featured-sm" href="https://twitter.com/pluscanvas" target="_blank" title="Twitter">&nbsp;</a></div>
+<div class="col-xs-20"><a class="icon icon-featured active icon-instagram icon-featured-sm" href="https://instagram.com/pluscanvas/" target="_blank" title="Instagram">&nbsp;</a></div>
+<div class="col-xs-20"><a class="icon icon-featured active icon-pinterest icon-featured-sm" href="https://www.pinterest.com/pluscanvas/" target="_blank" title="Pinterest">&nbsp;</a></div>
+<div class="col-xs-20"><a class="icon icon-featured active icon-youtube icon-featured-sm" href="https://youtube.com/pluscanvas" target="_blank" title="YouTube">&nbsp;</a></div>
+<div class="col-xs-20"><a class="icon icon-featured active icon-google icon-featured-sm" href="https://plus.google.com/+pluscanvas" rel="Publisher" target="_blank" title="Google+">&nbsp;</a></div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+            <ul class="header-content header-links">
+                
+
+<li class="dropdown "
+    ng-mouseover="menuOpenRight($event, 'profile')"
+    ng-mouseout="menuClose()"
+    ng-class="{open: mainMenu == 'profile' }">
+
+    <a ng-click="toggleDropdown($event, 'profile')" id="header-profile-link" href="#"  aria-haspopup="true" aria-expanded="false">
+        <span class="menu-text">PROFİLİM</span>
+        <span class="icon icon-profile"></span>
+        <span class="wishlist-qty label label-danger js-wishlist-qty ng-cloak"
+              ng-class="{'no-items': !customerInfo.WishListItems || customerInfo.WishListItems == 0}" ng-bind="customerInfo.WishListItems || ''">
+        </span>
+
+    </a>
+    <ul class="dropdown-menu dropdown-profile ng-cloak" role="menu" aria-labelledby="header-profile-link">
+
+        <li ng-if="customerInfo && !customerInfo.IsAuthenticated">
+            <a tabindex="-1" ng-href="/login?returnUrl={{document.location.href}}">
+                Giriş yap
+            </a>
+        </li>
+        <li ng-if="customerInfo.IsAuthenticated"><label ng-bind="'Hoşgeldin ' + customerInfo.CustomerName"></label></li>
+
+
+        <li ng-if="customerInfo.AdminLinks.IsCustomerImpersonated">
+            <span class="text-danger">
+                Kullanılan giriş bilgileri: {0}
+               &nbsp;
+                {{customerInfo.AdminLinks.ImpersonatedCustomerEmailUsername}}
+                <a href="/logout">sezonu bitir</a>
+            </span>
+        </li>
+
+        <li>
+            <a tabindex="-1" href="/wishlist" title="Favorilerim">
+                Favorilerim
+                <span ng-show="customeInfo.WishlistItems">({{customeInfo.WishlistItems}})</span>
+            </a>
+        </li>
+
+        <li>
+            <a tabindex="-1" href="/customer/info">Hesabım</a>
+        </li>
+        <li>
+            <a tabindex="-1" href="/trackorder" prbl-popup="true">Sipariş takibi</a>
+        </li>
+
+        <li ng-if="customerInfo.IsAuthenticated"><a tabindex="-1" href="/order/history">Tüm siparişlerim</a></li>
+
+        <li ng-if="customerInfo.IsAuthenticated" class="divider"></li>
+        <li ng-if="customerInfo.IsAuthenticated"><a tabindex="-1" href="/logout">Çıkış</a></li>
+
+    </ul>
+</li>
+
+
+<li id="cart-dropdown"
+    class="dropdown cart-dropdown "
+    ng-class="{open: mainMenu == 'cart' }"
+    ng-mouseover="menuOpenRight($event, 'cart')"
+    ng-mouseout="menuClose()">
+    <a id="header-cart-link"
+       ux-event="click"
+       message="header-Sepetim"
+       title="Sepetim"
+       href="/cart"
+       ng-click="menuClose()"
+       ng-focus="menuOpenRight($event, 'cart')"
+       aria-haspopup="true"
+       aria-expanded="false">
+        <span class="menu-text">SEPETİM</span>
+        <span class="icon icon-cart"></span>
+        <span class="cart-qty label label-danger js-wishlist-qty ng-cloak"
+              ng-class="{'no-items': !customerInfo.ShoppingCartItems || customerInfo.ShoppingCartItems == 0}" ng-bind="customerInfo.ShoppingCartItems || ''">
+        </span>
+    </a>
+    <ul class="dropdown-menu dropdown-cart" role="menu" aria-labelledby="header-cart-link" ng-show="customerInfo">
+        <li class="hidden-xs hidden-sm">
+            <div class="yamm-content">
+
+                <div id="flyout-cart" class="flyout-cart delayed-menu" data-link="#topcartlink">
+
+    <div class="mini-shopping-cart">
+
+
+        <div class="items" ng-show="customerInfo.ShoppingCart.TotalProducts">
+
+            <div class="item row" ng-repeat="item in customerInfo.ShoppingCart.Items">
+
+                <div class="col-xs-33" prbl-image orientation="square" width="100" discard-visible="true" prbl-image-src="{{item.Picture.ImageUrl}}">
+                    <a ng-href="{{item.ProductSeName}}?updatecartitemid={{item.Id}}">
+                        <img class="img-responsive"/>
+                    </a>
+                </div>
+
+                <div class="product col-xs-87">
+                    <div class="name">
+                        <a ng-href="/{{item.ProductSeName}}?updatecartitemid={{item.Id}}">{{item.ProductName}}</a>
+                    </div>
+                    <div class="attributes" bind-unsafe-html="item.AttributeInfo"></div>
+                    <div class="quantity">Adet: <span>{{item.Quantity}}</span></div>
+                </div>
+
+                <hr ng-class="{'hide': $last}" />
+            </div>
+
+
+            <div class="more-items-text" ng-if="customerInfo.ShoppingCart.HasMoreItems">
+                <span ng-bind="'Sepetinde {0} ürün daha var'.replace('{0}', customerInfo.ShoppingCart.TotalProducts - customerInfo.ShoppingCart.DisplayedTotalProducts)">
+                    
+                </span>
+                <hr />
+            </div>
+           
+
+
+        </div>
+        
+        <div class="buttons" ng-if="customerInfo.ShoppingCart.TotalProducts">
+
+            <a ux-event="click"
+               message="header-Sepete git"
+               class="btn btn-danger btn-lg btn-rounded"
+               href="/cart">
+                Sepete git
+            </a>
+
+        </div>
+        <div class="info"
+             ng-if="customerInfo.ShoppingCart.TotalProducts">
+            <a prbl-popup
+               prbl-popup-size="lg"
+               href="/pluscanvas-garantisi">
+                <span class="icon icon-lock"></span>
+                Güvenli alışveriş, hızlı ve kaliteli hizmet!
+            </a>
+        </div>
+
+        <div class="count h3" ng-if="!customerInfo.ShoppingCart.TotalProducts">
+            Sepetinde hiç ürün yok :(
+        </div>
+
+    </div>
+
+</div>
+            </div>
+        </li>
+    </ul>
+</li>
+
+
+
+
+
+            </ul>
+            
+<div class="header-content header-nav">
+<ul>
+<li class="prbl-carousel-item dropdown" ng-class="{open: mainCategoryId == '173' }" ng-mouseover="menuOpenCategory($event, '173')" ng-mouseout="menuClose()"><a ux-event="click" message="header-kanvas-tablo-tasarla" ng-click="menuClose()" ng-focus="menuOpenCategory($event, '173')" href="/kisiye-ozel-kanvas-tablo" ng-class="{hover: categoryHref0 == '/kanvas-tablo-tasarla'}"> Kişiye &Ouml;zel <br class="visible-xs" />Tablo </a>
+<div class="dropdown-menu dropdown-menu-173" role="menu">
+<div class="clearfix hidden-xs hidden-sm">
+<div class="topic">
+<div class="dropdown-menu-content header-megamenu">
+<div class="header-megamenu-col header-grey-back">
+<ul class="list-unstyled">
+<li>
+<h3 class="header-megamenu-title">Tek fotoğraftan tablo</h3>
+</li>
+<li><a design-upload="" design-upload-data="$parent.designUploadData" category-id="174" href="/fotografindan-tablo" title="Fotoğrafından tablo ile hemen başla">Fotoğrafından tablo</a></li>
+</ul>
+<ul class="list-unstyled">
+<li>
+<h3 class="header-megamenu-title ">&Ccedil;ok fotoğraftan tablo</h3>
+</li>
+<li><a href="/mozaik-tablo" title="Mozaik tablo ile hemen başla">Mozaik tablo</a></li>
+<li><a href="/kolaj-tablo" title="Kolaj tablo kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Kolaj tablo</a></li>
+</ul>
+<ul class="list-unstyled">
+<li>
+<h3 class="header-megamenu-title">Aile tabloları</h3>
+</li>
+<li><a href="/evlilik-ve-nisan" title="Evlilik ve nişan kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Evlilik ve nişan</a></li>
+<li><a href="/bebek-ve-cocuk" title="Bebek ve &ccedil;ocuk kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Bebek ve &ccedil;ocuk</a></li>
+<li><a href="/annene-hediye" title="Annene hediye kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Annene hediye</a></li>
+<li><a href="/babana-hediye" title="Babana hediye kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Babana hediye</a></li>
+</ul>
+</div>
+<div class="header-megamenu-col  pull-right">
+<ul class="list-unstyled">
+<li>
+<h3 class="header-megamenu-title">Hediye tablolar</h3>
+</li>
+<li><a href="/dogum-gunu-hediyesi" title="Doğum g&uuml;n&uuml; hediyesi kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Doğum g&uuml;n&uuml; hediyesi</a></li>
+<li><a href="/sevgiline-hediye" title="Sevgiliye hediye kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Sevgiliye hediye</a></li>
+<li><a href="/yilbasi-hediyesi-kanvas-tablolar" title="Yılbaşı hediyesi kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Yılbaşı hediyesi</a></li>
+<li><a href="/takvim" title="Takvim tablo kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Takvim tablo</a></li>
+</ul>
+<ul class="list-unstyled">
+<li>
+<h3 class="header-megamenu-title">Boyama Tablo</h3>
+</li>
+<li><a href="/mandala-tablolar" title="Mandala boyama tabloları g&ouml;ster">Mandala</a></li>
+<li><a href="/cocuklar-icin-boyama-tablolar" title="&Ccedil;ocuklar i&ccedil;in boyama tabloları g&ouml;ster">&Ccedil;ocuklar İ&ccedil;in</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="prbl-carousel-item dropdown" ng-class="{open: mainCategoryId == '39' }" ng-mouseover="menuOpenCategory($event, '39')" ng-mouseout="menuClose()"><a ux-event="click" message="header-kanvas-tablo-galerisi" ng-click="menuClose()" ng-focus="menuOpenCategory($event, '39')" href="/kanvas-tablo-galerisi" ng-class="{hover: categoryHref0 == '/kanvas-tablo-galerisi'}">Tablo <br class="visible-xs" />Galerisi </a>
+<div class="dropdown-menu dropdown-menu-39" role="menu">
+<div class="clearfix hidden-xs hidden-sm">
+<div class="topic">
+<div class="dropdown-menu-content header-megamenu">
+<div class="header-megamenu-col header-grey-back">
+<ul class="list-unstyled">
+<li>
+<h3 class="header-megamenu-title">&Ouml;ne &ccedil;ıkanlar</h3>
+</li>
+<li><a href="/newproducts" title="Yeni tablolar kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Yeni Tablolar</a></li>
+<li><a href="/cok-satilan-kanvas-tablolar" title="En &ccedil;ok satılan hediye kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">En &Ccedil;ok Satılanlar</a></li>
+<li><a href="/basyapit-tablolar" title="Başyapıt tablolar kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Başyapıtlar</a></li>
+<li><a href="/fotograf-tablolar" title="Fotoğraf tablo kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Fotoğraf</a></li>
+<li><a href="/modern-sanatlar-tablo-koleksiyonu" title="Modern Sanatlar tablo kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Modern Sanatlar</a></li>
+<li><a href="/sehir-ve-manzara-tablolari" title="Şehir manzara tabloları kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Şehir Manzaraları</a></li>
+<li><a href="/doga-ve-manzara-tablolari" title="Doğa manzara tabloları kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Doğa Manzaraları</a></li>
+<li><a href="/cicek-tablolari" title="&Ccedil;i&ccedil;ek tabloları kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">&Ccedil;i&ccedil;ekler</a></li>
+<li><a href="/soyut-tablolar" title="Soyut tablolar kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Soyut</a></li>
+<li><a href="/siyah-beyaz-tablolar" title="Siyah beyaz tablolar kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Siyah Beyaz</a></li>
+<li><a href="/retro-ve-vintage-tablolar" title="Retro ve vintage kanvas tabloları kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Retro ve Vintage</a></li>
+<li><a href="/harita-tablolar" title="Harita tabloları kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Harita</a></li>
+</ul>
+</div>
+<div class="header-megamenu-col">
+<ul class="list-unstyled">
+<li>
+<h3 class="header-megamenu-title">Kategoriler</h3>
+</li>
+<li><a href="/yiyecek-ve-icecek-tablolari" title="Yiyecek ve i&ccedil;ecek kanvas tabloları kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Yiyecek ve İ&ccedil;ecek</a></li>
+<li><a href="/dans-ve-muzik-tablolari" title="dans ve m&uuml;zik kanvas tabloları kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Dans ve M&uuml;zik</a></li>
+<li><a href="/turkiye-ve-ataturk-tablolari" title="T&uuml;rkiye ve Atat&uuml;rk tabloları kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">T&uuml;rkiye ve Atat&uuml;rk</a></li>
+<li><a href="/artzula-tablo-koleksiyonu" title="ArtZula kanvas tablo koleksiyonundaki &uuml;r&uuml;nleri g&ouml;ster">ArtZula Koleksiyonu</a></li>
+<li><a href="/unlu-kisi-ve-sinema-kanvas-tablolari" title="&Uuml;nl&uuml;ler ve sinema kanvas tabloları kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">&Uuml;nl&uuml;ler ve Sinema</a></li>
+<li><a href="/tipografi-tablolari" title="Tipografi kanvas tablolar kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Tipografi</a></li>
+<li><a href="/bebek-ve-cocuk-odasi-tablolari" title="Bebek ve &ccedil;ocuk odası tabloları kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Bebek ve &Ccedil;ocuk Odası</a></li>
+<li><a href="/hayvanlar-ve-vahsi-doga-tablolari" title="Hayvanlar kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Hayvanlar</a></li>
+<li><a href="/din-ve-inanc-tablolari" title="Din ve inan&ccedil; kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Din ve İnan&ccedil;</a></li>
+<li><a href="/pop-art-ve-illustrasyon-tablolar" title="Pop art ve illustrasyon kanvas tabloları kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Pop Art ve İllustrasyon</a></li>
+<li><a href="/spor-tablolari" title="Spor tabloları kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Spor</a></li>
+<li><a href="/egitim-ve-motivasyon-tablolari" title="Eğitim ve motivasyon tabloları kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Eğitim ve Motivasyon <span class="text-danger"> (yeni)</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<ul></ul>
+        </div>
+    </div>
+    <div id="header-panel-1" class="header-panel header-panel-1">
+        <div class="header-panel-inner">
+            <div class="header-content header-info">
+                <div id="header-carousel" class="carousel slide" data-ride="carousel" data-interval="9000">
+<div class="carousel-inner" role="listbox">
+<div class="item active"><a href="indirim-popup" prbl-popup="" prbl-popup-size="lg"><b>%20</b>'ye varan indirim fırsatını ka&ccedil;ırma!</a></div>
+<div class="item"><a href="/teslimat-bilgileri" prbl-popup="" prbl-popup-size="lg">T&uuml;m T&uuml;rkiye'ye <b>Kargo Bedava</b></a></div>
+</div>
+</div>
+            </div>
+            <div class="header-content header-search">
+                
+
+<div class="dropdown search-box"
+     ng-controller="searchController"
+     ng-class="{open: focused || hovered}">
+
+    <form id="header-search" role="form"
+          action="/search"
+          novalidate class="search-box-form" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+        <meta itemprop="target" content="https://www.pluscanvas.com/search?q={q}" />
+        <input itemprop="query-input"
+               type="text"
+               ux-event="focus"
+               message="header-searchbox"
+               class="search-box-input"
+               autocomplete="off"
+               name="q"
+               ng-focus="focused = true;$parent.menuClose()"
+               ng-blur="focused = false"
+               ng-keydown="handleKeypress($event)"
+               placeholder="Ara"
+               ng-model="term"/>
+        
+        <button type="submit"
+                class="search-box-button"
+                ng-show="!loading"
+                ng-click="submit(term)">
+            <span class="icon icon-search"></span><span class="sr-only">Ara</span>
+        </button>
+        <button type="submit"
+                class="search-box-button ng-cloak"
+                ng-show="loading">
+            <span class="icon icon-loader"></span>
+        </button>
+    </form>
+    <ul class="dropdown-menu fade hidden-xs"
+        ng-mouseover="hovered=true"
+        ng-mouseout="hovered=false"
+        ng-class="{in:data.length > 0 }">
+        <li>
+            <div class="list-group">
+                <span ng-repeat="x in data">
+                    <a ng-if="!x.ispopup"
+                       class="list-group-item"
+                       
+                       ng-class="{active: $index == index}"
+                       
+                       ng-focus="$parent.focused = true"
+		               ng-blur="$parent.focused = false"
+                       ng-href="{{x.producturl}}">
+                        <img class="" ng-src="{{x.productpictureurl}}?width=50&height=50" alt="">
+                        <span class="h5">{{x.label}}</span>
+                    </a>
+                    <a ng-if="x.ispopup"
+                       design-upload
+                       product-id="{{x.productid}}" 
+                       design-id="{{x.designid}}" 
+                       ux-event
+                       message="header-searchbox-autocomplete"
+                       class="list-group-item"
+                       ng-class="{active: $index == index}"
+                       ng-focus="$parent.focused = true"
+		               ng-blur="$parent.focused = false"
+                       ng-href="{{x.producturl}}">
+                        <img class="" ng-src="{{x.productpictureurl}}?width=50&height=50" alt="">
+                        <span class="h5">{{x.label}}</span>
+                    </a>
+                </span>
+            </div>
+        </li>
+    </ul>
+</div>
+<script>
+
+    r(function() {
+        angular.module("searchModule").factory("searchLoadService", function () {
+            return {
+                autoCompleteUrl: '/catalog/searchtermautocomplete',
+                searchRedirectUrl: '/search',
+                searchButton: '#search-button',
+                placeholder: 'Ara',
+                minLength : 2,
+                searchInput: '.search-box-text'
+            };
+        });
+    });
+
+</script>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="header-margin"></div>
+
+
+    <div class="hidden-xs hidden-sm">
+        <div class="header-backdrop ng-cloak fade " ng-show="mainCategoryId || mainMenu"></div>
+    </div>
+</nav>
+<script>
+    r(function () {
+        angular.module("headerModule").factory("headerLoadService", function () {
+            return {
+                headerLinksUrl: '/Common/ExtendedHeaderLinks',
+                customerInfoUrl: '/customer/data'
+                //customerInfoUrl: 'https://cdn.pluscanvas.com/customer/data'
+
+            };
+        });
+    });
+</script>
+
+
+    
+    <div id="prblajaxcontent" class="main-site">
+
+<div ng-controller="catalogController" class="container-xl catalog">
+    <div class="product-grid-loader">
+        <span loader></span>
+    </div>
+    <div class="product-ajax">
+        
+
+    <div class="container category-header">
+
+<div class="breadcrumb-container">
+    <ol class="breadcrumb">
+        <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="/" title="Ana sayfa" itemprop="url">
+                <span class="icon icon-home"></span>
+                <span class="sr-only" itemprop="title">Ana sayfa</span>
+            </a>
+        </li>
+            <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a href="/kanvas-tablo-galerisi" title="Kanvas tablo galerisi" itemprop="url">
+                    <span itemprop="title">Kanvas tablo galerisi</span>
+                </a>
+            </li>            <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a href="/soyut-tablolar" title="Soyut" itemprop="url">
+                    <span itemprop="title">Soyut</span>
+                </a>
+            </li>    </ol>
+</div>
+        <h1>
+            Soyut
+        </h1>
+    </div>
+        <div class="container category-description" minimize="" height="150" height-xs="100">
+            <p>En &ccedil;ok tercih edilen ve beğenilen soyut desenli kanvas tablolar&nbsp;ile renklerin&nbsp;ve desenlerin muhteşem uyumunu yaşam alanlarınıza taşıyın.</p>
+<p>&Ouml;zg&uuml;r ruhun temsili olarak g&ouml;r&uuml;len Soyut &ccedil;alışmaların ilk temsilcileri Kandinsky ve Malevich&rsquo;tir. Soyut &ccedil;alışmalar non fig&uuml;ratif yani fig&uuml;rs&uuml;z resim olarak da bilinir. İnsanların resmedilmesinin yasak olduğu d&ouml;nemlerde ortaya &ccedil;ıkan s&uuml;sleme sanatlarında kullanılan nakışlar fig&uuml;rs&uuml;z resimlerin ilk &ouml;rnekleridir.</p>
+        </div>
+
+    
+
+        <div class="page-body">
+            <div class="scroll-position"></div>
+            <div class="col-xs-120 col-sm-40 col-md-30 col-xl-25">
+                
+                <div class="row">
+
+    
+
+
+    <nav class="nav-sidebar">
+        <ul class="nav">
+            <li class="nav-sidebar-header" ng-click="toggleNavigation($event)">
+                <span>
+                    Kategoriler
+                    <span class="icon icon-arrow-down"></span>
+                </span>
+            </li>
+    <li class=" current" ng-hide="hideNavigation" data-pjax>
+        <a href="/kanvas-tablo-galerisi"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Kanvas tablo galerisi"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+                <h2 class="category-title">
+                    Kanvas tablo galerisi
+                </h2>
+        </a>
+
+                <ul class="sublist">
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/cok-satilan-kanvas-tablolar"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="&#199;ok satılanlar"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+&#199;ok satılanlar                    <span class="qty-category">
+                        (227)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/basyapit-tablolar"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Başyapıtlar"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Başyapıtlar                    <span class="qty-category">
+                        (566)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/cicek-tablolari"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="&#199;i&#231;ekler"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+&#199;i&#231;ekler                    <span class="qty-category">
+                        (404)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/modern-sanatlar-tablo-koleksiyonu"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Modern sanatlar"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Modern sanatlar                    <span class="qty-category">
+                        (667)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class="active current" ng-hide="hideNavigation" data-pjax>
+        <a href="/soyut-tablolar"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Soyut"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Soyut                    <span class="qty-category">
+                        (259)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/turkiye-ve-ataturk-tablolari"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="T&#252;rkiye ve Atat&#252;rk"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+T&#252;rkiye ve Atat&#252;rk                    <span class="qty-category">
+                        (47)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/doga-ve-manzara-tablolari"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Doğa manzaraları"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Doğa manzaraları                    <span class="qty-category">
+                        (316)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/fotograf-tablolar"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Fotoğraf"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Fotoğraf                    <span class="qty-category">
+                        (463)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/bebek-ve-cocuk-odasi-tablolari"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Bebek ve &#231;ocuk odası"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Bebek ve &#231;ocuk odası                    <span class="qty-category">
+                        (216)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/artzula-tablo-koleksiyonu"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="ArtZula Koleksiyonu"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+ArtZula Koleksiyonu                    <span class="qty-category">
+                        (388)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/sehir-ve-manzara-tablolari"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Şehir manzaraları"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Şehir manzaraları                    <span class="qty-category">
+                        (457)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/siyah-beyaz-tablolar"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Siyah beyaz"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Siyah beyaz                    <span class="qty-category">
+                        (137)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/harita-tablolar"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Harita"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Harita                    <span class="qty-category">
+                        (39)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/retro-ve-vintage-tablolar"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Retro ve Vintage"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Retro ve Vintage                    <span class="qty-category">
+                        (267)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/tipografi-tablolari"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Tipografi"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Tipografi                    <span class="qty-category">
+                        (213)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/dans-ve-muzik-tablolari"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Dans ve M&#252;zik"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Dans ve M&#252;zik                    <span class="qty-category">
+                        (141)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/egitim-ve-motivasyon-tablolari"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Eğitim ve motivasyon"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Eğitim ve motivasyon                    <span class="qty-category">
+                        (160)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/unlu-kisi-ve-sinema-kanvas-tablolari"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="&#220;nl&#252;ler ve sinema"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+&#220;nl&#252;ler ve sinema                    <span class="qty-category">
+                        (235)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/yiyecek-ve-icecek-tablolari"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Yiyecek ve i&#231;ecek"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Yiyecek ve i&#231;ecek                    <span class="qty-category">
+                        (219)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/hayvanlar-ve-vahsi-doga-tablolari"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Hayvanlar"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Hayvanlar                    <span class="qty-category">
+                        (213)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/din-ve-inanc-tablolari"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Din ve inan&#231;"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Din ve inan&#231;                    <span class="qty-category">
+                        (64)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/pop-art-ve-illustrasyon-tablolar"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Pop Art"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Pop Art                    <span class="qty-category">
+                        (191)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/spor-tablolari"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Spor"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Spor                    <span class="qty-category">
+                        (46)
+                    </span>
+        </a>
+
+
+    </li>
+                </ul>
+
+    </li>
+
+
+
+
+<li class="collapse-panel ng-cloak" ng-repeat="x in availableFilters" data-pjax>
+    <span>
+        {{$parent.availableFilters[$index][0].SpecificationAttributeName}}
+    </span>
+    <ul id="filters{{$parent.availableFilters[$index][0].SpecificationAttributeName}}" class="nav nav-pills">
+        <li class="show-all"
+            ng-class="{active: !$parent.specificationAttributeOption}">
+            <a ng-href="{{getCatalogUrl({specs:'remove'})}}"
+               ng-click="$parent.clearFilters()"
+               title="Filtreyi kaldır">
+                Karışık
+            </a>
+        </li>
+        <li ng-repeat="y in x"
+            ng-class="{active: $parent.$parent.specificationAttributeOption == y}">
+            <a ng-click="$parent.$parent.specificationAttributeOption = y"
+               ng-href="{{getCatalogUrl({specs:y.SpecificationAttributeOptionId})}}"
+               title="{{y.SpecificationAttributeOptionName}}">
+                <img ng-src="https://cdn.pluscanvas.com/themes/pluscanvas/content/images/specifications/{{y.SpecificationAttributeOptionId}}.png" alt="{{y.SpecificationAttributeOptionName}}" />
+                {{y.SpecificationAttributeOptionName}}
+            </a>
+        </li>
+    </ul>
+</li>
+<li class="collapse-panel ng-cloak" ng-repeat="x in activeFilters" data-pjax>
+    <span>
+        <strong>{{x.SpecificationAttributeName}}</strong> : {{x.SpecificationAttributeOptionName}}
+        <a ng-href="{{getCatalogUrl({specs:'remove'})}}"> (Filtreyi kaldır)</a>
+    </span>
+</li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/kisiye-ozel-kanvas-tablo"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Kişiye &#246;zel tablo"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+                <h2 class="category-title">
+                    Kişiye &#246;zel tablo
+                </h2>
+        </a>
+
+                <ul class="sublist">
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/fotografindan-tablo"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Fotoğrafından Tablo"
+           ng-click="clearFilters();toggleNavigation($event, true);" design-upload category-id="174">
+Fotoğrafından Tablo                    <span class="get-started">(hemen başla)</span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/babana-hediye"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Babana Hediye"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Babana Hediye                    <span class="qty-category">
+                        (13)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/annene-hediye"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Annene Hediye"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Annene Hediye                    <span class="qty-category">
+                        (30)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/sevgiline-hediye"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Sevgiline Hediye"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Sevgiline Hediye                    <span class="qty-category">
+                        (42)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/evlilik-ve-nisan"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Evlilik ve Nişan"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Evlilik ve Nişan                    <span class="qty-category">
+                        (25)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/dogum-gunu-hediyesi"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Doğum G&#252;n&#252; Hediyesi"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Doğum G&#252;n&#252; Hediyesi                    <span class="qty-category">
+                        (7)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/kolaj-tablo"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Kolaj Tablo"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Kolaj Tablo                    <span class="qty-category">
+                        (28)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/mozaik-tablo"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Mozaik Tablo"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Mozaik Tablo                    <span class="qty-category">
+                        (18)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/bebek-ve-cocuk"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Bebek ve &#199;ocuk"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Bebek ve &#199;ocuk                    <span class="qty-category">
+                        (36)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/yilbasi-hediyesi-kanvas-tablolar"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Yeni Yıl Hediyesi"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Yeni Yıl Hediyesi                    <span class="qty-category">
+                        (7)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/takvim"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Takvim Tablo"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Takvim Tablo                    <span class="qty-category">
+                        (5)
+                    </span>
+        </a>
+
+
+    </li>
+                </ul>
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/boyama-tablo"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Boyama tablo"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+                <h2 class="category-title">
+                    Boyama tablo
+                </h2>
+        </a>
+
+                <ul class="sublist">
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/mandala-tablolar"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="Mandala"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+Mandala                    <span class="qty-category">
+                        (41)
+                    </span>
+        </a>
+
+
+    </li>
+    <li class=" " ng-hide="hideNavigation" data-pjax>
+        <a href="/cocuklar-icin-boyama-tablolar"
+           ux-event="click"
+           message="catalog-navigation-left"
+           title="&#199;ocuklar i&#231;in"
+           ng-click="clearFilters();toggleNavigation($event, true);" >
+&#199;ocuklar i&#231;in                    <span class="qty-category">
+                        (10)
+                    </span>
+        </a>
+
+
+    </li>
+                </ul>
+
+    </li>
+            <li product-list="recentlyViewedProducts"
+                title="En son görüntülenenler"
+                class="product-list ng-cloak"
+                ux-event="click"
+                message="catalog-navigation-left"
+                ng-hide="hideNavigation">
+
+            </li>
+        </ul>
+    </nav>
+
+    
+                </div>
+                
+            </div>
+            <div class="col-xs-120 col-sm-80 col-md-90 col-xl-95">
+                
+                
+
+
+
+
+
+
+
+
+
+<div class="catalog catalog-gallery" ux-event="click" selector=".product-link" message="product-list">
+
+    
+
+<div class="row" ux-event="click" message-prefix="pager" selector=".pager a">
+    <div class="col-xs-55 col-sm-45 sort-container">
+        <div class="pager" data-pjax>
+            <ul>
+                
+                    <li class="ng-cloak"
+                        ng-repeat="x in sortOptions"
+                        ng-class="{'active':$parent.sortOption == x}"
+                        ng-click="$parent.sortOption = x">
+                        <a ng-href="{{getCatalogUrl({orderby:x.Value})}}">{{x.Text}}</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+        <div class="col-xs-65 col-sm-75 pager-container">
+            <div id="pager" class="pager" data-pjax>
+                <ul><li class="current-page"><span>1</span></li><li class="individual-page"><a href="/soyut-tablolar?pagenumber=2">2</a></li><li class="individual-page"><a href="/soyut-tablolar?pagenumber=3">3</a></li><li class="individual-page"><a href="/soyut-tablolar?pagenumber=4">4</a></li><li class="individual-page"><a href="/soyut-tablolar?pagenumber=5">5</a></li><li class="next-page"><a href="/soyut-tablolar?pagenumber=2">Sonraki <span class="icon icon-arrow-right"></span></a></li></ul>
+            </div>
+        </div>
+</div>    <div class="product-grid" manage-products specs="[]">
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3609">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/yagliboya-soyut-liman-tablo-2" title="Yağlıboya Soyut Liman detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/d2b7d29c-b003-45a4-8cdb-7d67605e23fc/yagliboya-soyut-liman-tablo-2.jpg"
+	             alt="Yağlıboya Soyut Liman g&#246;rseli."
+	             title="Yağlıboya Soyut Liman detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/d2b7d29c-b003-45a4-8cdb-7d67605e23fc/yagliboya-soyut-liman-tablo-2.jpg"
+	                 alt="Yağlıboya Soyut Liman g&#246;rseli."
+	                 title="Yağlıboya Soyut Liman detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3609', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/yagliboya-soyut-liman-tablo-2"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/yagliboya-soyut-liman-tablo-2" class="product-link">Yağlıboya Soyut Liman</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">89,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="2977">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/abstract-tree-ii-kanvas-tablo" title="Renkli Soyut Ağa&#231;lar detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/501d4595-a286-42fc-9c1f-e52d71413fad/abstract-tree-ii-kanvas-tablo.jpg"
+	             alt="Renkli Soyut Ağa&#231;lar g&#246;rseli."
+	             title="Renkli Soyut Ağa&#231;lar detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/501d4595-a286-42fc-9c1f-e52d71413fad/abstract-tree-ii-kanvas-tablo.jpg"
+	                 alt="Renkli Soyut Ağa&#231;lar g&#246;rseli."
+	                 title="Renkli Soyut Ağa&#231;lar detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=2977', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/abstract-tree-ii-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/abstract-tree-ii-kanvas-tablo" class="product-link">Renkli Soyut Ağa&#231;lar</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3611">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/yagliboya-soyut-liman-tablo" title="Yağlıboya Soyut Liman detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/e6ec5ca9-dc22-45fc-bc93-750cdcf7413a/yagliboya-soyut-liman-tablo.jpg"
+	             alt="Yağlıboya Soyut Liman g&#246;rseli."
+	             title="Yağlıboya Soyut Liman detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/e6ec5ca9-dc22-45fc-bc93-750cdcf7413a/yagliboya-soyut-liman-tablo.jpg"
+	                 alt="Yağlıboya Soyut Liman g&#246;rseli."
+	                 title="Yağlıboya Soyut Liman detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3611', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/yagliboya-soyut-liman-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/yagliboya-soyut-liman-tablo" class="product-link">Yağlıboya Soyut Liman</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">89,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3514">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/soyut-yagli-boya-kanvas-tablo" title="Soyut Yağlı Boya detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/516a9e40-6d4b-41f7-bc9c-985871e3cd8d/soyut-yagli-boya-kanvas-tablo.jpg"
+	             alt="Soyut Yağlı Boya g&#246;rseli."
+	             title="Soyut Yağlı Boya detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/516a9e40-6d4b-41f7-bc9c-985871e3cd8d/soyut-yagli-boya-kanvas-tablo.jpg"
+	                 alt="Soyut Yağlı Boya g&#246;rseli."
+	                 title="Soyut Yağlı Boya detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3514', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/soyut-yagli-boya-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/soyut-yagli-boya-kanvas-tablo" class="product-link">Soyut Yağlı Boya</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="1904">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/abignale-abstract-tablo" title="Metropol Soyut detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/a0ac03a9-2ba8-4ddb-b8c5-af2fd4ad67a2/abignale-abstract-tablo.jpg"
+	             alt="Metropol Soyut g&#246;rseli."
+	             title="Metropol Soyut detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/a0ac03a9-2ba8-4ddb-b8c5-af2fd4ad67a2/abignale-abstract-tablo.jpg"
+	                 alt="Metropol Soyut g&#246;rseli."
+	                 title="Metropol Soyut detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=1904', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/abignale-abstract-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/abignale-abstract-tablo" class="product-link">Metropol Soyut</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">119,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3782">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/buzlu-tablo" title="Buzlu detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637238798687270000/thumb/500x0/8950059b-2444-4526-88b6-56b12c7bad6a/buzlu-tablo.jpg"
+	             alt="Buzlu g&#246;rseli."
+	             title="Buzlu detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637238798687270000/thumb/500x0/8950059b-2444-4526-88b6-56b12c7bad6a/buzlu-tablo.jpg"
+	                 alt="Buzlu g&#246;rseli."
+	                 title="Buzlu detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3782', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/buzlu-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/buzlu-tablo" class="product-link">Buzlu</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="10437">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/yagli-boya-reproduksiyon-butterfly-effect-kanvas-tablo" title="Butterfly Effect detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/9085f613-31b8-4403-991d-fcc13dc724ec/yagli-boya-reproduksiyon-butterfly-effect-kanvas-tablo.jpg"
+	             alt="Butterfly Effect g&#246;rseli."
+	             title="Butterfly Effect detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/9085f613-31b8-4403-991d-fcc13dc724ec/yagli-boya-reproduksiyon-butterfly-effect-kanvas-tablo.jpg"
+	                 alt="Butterfly Effect g&#246;rseli."
+	                 title="Butterfly Effect detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=10437', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/yagli-boya-reproduksiyon-butterfly-effect-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/yagli-boya-reproduksiyon-butterfly-effect-kanvas-tablo" class="product-link">Butterfly Effect</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="9901">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/turquoise-rustic-beach-cottage-kanvas-tablo" title="Turquoise Rustic Beach Cottage detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/76d78cf8-d3bb-4495-b939-481e994ff79b/turquoise-rustic-beach-cottage-kanvas-tablo.jpg"
+	             alt="Turquoise Rustic Beach Cottage g&#246;rseli."
+	             title="Turquoise Rustic Beach Cottage detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/76d78cf8-d3bb-4495-b939-481e994ff79b/turquoise-rustic-beach-cottage-kanvas-tablo.jpg"
+	                 alt="Turquoise Rustic Beach Cottage g&#246;rseli."
+	                 title="Turquoise Rustic Beach Cottage detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=9901', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/turquoise-rustic-beach-cottage-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/turquoise-rustic-beach-cottage-kanvas-tablo" class="product-link">Turquoise Rustic Beach Cottage</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3728">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/soyut-yagli-boya-kanvas-tablo-10" title="Soyut Yağlı Boya detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/9c9518b3-66d7-4fd1-a51f-c14032348b31/soyut-yagli-boya-kanvas-tablo-10.jpg"
+	             alt="Soyut Yağlı Boya g&#246;rseli."
+	             title="Soyut Yağlı Boya detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/9c9518b3-66d7-4fd1-a51f-c14032348b31/soyut-yagli-boya-kanvas-tablo-10.jpg"
+	                 alt="Soyut Yağlı Boya g&#246;rseli."
+	                 title="Soyut Yağlı Boya detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3728', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/soyut-yagli-boya-kanvas-tablo-10"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/soyut-yagli-boya-kanvas-tablo-10" class="product-link">Soyut Yağlı Boya</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="10461">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/yagli-boya-reproduksiyon-ice-kanvas-tablo" title="Ice detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637230815382600000/thumb/500x0/b52cda0f-6f65-4942-9215-4d0dbd48adfb/yagli-boya-reproduksiyon-ice-kanvas-tablo.jpg"
+	             alt="Ice g&#246;rseli."
+	             title="Ice detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637230815382600000/thumb/500x0/b52cda0f-6f65-4942-9215-4d0dbd48adfb/yagli-boya-reproduksiyon-ice-kanvas-tablo.jpg"
+	                 alt="Ice g&#246;rseli."
+	                 title="Ice detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=10461', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/yagli-boya-reproduksiyon-ice-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/yagli-boya-reproduksiyon-ice-kanvas-tablo" class="product-link">Ice</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">89,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3338">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/violet-agac-kanvas-tablo" title="Violet Ağa&#231; detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/a9f3c5c1-8937-40f9-97c3-ba10e4c3684f/violet-agac-kanvas-tablo.jpg"
+	             alt="Violet Ağa&#231; g&#246;rseli."
+	             title="Violet Ağa&#231; detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/a9f3c5c1-8937-40f9-97c3-ba10e4c3684f/violet-agac-kanvas-tablo.jpg"
+	                 alt="Violet Ağa&#231; g&#246;rseli."
+	                 title="Violet Ağa&#231; detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3338', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/violet-agac-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/violet-agac-kanvas-tablo" class="product-link">Violet Ağa&#231;</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="10531">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/yagli-boya-reproduksiyon-sisli-sabah-kanvas-tablo" title="Sisli Sabah detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/4476a935-8bb2-425f-878b-305fbaa0b81b/yagli-boya-reproduksiyon-sisli-sabah-kanvas-tablo.jpg"
+	             alt="Sisli Sabah g&#246;rseli."
+	             title="Sisli Sabah detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/4476a935-8bb2-425f-878b-305fbaa0b81b/yagli-boya-reproduksiyon-sisli-sabah-kanvas-tablo.jpg"
+	                 alt="Sisli Sabah g&#246;rseli."
+	                 title="Sisli Sabah detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=10531', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/yagli-boya-reproduksiyon-sisli-sabah-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/yagli-boya-reproduksiyon-sisli-sabah-kanvas-tablo" class="product-link">Sisli Sabah</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">89,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3615">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/soyut-yagli-boya-tablo-6" title="Soyut Yağlı Boya detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637225668277570000/thumb/500x0/d3d2f792-73dc-4693-a85d-252e57388875/soyut-yagli-boya-tablo-6.jpg"
+	             alt="Soyut Yağlı Boya g&#246;rseli."
+	             title="Soyut Yağlı Boya detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637225668277570000/thumb/500x0/d3d2f792-73dc-4693-a85d-252e57388875/soyut-yagli-boya-tablo-6.jpg"
+	                 alt="Soyut Yağlı Boya g&#246;rseli."
+	                 title="Soyut Yağlı Boya detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3615', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/soyut-yagli-boya-tablo-6"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/soyut-yagli-boya-tablo-6" class="product-link">Soyut Yağlı Boya</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="1772">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/the-band-played-kanvas-tablo" title="The Band Played detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/c8444792-6007-4ac0-8b2c-228429402238/the-band-played-kanvas-tablo.jpg"
+	             alt="The Band Played g&#246;rseli."
+	             title="The Band Played detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/c8444792-6007-4ac0-8b2c-228429402238/the-band-played-kanvas-tablo.jpg"
+	                 alt="The Band Played g&#246;rseli."
+	                 title="The Band Played detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=1772', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/the-band-played-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/the-band-played-kanvas-tablo" class="product-link">The Band Played</a>
+		</h3>
+			<a data-pjax href="/jazz-tango-canvas-prints" title="Jazz ve Tango">Jazz ve Tango</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="2657">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/liquid-harmony-of-colors-kanvas-tablo" title="Liquid Harmony of Colors detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/a638e8df-166b-4aa2-bc7d-f947307f877c/liquid-harmony-of-colors-kanvas-tablo.jpg"
+	             alt="Liquid Harmony of Colors g&#246;rseli."
+	             title="Liquid Harmony of Colors detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/a638e8df-166b-4aa2-bc7d-f947307f877c/liquid-harmony-of-colors-kanvas-tablo.jpg"
+	                 alt="Liquid Harmony of Colors g&#246;rseli."
+	                 title="Liquid Harmony of Colors detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=2657', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/liquid-harmony-of-colors-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/liquid-harmony-of-colors-kanvas-tablo" class="product-link">Liquid Harmony of Colors</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3610">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/yagliboya-soyut-sehir-tablo" title="Yağlıboya Soyut Şehir detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/2f9f248a-50b2-4d39-98f8-088592ef0502/yagliboya-soyut-sehir-tablo.jpg"
+	             alt="Yağlıboya Soyut Şehir g&#246;rseli."
+	             title="Yağlıboya Soyut Şehir detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/2f9f248a-50b2-4d39-98f8-088592ef0502/yagliboya-soyut-sehir-tablo.jpg"
+	                 alt="Yağlıboya Soyut Şehir g&#246;rseli."
+	                 title="Yağlıboya Soyut Şehir detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3610', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/yagliboya-soyut-sehir-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/yagliboya-soyut-sehir-tablo" class="product-link">Yağlıboya Soyut Şehir</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">89,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3871">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/no-5-no-22-tablo-2" title="No 5 - No 22 detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/861502d1-78f1-4ee6-89a7-e768bcf9a0bf/no-5-no-22-tablo-2.jpg"
+	             alt="No 5 - No 22 g&#246;rseli."
+	             title="No 5 - No 22 detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/861502d1-78f1-4ee6-89a7-e768bcf9a0bf/no-5-no-22-tablo-2.jpg"
+	                 alt="No 5 - No 22 g&#246;rseli."
+	                 title="No 5 - No 22 detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3871', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/no-5-no-22-tablo-2"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/no-5-no-22-tablo-2" class="product-link">No 5 - No 22</a>
+		</h3>
+			<a data-pjax href="/mark-rothko-tablolari" title="Mark Rothko">Mark Rothko</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="1248">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/nautilus-i" title="Nautilus detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/9b1a350b-80e1-4bb2-bde3-abe06d0afcee/nautilus-i.jpg"
+	             alt="Nautilus g&#246;rseli."
+	             title="Nautilus detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/9b1a350b-80e1-4bb2-bde3-abe06d0afcee/nautilus-i.jpg"
+	                 alt="Nautilus g&#246;rseli."
+	                 title="Nautilus detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=1248', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/nautilus-i"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/nautilus-i" class="product-link">Nautilus</a>
+		</h3>
+			<a data-pjax href="/close-up-tablolar" title="Close-up">Close-up</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="10466">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/yagli-boya-reproduksiyon-ocean-kanvas-tablo" title="Ocean detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/8bd92cdb-27d1-4eda-a7be-7cf7ecd552eb/yagli-boya-reproduksiyon-ocean-kanvas-tablo.jpg"
+	             alt="Ocean g&#246;rseli."
+	             title="Ocean detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/8bd92cdb-27d1-4eda-a7be-7cf7ecd552eb/yagli-boya-reproduksiyon-ocean-kanvas-tablo.jpg"
+	                 alt="Ocean g&#246;rseli."
+	                 title="Ocean detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=10466', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/yagli-boya-reproduksiyon-ocean-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/yagli-boya-reproduksiyon-ocean-kanvas-tablo" class="product-link">Ocean</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="2175">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/renkli-dijital-alevler-kanvas-tablo" title="Renkli dijital alevler detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/d8a74827-7af8-411b-a8dd-6fa623980c56/renkli-dijital-alevler-kanvas-tablo.jpg"
+	             alt="Renkli dijital alevler g&#246;rseli."
+	             title="Renkli dijital alevler detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/d8a74827-7af8-411b-a8dd-6fa623980c56/renkli-dijital-alevler-kanvas-tablo.jpg"
+	                 alt="Renkli dijital alevler g&#246;rseli."
+	                 title="Renkli dijital alevler detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=2175', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/renkli-dijital-alevler-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/renkli-dijital-alevler-kanvas-tablo" class="product-link">Renkli dijital alevler</a>
+		</h3>
+			<a data-pjax href="/uc-boyutlu-kanvas-tablolar" title="&#220;&#231; boyutlu">&#220;&#231; boyutlu</a>
+		<div class="prices">
+				<span class="price actual-price">119,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3517">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/soyut-yagli-boya-tablo-3" title="Soyut Yağlı Boya detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/7cba4122-49b7-434b-887b-acef8aefbab3/soyut-yagli-boya-tablo-3.jpg"
+	             alt="Soyut Yağlı Boya g&#246;rseli."
+	             title="Soyut Yağlı Boya detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/7cba4122-49b7-434b-887b-acef8aefbab3/soyut-yagli-boya-tablo-3.jpg"
+	                 alt="Soyut Yağlı Boya g&#246;rseli."
+	                 title="Soyut Yağlı Boya detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3517', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/soyut-yagli-boya-tablo-3"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/soyut-yagli-boya-tablo-3" class="product-link">Soyut Yağlı Boya</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3764">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/cizgisel-boyalar-tablo" title="&#199;izgisel Boyalar detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/7efdc273-fcd6-49a0-98a1-1291c04be9b2/cizgisel-boyalar-tablo.jpg"
+	             alt="&#199;izgisel Boyalar g&#246;rseli."
+	             title="&#199;izgisel Boyalar detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/7efdc273-fcd6-49a0-98a1-1291c04be9b2/cizgisel-boyalar-tablo.jpg"
+	                 alt="&#199;izgisel Boyalar g&#246;rseli."
+	                 title="&#199;izgisel Boyalar detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3764', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/cizgisel-boyalar-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/cizgisel-boyalar-tablo" class="product-link">&#199;izgisel Boyalar</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3756">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/turuncu-ustune-siyah-dogaclama-tablo" title="Turuncu Siyah Doğa&#231;lama detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/5a814b1e-ea25-46cf-814c-f52beac1d7fe/turuncu-ustune-siyah-dogaclama-tablo.jpg"
+	             alt="Turuncu Siyah Doğa&#231;lama g&#246;rseli."
+	             title="Turuncu Siyah Doğa&#231;lama detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/5a814b1e-ea25-46cf-814c-f52beac1d7fe/turuncu-ustune-siyah-dogaclama-tablo.jpg"
+	                 alt="Turuncu Siyah Doğa&#231;lama g&#246;rseli."
+	                 title="Turuncu Siyah Doğa&#231;lama detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3756', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/turuncu-ustune-siyah-dogaclama-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/turuncu-ustune-siyah-dogaclama-tablo" class="product-link">Turuncu Siyah Doğa&#231;lama</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">89,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3868">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/isimsiz-kanvas-tablo-2" title="İsimsiz detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/c61df20a-26a1-4d34-af62-d5b9629b6b81/isimsiz-kanvas-tablo-2.jpg"
+	             alt="İsimsiz g&#246;rseli."
+	             title="İsimsiz detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/c61df20a-26a1-4d34-af62-d5b9629b6b81/isimsiz-kanvas-tablo-2.jpg"
+	                 alt="İsimsiz g&#246;rseli."
+	                 title="İsimsiz detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3868', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/isimsiz-kanvas-tablo-2"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/isimsiz-kanvas-tablo-2" class="product-link">İsimsiz</a>
+		</h3>
+			<a data-pjax href="/mark-rothko-tablolari" title="Mark Rothko">Mark Rothko</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3759">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/mor-ve-mavi-dogaclama-tablo" title="Mor ve Mavi Doğa&#231;lama detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/7edb9bb0-ed80-48af-b7fe-f673d53c8884/mor-ve-mavi-dogaclama-tablo.jpg"
+	             alt="Mor ve Mavi Doğa&#231;lama g&#246;rseli."
+	             title="Mor ve Mavi Doğa&#231;lama detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/7edb9bb0-ed80-48af-b7fe-f673d53c8884/mor-ve-mavi-dogaclama-tablo.jpg"
+	                 alt="Mor ve Mavi Doğa&#231;lama g&#246;rseli."
+	                 title="Mor ve Mavi Doğa&#231;lama detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3759', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/mor-ve-mavi-dogaclama-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/mor-ve-mavi-dogaclama-tablo" class="product-link">Mor ve Mavi Doğa&#231;lama</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3825">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/baloncuklar-tablo" title="Baloncuklar detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/8fbc9e54-cca6-4b3f-a7a2-cdd7d11a700a/baloncuklar-tablo.jpg"
+	             alt="Baloncuklar g&#246;rseli."
+	             title="Baloncuklar detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/8fbc9e54-cca6-4b3f-a7a2-cdd7d11a700a/baloncuklar-tablo.jpg"
+	                 alt="Baloncuklar g&#246;rseli."
+	                 title="Baloncuklar detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3825', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/baloncuklar-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/baloncuklar-tablo" class="product-link">Baloncuklar</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">89,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3761">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/yumusak-esinti-tablo" title="Yumuşak Esinti detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/d01245fa-0b07-45c9-9939-f0cdbcc41c91/yumusak-esinti-tablo.jpg"
+	             alt="Yumuşak Esinti g&#246;rseli."
+	             title="Yumuşak Esinti detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/d01245fa-0b07-45c9-9939-f0cdbcc41c91/yumusak-esinti-tablo.jpg"
+	                 alt="Yumuşak Esinti g&#246;rseli."
+	                 title="Yumuşak Esinti detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3761', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/yumusak-esinti-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/yumusak-esinti-tablo" class="product-link">Yumuşak Esinti</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="10439">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/yagli-boya-reproduksiyon-creature-kanvas-tablo" title="Creature detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/2b6d31af-1910-4fdd-824f-cf1a43111ee9/yagli-boya-reproduksiyon-creature-kanvas-tablo.jpg"
+	             alt="Creature g&#246;rseli."
+	             title="Creature detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/2b6d31af-1910-4fdd-824f-cf1a43111ee9/yagli-boya-reproduksiyon-creature-kanvas-tablo.jpg"
+	                 alt="Creature g&#246;rseli."
+	                 title="Creature detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=10439', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/yagli-boya-reproduksiyon-creature-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/yagli-boya-reproduksiyon-creature-kanvas-tablo" class="product-link">Creature</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="2520">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/floral-pattern-i-kanvas-tablo" title="Floral Pattern detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/7640a40b-f7d3-4f3d-bb7f-2b44edf1123c/floral-pattern-i-kanvas-tablo.jpg"
+	             alt="Floral Pattern g&#246;rseli."
+	             title="Floral Pattern detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/7640a40b-f7d3-4f3d-bb7f-2b44edf1123c/floral-pattern-i-kanvas-tablo.jpg"
+	                 alt="Floral Pattern g&#246;rseli."
+	                 title="Floral Pattern detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=2520', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/floral-pattern-i-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/floral-pattern-i-kanvas-tablo" class="product-link">Floral Pattern</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="10524">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/yagli-boya-reproduksiyon-magic-night-kanvas-tablo" title="Magic Night detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/915669a4-d693-4fa3-a2fb-19bd4403b8ff/yagli-boya-reproduksiyon-magic-night-kanvas-tablo.jpg"
+	             alt="Magic Night g&#246;rseli."
+	             title="Magic Night detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/915669a4-d693-4fa3-a2fb-19bd4403b8ff/yagli-boya-reproduksiyon-magic-night-kanvas-tablo.jpg"
+	                 alt="Magic Night g&#246;rseli."
+	                 title="Magic Night detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=10524', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/yagli-boya-reproduksiyon-magic-night-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/yagli-boya-reproduksiyon-magic-night-kanvas-tablo" class="product-link">Magic Night</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="2820">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/loop-kanvas-tablo-2" title="Loop detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/8fb1309a-0436-4e69-bd07-0bb4e19695b6/loop-kanvas-tablo-2.jpg"
+	             alt="Loop g&#246;rseli."
+	             title="Loop detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/8fb1309a-0436-4e69-bd07-0bb4e19695b6/loop-kanvas-tablo-2.jpg"
+	                 alt="Loop g&#246;rseli."
+	                 title="Loop detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=2820', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/loop-kanvas-tablo-2"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/loop-kanvas-tablo-2" class="product-link">Loop</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="2518">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/figure-i-tablo-4" title="Figure I detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/00afa7ea-9407-44d0-9862-166a93b81b64/figure-i-tablo-4.jpg"
+	             alt="Figure I g&#246;rseli."
+	             title="Figure I detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/00afa7ea-9407-44d0-9862-166a93b81b64/figure-i-tablo-4.jpg"
+	                 alt="Figure I g&#246;rseli."
+	                 title="Figure I detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=2518', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/figure-i-tablo-4"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/figure-i-tablo-4" class="product-link">Figure I</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3519">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/soyut-yagli-boya-kanvas-tablo-12" title="Soyut Yağlı Boya detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/e5b06104-b9d4-43d8-ac4f-d0a15fd69b9e/soyut-yagli-boya-kanvas-tablo-12.jpg"
+	             alt="Soyut Yağlı Boya g&#246;rseli."
+	             title="Soyut Yağlı Boya detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/e5b06104-b9d4-43d8-ac4f-d0a15fd69b9e/soyut-yagli-boya-kanvas-tablo-12.jpg"
+	                 alt="Soyut Yağlı Boya g&#246;rseli."
+	                 title="Soyut Yağlı Boya detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3519', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/soyut-yagli-boya-kanvas-tablo-12"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/soyut-yagli-boya-kanvas-tablo-12" class="product-link">Soyut Yağlı Boya</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3897">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/old-school-tablo" title="Old School detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/14b2ffb1-ce28-4fc7-a711-2c55b41dda3a/old-school-tablo.jpg"
+	             alt="Old School g&#246;rseli."
+	             title="Old School detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/14b2ffb1-ce28-4fc7-a711-2c55b41dda3a/old-school-tablo.jpg"
+	                 alt="Old School g&#246;rseli."
+	                 title="Old School detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3897', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/old-school-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/old-school-tablo" class="product-link">Old School</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3763">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/yumusak-esinti-tablo-3" title="Yumuşak Esinti detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/5f61119f-0cb8-40da-83f6-658a7e489177/yumusak-esinti-tablo-3.jpg"
+	             alt="Yumuşak Esinti g&#246;rseli."
+	             title="Yumuşak Esinti detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/5f61119f-0cb8-40da-83f6-658a7e489177/yumusak-esinti-tablo-3.jpg"
+	                 alt="Yumuşak Esinti g&#246;rseli."
+	                 title="Yumuşak Esinti detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3763', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/yumusak-esinti-tablo-3"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/yumusak-esinti-tablo-3" class="product-link">Yumuşak Esinti</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="9900">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/jan-riske-blue-thumb-kanvas-tablo" title="Blue Thumb detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/486eda65-2184-428e-8fe4-01628697a239/jan-riske-blue-thumb-kanvas-tablo.jpg"
+	             alt="Blue Thumb g&#246;rseli."
+	             title="Blue Thumb detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/486eda65-2184-428e-8fe4-01628697a239/jan-riske-blue-thumb-kanvas-tablo.jpg"
+	                 alt="Blue Thumb g&#246;rseli."
+	                 title="Blue Thumb detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=9900', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/jan-riske-blue-thumb-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/jan-riske-blue-thumb-kanvas-tablo" class="product-link">Blue Thumb</a>
+		</h3>
+			<a data-pjax href="/jan-riske" title="Jan Riske">Jan Riske</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3870">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/no-3-no-13" title="No 3 - No 13 detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/6fac8ca0-c39f-48c5-bffd-b483a0c2fdd4/no-3-no-13.jpg"
+	             alt="No 3 - No 13 g&#246;rseli."
+	             title="No 3 - No 13 detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/6fac8ca0-c39f-48c5-bffd-b483a0c2fdd4/no-3-no-13.jpg"
+	                 alt="No 3 - No 13 g&#246;rseli."
+	                 title="No 3 - No 13 detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3870', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/no-3-no-13"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/no-3-no-13" class="product-link">No 3 - No 13</a>
+		</h3>
+			<a data-pjax href="/mark-rothko-tablolari" title="Mark Rothko">Mark Rothko</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="10460">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/yagli-boya-reproduksiyon-glasy-kanvas-tablo" title="Glasy detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/42134d73-13b0-47c6-9363-4ea14007df93/yagli-boya-reproduksiyon-glasy-kanvas-tablo.jpg"
+	             alt="Glasy g&#246;rseli."
+	             title="Glasy detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/42134d73-13b0-47c6-9363-4ea14007df93/yagli-boya-reproduksiyon-glasy-kanvas-tablo.jpg"
+	                 alt="Glasy g&#246;rseli."
+	                 title="Glasy detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=10460', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/yagli-boya-reproduksiyon-glasy-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/yagli-boya-reproduksiyon-glasy-kanvas-tablo" class="product-link">Glasy</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">119,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="10706">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/mark-rothko-no-14-1960-kanvas-tablo" title="No 14 1960 detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/3cf4847a-dadd-45aa-8773-a7c35fe7505a/mark-rothko-no-14-1960-kanvas-tablo.jpg"
+	             alt="No 14 1960 g&#246;rseli."
+	             title="No 14 1960 detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/3cf4847a-dadd-45aa-8773-a7c35fe7505a/mark-rothko-no-14-1960-kanvas-tablo.jpg"
+	                 alt="No 14 1960 g&#246;rseli."
+	                 title="No 14 1960 detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=10706', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/mark-rothko-no-14-1960-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/mark-rothko-no-14-1960-kanvas-tablo" class="product-link">No 14 1960</a>
+		</h3>
+			<a data-pjax href="/mark-rothko-tablolari" title="Mark Rothko">Mark Rothko</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3765">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/cizgisel-boyalar-tablo-3" title="&#199;izgisel Boyalar detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/fb3719dd-97e9-4b2f-ae0a-49cee4e7a71b/cizgisel-boyalar-tablo-3.jpg"
+	             alt="&#199;izgisel Boyalar g&#246;rseli."
+	             title="&#199;izgisel Boyalar detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/fb3719dd-97e9-4b2f-ae0a-49cee4e7a71b/cizgisel-boyalar-tablo-3.jpg"
+	                 alt="&#199;izgisel Boyalar g&#246;rseli."
+	                 title="&#199;izgisel Boyalar detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3765', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/cizgisel-boyalar-tablo-3"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/cizgisel-boyalar-tablo-3" class="product-link">&#199;izgisel Boyalar</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="10467">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/yagli-boya-reproduksiyon-orpheo-kanvas-tablo" title="Orpheo detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/f04130ad-8004-46a8-b87f-19e399fa9f91/yagli-boya-reproduksiyon-orpheo-kanvas-tablo.jpg"
+	             alt="Orpheo g&#246;rseli."
+	             title="Orpheo detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/f04130ad-8004-46a8-b87f-19e399fa9f91/yagli-boya-reproduksiyon-orpheo-kanvas-tablo.jpg"
+	                 alt="Orpheo g&#246;rseli."
+	                 title="Orpheo detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=10467', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/yagli-boya-reproduksiyon-orpheo-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/yagli-boya-reproduksiyon-orpheo-kanvas-tablo" class="product-link">Orpheo</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">89,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3757">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/renkli-dogaclama-tablo" title="Renkli Doğa&#231;lama detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/35696df5-e6b3-4a94-85ef-a055d29dd175/renkli-dogaclama-tablo.jpg"
+	             alt="Renkli Doğa&#231;lama g&#246;rseli."
+	             title="Renkli Doğa&#231;lama detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/35696df5-e6b3-4a94-85ef-a055d29dd175/renkli-dogaclama-tablo.jpg"
+	                 alt="Renkli Doğa&#231;lama g&#246;rseli."
+	                 title="Renkli Doğa&#231;lama detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3757', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/renkli-dogaclama-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/renkli-dogaclama-tablo" class="product-link">Renkli Doğa&#231;lama</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3703">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/soyut-yagli-boya-kanvas-tablo-8" title="Soyut Yağlı Boya detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/a861bd42-5363-4fa1-9151-b3dda7e403a2/soyut-yagli-boya-kanvas-tablo-8.jpg"
+	             alt="Soyut Yağlı Boya g&#246;rseli."
+	             title="Soyut Yağlı Boya detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/a861bd42-5363-4fa1-9151-b3dda7e403a2/soyut-yagli-boya-kanvas-tablo-8.jpg"
+	                 alt="Soyut Yağlı Boya g&#246;rseli."
+	                 title="Soyut Yağlı Boya detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3703', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/soyut-yagli-boya-kanvas-tablo-8"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/soyut-yagli-boya-kanvas-tablo-8" class="product-link">Soyut Yağlı Boya</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="2524">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/circles-in-squares-ii-kanvas-tablo" title="Circles in Squares detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/975690b7-df41-47aa-aaaf-8e00a411458e/circles-in-squares-ii-kanvas-tablo.jpg"
+	             alt="Circles in Squares g&#246;rseli."
+	             title="Circles in Squares detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/975690b7-df41-47aa-aaaf-8e00a411458e/circles-in-squares-ii-kanvas-tablo.jpg"
+	                 alt="Circles in Squares g&#246;rseli."
+	                 title="Circles in Squares detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=2524', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/circles-in-squares-ii-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/circles-in-squares-ii-kanvas-tablo" class="product-link">Circles in Squares</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3953">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/soyut-cizgiler-tablo" title="Soyut &#199;izgiler detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/f6476795-624b-4706-8121-4b9436e6c0df/soyut-cizgiler-tablo.jpg"
+	             alt="Soyut &#199;izgiler g&#246;rseli."
+	             title="Soyut &#199;izgiler detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/f6476795-624b-4706-8121-4b9436e6c0df/soyut-cizgiler-tablo.jpg"
+	                 alt="Soyut &#199;izgiler g&#246;rseli."
+	                 title="Soyut &#199;izgiler detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3953', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/soyut-cizgiler-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/soyut-cizgiler-tablo" class="product-link">Soyut &#199;izgiler</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">119,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="1826">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/caleb-kanvas-tablo-2" title="Caleb detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/02276c76-953d-4afc-af2b-43f1e5d43a3a/caleb-kanvas-tablo-2.jpg"
+	             alt="Caleb g&#246;rseli."
+	             title="Caleb detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/02276c76-953d-4afc-af2b-43f1e5d43a3a/caleb-kanvas-tablo-2.jpg"
+	                 alt="Caleb g&#246;rseli."
+	                 title="Caleb detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=1826', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/caleb-kanvas-tablo-2"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/caleb-kanvas-tablo-2" class="product-link">Caleb</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">119,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3124">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/amazon-iii-kanvas-tablo" title="Amazon III detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/2a5a36ed-6c66-4adf-9906-3a97ba075a39/amazon-iii-kanvas-tablo.jpg"
+	             alt="Amazon III g&#246;rseli."
+	             title="Amazon III detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/2a5a36ed-6c66-4adf-9906-3a97ba075a39/amazon-iii-kanvas-tablo.jpg"
+	                 alt="Amazon III g&#246;rseli."
+	                 title="Amazon III detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3124', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/amazon-iii-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/amazon-iii-kanvas-tablo" class="product-link">Amazon III</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3872">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/no-14-tablo" title="No 14 1951 detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/4e271c7d-425e-4b28-81fa-ce8fa6828545/no-14-tablo.jpg"
+	             alt="No 14 1951 g&#246;rseli."
+	             title="No 14 1951 detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/4e271c7d-425e-4b28-81fa-ce8fa6828545/no-14-tablo.jpg"
+	                 alt="No 14 1951 g&#246;rseli."
+	                 title="No 14 1951 detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3872', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/no-14-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/no-14-tablo" class="product-link">No 14 1951</a>
+		</h3>
+			<a data-pjax href="/mark-rothko-tablolari" title="Mark Rothko">Mark Rothko</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3783">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/buzlu-kanvas-tablo-2" title="Buzlu detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/87e2ec14-630e-4226-b8b2-79bb12a939b4/buzlu-kanvas-tablo-2.jpg"
+	             alt="Buzlu g&#246;rseli."
+	             title="Buzlu detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/87e2ec14-630e-4226-b8b2-79bb12a939b4/buzlu-kanvas-tablo-2.jpg"
+	                 alt="Buzlu g&#246;rseli."
+	                 title="Buzlu detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3783', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/buzlu-kanvas-tablo-2"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/buzlu-kanvas-tablo-2" class="product-link">Buzlu</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3781">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/dairesel-izler-kanvas-tablo-3" title="Dairesel İzler detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/60efba83-752f-4feb-8466-90b28d09df8d/dairesel-izler-kanvas-tablo-3.jpg"
+	             alt="Dairesel İzler g&#246;rseli."
+	             title="Dairesel İzler detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/60efba83-752f-4feb-8466-90b28d09df8d/dairesel-izler-kanvas-tablo-3.jpg"
+	                 alt="Dairesel İzler g&#246;rseli."
+	                 title="Dairesel İzler detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3781', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/dairesel-izler-kanvas-tablo-3"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/dairesel-izler-kanvas-tablo-3" class="product-link">Dairesel İzler</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3617">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/soyut-yagli-boya-kanvas-tablo-20" title="Soyut Yağlı Boya detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/db52deef-d0e2-4cd7-ba7e-0dcc7079a2fa/soyut-yagli-boya-kanvas-tablo-20.jpg"
+	             alt="Soyut Yağlı Boya g&#246;rseli."
+	             title="Soyut Yağlı Boya detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/db52deef-d0e2-4cd7-ba7e-0dcc7079a2fa/soyut-yagli-boya-kanvas-tablo-20.jpg"
+	                 alt="Soyut Yağlı Boya g&#246;rseli."
+	                 title="Soyut Yağlı Boya detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3617', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/soyut-yagli-boya-kanvas-tablo-20"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/soyut-yagli-boya-kanvas-tablo-20" class="product-link">Soyut Yağlı Boya</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3435">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/kristal-desenler-tablo" title="Kristal Desenler detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/8cd72d19-3850-4c54-b8ab-b84bfac13a8a/kristal-desenler-tablo.jpg"
+	             alt="Kristal Desenler g&#246;rseli."
+	             title="Kristal Desenler detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/8cd72d19-3850-4c54-b8ab-b84bfac13a8a/kristal-desenler-tablo.jpg"
+	                 alt="Kristal Desenler g&#246;rseli."
+	                 title="Kristal Desenler detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3435', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/kristal-desenler-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/kristal-desenler-tablo" class="product-link">Kristal Desenler</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3618">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/soyut-yagli-boya-tablo-16" title="Soyut Yağlı Boya detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/1c5be974-a6bf-401a-8418-caa037761d95/soyut-yagli-boya-tablo-16.jpg"
+	             alt="Soyut Yağlı Boya g&#246;rseli."
+	             title="Soyut Yağlı Boya detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/1c5be974-a6bf-401a-8418-caa037761d95/soyut-yagli-boya-tablo-16.jpg"
+	                 alt="Soyut Yağlı Boya g&#246;rseli."
+	                 title="Soyut Yağlı Boya detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3618', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/soyut-yagli-boya-tablo-16"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/soyut-yagli-boya-tablo-16" class="product-link">Soyut Yağlı Boya</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="10440">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/yagli-boya-reproduksiyon-cubex-kanvas-tablo" title="Cubex detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/64aa7341-f068-459d-8925-98b0b5bf64b4/yagli-boya-reproduksiyon-cubex-kanvas-tablo.jpg"
+	             alt="Cubex g&#246;rseli."
+	             title="Cubex detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/64aa7341-f068-459d-8925-98b0b5bf64b4/yagli-boya-reproduksiyon-cubex-kanvas-tablo.jpg"
+	                 alt="Cubex g&#246;rseli."
+	                 title="Cubex detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=10440', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/yagli-boya-reproduksiyon-cubex-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/yagli-boya-reproduksiyon-cubex-kanvas-tablo" class="product-link">Cubex</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">89,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3123">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/amazon-ii-kanvas-tablo" title="Amazon detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/2d0702b2-dc84-44a9-8437-d79fd938c602/amazon-ii-kanvas-tablo.jpg"
+	             alt="Amazon g&#246;rseli."
+	             title="Amazon detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/2d0702b2-dc84-44a9-8437-d79fd938c602/amazon-ii-kanvas-tablo.jpg"
+	                 alt="Amazon g&#246;rseli."
+	                 title="Amazon detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3123', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/amazon-ii-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/amazon-ii-kanvas-tablo" class="product-link">Amazon</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3875">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/isimsiz-tablo-2" title="İsimsiz detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/e6b5104c-7ddc-4450-aaec-ad3b079c9ef6/isimsiz-tablo-2.jpg"
+	             alt="İsimsiz g&#246;rseli."
+	             title="İsimsiz detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/e6b5104c-7ddc-4450-aaec-ad3b079c9ef6/isimsiz-tablo-2.jpg"
+	                 alt="İsimsiz g&#246;rseli."
+	                 title="İsimsiz detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3875', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/isimsiz-tablo-2"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/isimsiz-tablo-2" class="product-link">İsimsiz</a>
+		</h3>
+			<a data-pjax href="/mark-rothko-tablolari" title="Mark Rothko">Mark Rothko</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3766">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/cizgisel-boyalar-tablo-2" title="&#199;izgisel Boyalar detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/293ba0bd-1d57-4f1c-b50e-5ef02925a0f2/cizgisel-boyalar-tablo-2.jpg"
+	             alt="&#199;izgisel Boyalar g&#246;rseli."
+	             title="&#199;izgisel Boyalar detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/293ba0bd-1d57-4f1c-b50e-5ef02925a0f2/cizgisel-boyalar-tablo-2.jpg"
+	                 alt="&#199;izgisel Boyalar g&#246;rseli."
+	                 title="&#199;izgisel Boyalar detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3766', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/cizgisel-boyalar-tablo-2"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/cizgisel-boyalar-tablo-2" class="product-link">&#199;izgisel Boyalar</a>
+		</h3>
+			<a data-pjax href="/yagli-boya-reproduksiyon-tablolar" title="Yağlı boya reprod&#252;ksiyon">Yağlı boya reprod&#252;ksiyon</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="10726">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/natalia-goncharova-cats-kanvas-tablo" title="Cats detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/a24683e0-2451-4aec-bd59-01ba60423b3d/natalia-goncharova-cats-kanvas-tablo.jpg"
+	             alt="Cats g&#246;rseli."
+	             title="Cats detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/a24683e0-2451-4aec-bd59-01ba60423b3d/natalia-goncharova-cats-kanvas-tablo.jpg"
+	                 alt="Cats g&#246;rseli."
+	                 title="Cats detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=10726', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/natalia-goncharova-cats-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/natalia-goncharova-cats-kanvas-tablo" class="product-link">Cats</a>
+		</h3>
+			<a data-pjax href="/natalia-goncharova-tablolari" title="Natalia Goncharova">Natalia Goncharova</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="3874">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/isimsiz-1957-kanvas-tablo" title="İsimsiz 1957 detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/9726d4f7-0e28-4033-877a-2b00ad19eaf1/isimsiz-1957-kanvas-tablo.jpg"
+	             alt="İsimsiz 1957 g&#246;rseli."
+	             title="İsimsiz 1957 detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/9726d4f7-0e28-4033-877a-2b00ad19eaf1/isimsiz-1957-kanvas-tablo.jpg"
+	                 alt="İsimsiz 1957 g&#246;rseli."
+	                 title="İsimsiz 1957 detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=3874', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/isimsiz-1957-kanvas-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/isimsiz-1957-kanvas-tablo" class="product-link">İsimsiz 1957</a>
+		</h3>
+			<a data-pjax href="/mark-rothko-tablolari" title="Mark Rothko">Mark Rothko</a>
+		<div class="prices">
+				<span class="price actual-price">49,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-xs-60 col-sm-60 col-md-40 col-xl-30">
+                
+
+
+<div class="product-item thumbnail" data-productid="2944">
+	<div class="picture" prbl-image orientation="square">
+	    <a href="/fire-in-colors-tablo" title="Fire in Colors detaylarını g&#246;ster" 
+	        class="product-picture-link product-link" rel="nofollow">
+	        <img class="product-picture fade"
+	             data-src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/302df738-a7a3-47de-87ba-f92e409d44b8/fire-in-colors-tablo.jpg"
+	             alt="Fire in Colors g&#246;rseli."
+	             title="Fire in Colors detaylarını g&#246;ster"/>
+	        <noscript>
+	            <img class="product-picture"
+	                 src="https://cdn.pluscanvas.com/c/1-0-0/1-637221035129430000/thumb/500x0/302df738-a7a3-47de-87ba-f92e409d44b8/fire-in-colors-tablo.jpg"
+	                 alt="Fire in Colors g&#246;rseli."
+	                 title="Fire in Colors detaylarını g&#246;ster"/>
+	        </noscript>
+	    </a>
+
+			<div class="controls fade">
+				<div class="col-xs-60">
+					<button type="button" class="btn wishlist-button" onclick="AjaxCart.addproducttocart_catalog('/ShoppingCart/AddProductToWishlist_CanvasPrint?productId=2944', this);return false;">
+						<span class="icon icon-heart"></span>
+					</button>
+				</div>
+				<div class="divider"></div>
+				<div class="col-xs-59">
+					<a class="btn product-link" href="/fire-in-colors-tablo"  rel="nofollow">
+						<span class="icon icon-cart"></span>
+					</a>
+				</div>
+			</div>
+
+	</div>
+	<div class="caption">
+		<h3 class="title">
+			<a  href="/fire-in-colors-tablo" class="product-link">Fire in Colors</a>
+		</h3>
+			<br />
+		<div class="prices">
+				<span class="price actual-price">89,90 ₺</span>
+
+			
+		</div>
+	</div>
+</div>
+
+
+            </div>
+    </div>
+
+<div class="page-footer catalog-navigation" ux-event="click" message-prefix="pager" selector=".pager a">
+
+    <div class="col-xs-120">
+        <div class="product-control">
+            <div id="pager" class="pager" data-pjax>
+                <ul><li class="current-page"><span>1</span></li><li class="individual-page"><a href="/soyut-tablolar?pagenumber=2">2</a></li><li class="individual-page"><a href="/soyut-tablolar?pagenumber=3">3</a></li><li class="individual-page"><a href="/soyut-tablolar?pagenumber=4">4</a></li><li class="individual-page"><a href="/soyut-tablolar?pagenumber=5">5</a></li><li class="next-page"><a href="/soyut-tablolar?pagenumber=2">Sonraki <span class="icon icon-arrow-right"></span></a></li></ul>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+    <script id="part_7307689b7eaf807f34a95276aa7ab8767e77d310a490556bec4e9dbc9b3fa02d">r(function(){setTimeout(function(){$.ajax({ method: 'post', url: '/Catalog/PostCatalog?categoryId=58&continueShoppingPage=https%3a%2f%2fwww.pluscanvas.com%2fsoyut-tablolar', success: function (xhr) { $('#part_7307689b7eaf807f34a95276aa7ab8767e77d310a490556bec4e9dbc9b3fa02d').after(xhr); $('#part_7307689b7eaf807f34a95276aa7ab8767e77d310a490556bec4e9dbc9b3fa02d').remove(); }, cache: false });}, 2000);});</script>
+    
+</div>
+
+<script>
+    r(function() {
+        var scope = angular.element($('[ng-controller="catalogController"]')).scope();
+
+        var initialData = {
+            sortOptions: [{"Disabled":false,"Group":null,"Selected":true,"Text":"Popülarite","Value":"https://www.pluscanvas.com/soyut-tablolar?orderby=0"},{"Disabled":false,"Group":null,"Selected":false,"Text":"Yeni","Value":"https://www.pluscanvas.com/soyut-tablolar?orderby=15"}],
+            pageSizeOptions: [],
+            availableFilters: [[{"SpecificationAttributeOptionId":199,"SpecificationAttributeName":"Tablo Tipi","SpecificationAttributeOptionName":"Kare","FilterUrl":"https://www.pluscanvas.com/soyut-tablolar?specs=199","CustomProperties":{}},{"SpecificationAttributeOptionId":198,"SpecificationAttributeName":"Tablo Tipi","SpecificationAttributeOptionName":"Yatay","FilterUrl":"https://www.pluscanvas.com/soyut-tablolar?specs=198","CustomProperties":{}},{"SpecificationAttributeOptionId":197,"SpecificationAttributeName":"Tablo Tipi","SpecificationAttributeOptionName":"Dikey","FilterUrl":"https://www.pluscanvas.com/soyut-tablolar?specs=197","CustomProperties":{}},{"SpecificationAttributeOptionId":205,"SpecificationAttributeName":"Tablo Tipi","SpecificationAttributeOptionName":"Yatay 2/1","FilterUrl":"https://www.pluscanvas.com/soyut-tablolar?specs=205","CustomProperties":{}},{"SpecificationAttributeOptionId":200,"SpecificationAttributeName":"Tablo Tipi","SpecificationAttributeOptionName":"Panorama 3/1","FilterUrl":"https://www.pluscanvas.com/soyut-tablolar?specs=200","CustomProperties":{}},{"SpecificationAttributeOptionId":206,"SpecificationAttributeName":"Tablo Tipi","SpecificationAttributeOptionName":"Dikey 1/2","FilterUrl":"https://www.pluscanvas.com/soyut-tablolar?specs=206","CustomProperties":{}},{"SpecificationAttributeOptionId":207,"SpecificationAttributeName":"Tablo Tipi","SpecificationAttributeOptionName":"Dikey 1/3","FilterUrl":"https://www.pluscanvas.com/soyut-tablolar?specs=207","CustomProperties":{}},{"SpecificationAttributeOptionId":201,"SpecificationAttributeName":"Tablo Tipi","SpecificationAttributeOptionName":"5 parçalı simetrik","FilterUrl":"https://www.pluscanvas.com/soyut-tablolar?specs=201","CustomProperties":{}},{"SpecificationAttributeOptionId":204,"SpecificationAttributeName":"Tablo Tipi","SpecificationAttributeOptionName":"3 parçalı simetrik","FilterUrl":"https://www.pluscanvas.com/soyut-tablolar?specs=204","CustomProperties":{}},{"SpecificationAttributeOptionId":203,"SpecificationAttributeName":"Tablo Tipi","SpecificationAttributeOptionName":"4 parçalı kare","FilterUrl":"https://www.pluscanvas.com/soyut-tablolar?specs=203","CustomProperties":{}},{"SpecificationAttributeOptionId":1255,"SpecificationAttributeName":"Tablo Tipi","SpecificationAttributeOptionName":"3 parçalı yatay","FilterUrl":"https://www.pluscanvas.com/soyut-tablolar?specs=1255","CustomProperties":{}},{"SpecificationAttributeOptionId":1257,"SpecificationAttributeName":"Tablo Tipi","SpecificationAttributeOptionName":"2 parçalı yatay","FilterUrl":"https://www.pluscanvas.com/soyut-tablolar?specs=1257","CustomProperties":{}},{"SpecificationAttributeOptionId":1256,"SpecificationAttributeName":"Tablo Tipi","SpecificationAttributeOptionName":"3 parçalı panorama","FilterUrl":"https://www.pluscanvas.com/soyut-tablolar?specs=1256","CustomProperties":{}},{"SpecificationAttributeOptionId":1258,"SpecificationAttributeName":"Tablo Tipi","SpecificationAttributeOptionName":"2 parçalı dikey","FilterUrl":"https://www.pluscanvas.com/soyut-tablolar?specs=1258","CustomProperties":{}},{"SpecificationAttributeOptionId":1259,"SpecificationAttributeName":"Tablo Tipi","SpecificationAttributeOptionName":"3 parçalı panorama","FilterUrl":"https://www.pluscanvas.com/soyut-tablolar?specs=1259","CustomProperties":{}}]],
+            activeFilters: [],
+            customizedCategory: false
+        };
+
+        if (scope != null) {
+            scope.compile(initialData);
+        } else {
+            angular.module("catalogModule").factory("initialLoadService", function() {
+                return initialData;
+            }); 
+        }
+    });
+</script>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    
+    
+<div class="footer hidden-print">
+    
+<div class="container container-xl footer-sitelinks">
+<div class="row footer-top-row">
+<div class="col-xs-45 col-sm-29">
+<div class="footer-logo"><img class="footer-logo-image" src="https://cdn.pluscanvas.com/themes/pluscanvas/content/images/logo.png" alt="PlusCanvas" width="219" height="41" /></div>
+</div>
+<div class="footer-top-right-bar text-right pull-right">
+<div><a href="/customer/info">Hesabım</a></div>
+<span>|</span>
+<div><a href="/trackorder" prbl-popup="true">Sipariş Takibi</a></div>
+<span>|</span>
+<div><a href="/iade" data-popup="true" data-popup-size="lg">İade ve Değişim</a></div>
+</div>
+</div>
+<div class="row footer-top-row footer-second-row">
+<div class="home-page-bullets container container-xl">
+<ul class="nav">
+<li>
+<h3><span style="display: block;">Kargo bedava</span><span class="icon icon-truck"><span class="hide">&nbsp;</span></span></h3>
+<p>T&uuml;m T&uuml;rkiye&rsquo;ye hızlı kargo bedava. <br class="visible-lg" />2 iş g&uuml;n&uuml;nde kargoda.</p>
+</li>
+<li>
+<h3><span>Taksitli &ouml;deme</span><span class="icon icon-creditcard"><span class="hide">&nbsp;</span></span></h3>
+<p>Banka havalesi veya kredi kartı&nbsp;ile &ouml;deme.<br class="visible-lg" /> 3, 6 veya 9 taksit imkanı.</p>
+</li>
+<li>
+<h3><span>%100 Memnuniyet</span><span class="icon icon-thumbs-up"><span class="hide">&nbsp;</span></span></h3>
+<p>Kolay iade veya yeniden &uuml;retim s&uuml;reci.<br class="visible-lg" /> %100 beğenme garantisi.</p>
+</li>
+<li>
+<h3><span>M&uuml;kemmel kalite</span><span class="icon icon-quality"><span class="hide">&nbsp;</span></span></h3>
+<p>Malzeme ve iş&ccedil;ilikte maksimum kalite.<br class="visible-lg" /> &Ouml;m&uuml;r boyu dayanıklı tablolar.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-60 col-sm-40 col-md-28 col-lg-28">
+<ul class="list-unstyled">
+<li class="FooterTitle"><a href="/kanvas-tablo-galerisi">Tablo Galerisi</a></li>
+<li><a href=" /cok-satilan-kanvas-tablolar">&Ccedil;ok Satılanlar</a></li>
+<li><a href="/newproducts" title="Yeni tablolar kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Yeni Tablolar</a></li>
+<li><a href=" /basyapit-tablolar">Başyapıt Tablolar</a></li>
+<li><a href=" /modern-sanatlar-tablo-koleksiyonu">Modern Sanat Tabloları</a></li>
+<li><a href=" /doga-ve-manzara-tablolari">Manzara Tabloları</a></li>
+<li><a href=" /cicek-tablolari">&Ccedil;i&ccedil;ek Tabloları</a></li>
+<li><a href=" /soyut-tablolar">Soyut Tablolar</a></li>
+<li><a href="/istanbul-tablo-5">İstanbul Tabloları</a></li>
+</ul>
+</div>
+<div class="col-xs-60 col-sm-40 col-md-offset-0 col-md-24">
+<ul class="list-unstyled">
+<li class="FooterTitle"><a href="/kanvas-tablo-tasarla">Kişiye &Ouml;zel&nbsp;Tablo</a></li>
+<li><a href="/fotografindan-tablo" design-upload="" design-upload-data="designUploadData" category-id="174">Fotoğrafından Tablo</a></li>
+<li><a href="/sevgiline-hediye" title="Sevgiliye hediye kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Sevgiliye Hediye</a></li>
+<li><a href="/kolaj-tablo" title="Kolaj kanvas tablolar kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Kolaj Kanvas Tablo</a></li>
+<li><a design-upload="" design-upload-data="designUploadData" category-id="175" href="/mozaik-tablo" title="Mozaik tablolar kategorisinde hızlı başla">Mozaik Tablo</a></li>
+<li><a href="/evlilik-ve-nisan" title="Evlilik ve nişan i&ccedil;in tablolar kategorisindeki &uuml;r&uuml;nleri g&ouml;ster">Evlilik ve Nişan</a></li>
+<li><a href="/bebek-ve-cocuk" title="Bebek ve &ccedil;ocuk i&ccedil;in kişiye &ouml;zel tabloları g&ouml;ster"> Bebek ve &Ccedil;ocuk</a></li>
+<li><a href="/dogum-gunu-hediyesi" title="Doğum g&uuml;n&uuml; hediyesi i&ccedil;in kişiye &ouml;zel tabloları g&ouml;ster"> Doğum G&uuml;n&uuml; Hediyesi</a></li>
+<li><a href="/takvim">Takvim Tablo</a></li>
+<li><a href="/annene-hediye">Annene Hediye</a></li>
+</ul>
+</div>
+<div class="col-xs-60 col-sm-40 col-md-20">
+<ul class="list-unstyled">
+<li class="FooterTitle"><a href="/boyama-tablo">Boyama Tablo</a></li>
+<li><a href=" /mandala-tablolar"> Mandala</a></li>
+<li><a href=" /cocuklar-icin-boyama-tablolar"> &Ccedil;ocuklar İ&ccedil;in</a></li>
+</ul>
+</div>
+<div class="col-xs-60 col-sm-40  visible-xs visible-sm">
+<ul class="list-unstyled">
+<li class="FooterTitle">Hakkımızda</li>
+<li><a href="/contactus" prbl-popup="" prbl-popup-size="lg"> Bize Ulaşın</a></li>
+<li><a href="/hakkimizda">Biz Kimiz?</a></li>
+<li><a href="/pluscanvas-garantisi" prbl-popup="" prbl-popup-size="lg">Garanti</a></li>
+<li><a href="/teslimat-bilgileri" prbl-popup="" prbl-popup-size="lg">Teslimat</a></li>
+</ul>
+</div>
+<div class="col-xs-120 col-sm-60 col-md-18 footer-social-media">
+<ul class="list-unstyled">
+<li class="FooterTitle">Bizi Takip Et</li>
+</ul>
+<div class="social-media-container">
+<ul class="list-unstyled">
+<li><a class="btn btn-link" href="https://www.facebook.com/PlusCanvas" target="_blank" title="Facebook"><span class="icon icon-facebook icon-featured icon-featured-sm">&nbsp;</span><span class="icon-text">Facebook</span></a></li>
+<li><a class="btn btn-link" href="https://twitter.com/pluscanvas" target="_blank" title="Twitter"><span class="icon icon-twitter icon-featured icon-featured-sm">&nbsp;</span><span class="icon-text">Twitter</span></a></li>
+<li><a class="btn btn-link" href="https://plus.google.com/+pluscanvas" target="_blank" title="Google+"><span class="icon icon-instagram icon-featured icon-featured-sm">&nbsp;</span><span class="icon-text">Google+</span></a></li>
+<li><a class="btn btn-link" href="https://www.pinterest.com/pluscanvas/" target="_blank" title="Pinterest"><span class="icon icon-pinterest icon-featured icon-featured-sm">&nbsp;</span><span class="icon-text">Pinterest</span></a></li>
+<li><a class="btn btn-link" href="https://instagram.com/pluscanvas/" target="_blank" title="Instagram"><span class="icon icon-youtube icon-featured icon-featured-sm">&nbsp;</span><span class="icon-text">Instagram</span></a></li>
+<li><a class="btn btn-link" href="https://youtube.com/pluscanvas" rel="Publisher" target="_blank" title="Youtube"><span class="icon icon-google icon-featured icon-featured-sm">&nbsp;</span><span class="icon-text">Youtube</span></a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-30 hidden-xs hidden-sm">
+<ul class="list-unstyled">
+<li class="FooterTitle">Hakkımızda</li>
+<li><a href="/contactus" prbl-popup="" prbl-popup-size="lg"> Bize Ulaşın</a></li>
+<li><a href="/hakkimizda">Biz Kimiz?</a></li>
+<li><a href="/pluscanvas-garantisi" prbl-popup="" prbl-popup-size="lg">Garanti</a></li>
+<li><a href="/teslimat-bilgileri" prbl-popup="" prbl-popup-size="lg">Teslimat</a></li>
+</ul>
+</div>
+<div class="col-xs-120 col-sm-60 col-md-30">
+<ul class="list-unstyled">
+<li class="FooterTitle">Haber b&uuml;ltenine kaydol</li>
+<li>
+<div newsletter-box="" placeholder="E-posta" button-text="Kaydet"></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-disclaimer container container-xl"><span class="footerDisclaimerLeft"> Copyright &copy; 2020 PlusCanvas<span>&reg;</span>&nbsp;T&uuml;m hakları saklıdır. </span>
+<div class="cards-container "><img src="https://cdn.pluscanvas.com/b/0/content/images/0895101.png" /></div>
+<span class="footerDisclaimerRight"> <a data-popup="true" data-popup-size="lg" href="/gizlilik">Gizlilik</a> | <a data-popup="true" data-popup-size="lg" href="/salesagreement">Satış s&ouml;zleşmesi</a> | <a data-popup="true" data-popup-size="lg" href="/kullanim-sartlari">Kullanım şartları</a> | <a href="/sitemap">Site Haritası</a> </span></div>
+    
+</div>
+    
+    
+
+
+<script>
+    r(function() {
+        angular.module("mainModule").factory("designUploadLoadService", function() {
+            return {
+                designUploadUrl: '/Product/DesignUpload',
+                designUploadPostUrl: '/Product/DesignUpload',
+                fileExtensions: [{ title: "Image files", extensions: 'jpg,jpeg,gif,png,psd,tif,tiff' }],
+                pictureApiUrl: 'https://image.pluscanvas.com/',
+                widgetViewUrl: '/Product/DesignUploadWidget',
+                dummyProgressTextData: ['Yükleme büyüklüğü hesaplanıyor.',                     'Görseller kontrol ediliyor.',                     'Kontroller tamamlandı. Ürün hazırlanıyor.',                     'Lütfen bekle, bu işlem kısa sürecek.',                     'Beklediğine değecek.',                     'Tablo hazır. Ürün sayfasına gidiyoruz.'],
+                ezfbParams: {
+                    appId: '78331447271',
+                    version: 'v2.3'
+                }
+            };
+        });
+    });
+</script>
+<div class="modal-loader fade ng-cloak"
+        ng-class="{in: !designUploadData.dataReady || !designUploadData.viewReady }"
+        ng-if="designUploadData">
+    <span loader></span>
+</div>
+<div class="modal-loader-backdrop fade ng-cloak"
+        ng-class="{in: !designUploadData.dataReady || !designUploadData.viewReady }"
+        ng-if="designUploadData">
+</div>
+<div ng-if="designUploadData"
+        onload="designUploadData.viewReady=true"
+        ng-include="'/Product/DesignUploadWidget'">
+</div>
+
+</div>
+
+
+    <script>
+        window.resourceLocalizerData = [{"key":"common.ok","value":"Tamam"},{"key":"common.cancel","value":"Vazgeç"},{"key":"common.404notfound","value":"Talep ettiğin sayfaya ulaşılamıyor."},{"key":"common.copyright","value":"Tüm hakları saklıdır"},{"key":"products.producthasbeenaddedtothecart","value":"Ürün sepete eklendi."},{"key":"product.edit.error","value":"Ürün kaydedilemedi. Lütfen tekrar deneyin."},{"key":"common.error","value":"Hata"},{"key":"common.leavewithoutsavewarning","value":"Bu sayfadan ayrılırsanız yapmış olduğunuz değişiklikler kaybolacaktır."},{"key":"product.shipping.loaderror","value":"Teslimat bilgileri yüklenemedi"},{"key":"product.design.saveerror","value":"Error while saving design"},{"key":"product.design.orderupdated","value":"Sipariş ürünü güncellendi"},{"key":"product.design.orderupdateerror","value":"Sipariş ürünü güncellenemedi."},{"key":"product.design.text.saveerror","value":"Yazı kaydedilemedi."},{"key":"product.priceerror","value":"Ürün fiyatları yüklenemedi"},{"key":"product.imageerror","value":"Görsel yüklenemedi."},{"key":"product.design.colorerror","value":"Renk kodu(HEX) hatalı"},{"key":"upload.error.unhandled","value":"Yükleme sırasında bilinmeyen hata oluştu."},{"key":"upload.error.instagramaccessfailed","value":"Instagram erişimi sırasında hata oluştu. Tekrar deneyebilirsin."},{"key":"upload.error.facebookaccessfailed","value":"Facebook'a erişim sağlanamadı."},{"key":"upload.error.instagramaccessdenied","value":"Instagram hesabınıza erişim vermediniz"},{"key":"upload.error.popup","value":"Pop-up engellendi. Lütfen pop-up\\'lara izin verin."},{"key":"common.readmore","value":"Devamını oku"},{"key":"common.showless","value":"Daha az göster"},{"key":"common.attention","value":"Dikkat!"},{"key":"checkout.newaddress","value":"Yeni adres"},{"key":"checkout.shipping.pickupinstore","value":"PlusCanvas ofisinden ben teslim alacağım."},{"key":"address.registered","value":"Kayıtlı adres"},{"key":"cart.productdeleted","value":"Ürün sepetten silinecek. Emin misin?"},{"key":"common.servererror","value":"Sunucu hatası oluştu"},{"key":"checkout.address.notvalidated","value":"Lütfen eksikleri tamamla"},{"key":"checkout.paymenttypenotfound","value":"Siparişi şu anda kabul edemiyoruz. Geçerli ödeme tipi bulunmuyor."},{"key":"upload.loadmore.warning","value":"Yeterli sayıda görsel seçtin"},{"key":"common.loadmore","value":"Devamını yükle"},{"key":"upload.loadmore.message","value":"görsel seçebilirsin"},{"key":"wishlist.delete.error","value":"Ürün favorilerinden silinemedi."},{"key":"wishlist.delete.confirm","value":"Ürün favorilerinden silinecek. Emin misin?"},{"key":"product.design.text.shadow.size","value":"Büyüklük"},{"key":"product.design.text.shadow.intensity","value":"Yoğunluk"},{"key":"product.design.text.shadow.blur","value":"Bulanıklık"},{"key":"product.design.text.shadow.remove","value":"Gölgeyi kaldır"}]
+    </script>
+    
+    <script src="https://cdn.pluscanvas.com/assets/1.20.17129.1/Bundles/app3.js?v=1" type="text/javascript"></script>
+
+    
+
+    
+    <geo-redirect endpoint="https://cdn.pluscanvas.com/customer/geo"></geo-redirect>
+
+
+    
+
+ 
+</body>
+</html>

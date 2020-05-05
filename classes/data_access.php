@@ -92,11 +92,12 @@
  			$conn = new PDO("mysql:host=$server_name;dbname=$db_name", $user_name, $password);
  			$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
- 			$conn->exec($query);
+ 			return $conn->exec($query);
 
  		} catch(PDOException $e) {
  			echo "sql query : " . $query . "<br>";
  			echo "error message . " . $e->getMessage() . "<br>";
+ 			return 0;
  		}
  	}
 
