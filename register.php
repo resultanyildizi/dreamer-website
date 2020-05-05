@@ -11,9 +11,10 @@
 <body>
         <div class='brand-area-register'>
             <h1>DREAMER</h1>
+            <h3>Register</h3>
         </div>     
                    <div class='login-area'>
-                   <h3>Register</h3>
+                   
 				   <form action='' name='register_form' autocomplete='off' onsubmit="return validate_user_register()">
            
                        <div class='login-user-text'>
