@@ -10,6 +10,7 @@
 }
 
 .city-cards-row {
+
 }
 
 .city-card {
@@ -21,7 +22,7 @@
   float: left;
   padding: 0;
   border: 2px solid white;
-  margin: 0 47px 80px 47px;
+  margin: 0 70px 80px 70px;
   -webkit-box-shadow: 14px 16px 38px -5px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 14px 16px 38px -5px rgba(0, 0, 0, 0.45);
   box-shadow: 14px 16px 38px -5px rgba(0, 0, 0, 0.45);
@@ -29,6 +30,25 @@
   background-size: cover;
   color: white;
   padding: 10px 10px 10px 10px;
+  position: relative;
+}
+
+.city-card:hover {
+  box-sizing: border-box;
+  min-width: 320px;
+  max-width: 320px;
+  height: 420px;
+  margin: -20px 50px 60px 50px;
+  transition: .5s;
+  cursor: pointer;
+  -webkit-box-shadow: 14px 16px 38px -5px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 14px 16px 38px -5px rgba(0, 0, 0, 0.7);
+  box-shadow: 14px 16px 38px -5px rgba(0, 0, 0, 0.7);
+}
+
+.city-card:hover > .city-card-title {
+  margin: 230px 0 5px 0;
+  transition: .5s;
 }
 
 .city-card-country {
@@ -59,13 +79,17 @@
   font-size: 1.6em;
 }
 .city-card-price {
-  margin-left: 5px;
-  margin-right: 120px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
 .city-card-purchase {
   text-decoration: none;
   color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 .city-card-purchase:hover {
