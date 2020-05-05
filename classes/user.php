@@ -1,6 +1,7 @@
 <?php
+
     class User {
-        public static Login($email, $password) {
+        public static function Login($email, $password) {
             $query = "select * from users where email = '$email' and password = '$password'";
             $result = DataAccess::ExecuteQuery($query);
 
@@ -9,12 +10,6 @@
             else
                 return null;
         }
-
-
-
-
-
-
     }
 
 

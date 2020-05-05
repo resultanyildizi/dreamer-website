@@ -42,6 +42,12 @@ body {
   font-family: "great_wishesregular";
   text-shadow: 3px 3px 4px rgb(0, 0, 0);
 }
+.login-area h3{
+   color:white;
+   font-style: bold;
+  text-align: center;
+
+}
 
 .login-area {
   width: 50%;
@@ -50,6 +56,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+.login-area p{
+  color:darkred;
+  margin:-15px 0px 3px 0px;
+  visibility: hidden;
+}
+
 
 .login-area form {
   width: 40%;
