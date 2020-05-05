@@ -32,7 +32,6 @@
  				 "surname varchar(40) not null," .
  				 "password varchar(20) not null,".
  				 "email varchar(30) not null, ".
- 				 "address varchar(100) not null, " .
  				 "picture_url text not null, ".  
  				 "reg_date timestamp default current_timestamp on update current_timestamp)";
 

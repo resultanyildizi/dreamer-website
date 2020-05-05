@@ -22,7 +22,7 @@
 						</div>
 						<div class='login-user-button'>
 							<input  type='reset' value='Reset'>
-							<input  type='submit' name='registe' value='Register'>
+							<input  type='submit' name='register' value='Register'>
 						</div>
 					</form>
 				</div>;
