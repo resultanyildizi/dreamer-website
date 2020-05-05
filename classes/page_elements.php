@@ -29,6 +29,7 @@ class PageElements {
 						"</div>".
 						"<div class='login-user-text'>".
 							"<input  type='password' placeholder='Password' autocomplete='off'>".
+							"<p>*Error</p>".
 						"</div>".
 						"<div class='login-user-button'>".
 							"<input  type='submit' name='signin' value='Sign In'>".
