@@ -5,21 +5,23 @@
 			$query = "select name, country, price, small_picture_url, details from city";
 			$result = DataAccess::ExecuteQuery($query);
 
-			$html_city_cards = "<div class='clearfix'>" .
-								"<div class='city-cards-row'>";
+			$html_city_cards =  "<div class='city-cards-row'>" ."<div class='clearfix'>";
+								
 
 			for($i = 0; $i < sizeof($result); $i++) {
 				
-				if($i % 3 == 0) {
+				if($i != 0 &&  $i % 3 == 0) {
 					$html_city_cards = $html_city_cards . "</div></div>";
-					$html_city_cards = $html_city_cards . "<div class='clearfix'>" .
-								"<div class='city-cards-row'>";
+					$html_city_cards = $html_city_cards . "<div class='city-cards-row'>" . 
+														  "<div class='clearfix'>";
+														  
 				}
 				
 				$current_city = $result[$i];
 				$html_city_cards = $html_city_cards . City::createCityCard($current_city);
 
 			}
+
 			$html_city_cards = $html_city_cards . "</div></div>";
 			return $html_city_cards;
 		}

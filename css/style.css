@@ -21,6 +21,9 @@ hr {
 	margin: auto;
 }
 
+.clearfix {
+
+}
 
 .clearfix::after {
 	content: "";
