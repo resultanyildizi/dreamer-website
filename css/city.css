@@ -5,11 +5,14 @@
   height: 700px;
   backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 50px 100px;
   overflow-y: scroll;
 }
 
 .city-cards-row {
+  width: 1260px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
 
 }
 
@@ -22,7 +25,7 @@
   float: left;
   padding: 0;
   border: 2px solid white;
-  margin: 0 70px 80px 70px;
+  margin: 0 70px 0 70px;
   -webkit-box-shadow: 14px 16px 38px -5px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 14px 16px 38px -5px rgba(0, 0, 0, 0.45);
   box-shadow: 14px 16px 38px -5px rgba(0, 0, 0, 0.45);
@@ -38,7 +41,7 @@
   min-width: 320px;
   max-width: 320px;
   height: 420px;
-  margin: -20px 50px 60px 50px;
+  margin: -20px 50px -20px 50px;
   transition: .5s;
   cursor: pointer;
   -webkit-box-shadow: 14px 16px 38px -5px rgba(0, 0, 0, 0.7);
