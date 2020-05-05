@@ -11,24 +11,13 @@
 	<?php
 		include("classes/data_access.php");
 		include("classes/city.php");
+		include("classes/page_elements.php");
 		DataAccess::CreateTables();
 	?>
 </head>
 <body>
-	<header>
-		<div class="container">
-			<div class="clearfix">
-				<nav>
-					<ul>
-						<li><a href="#">HOME</a></li>
-						<li><a href="#">CITIES</a></li>
-						<li><a href="#">RESERVATIONS</a></li>
-						<li><a href="#">ABOUT</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header>
+	<!--
+	<?php PageElements::get_header(); ?>
 	<section>
 		<div class="container">
 			<h1 class="title-1">Explore & Travel</h1>
@@ -41,6 +30,10 @@
 		</div>
 	</section>
 	<footer></footer>
+	-->
 
+	<?php PageElements::get_user_login(); ?>
+
+	<script type="text/javascript" src="js/general.js"></script>
 </body>
 </html>
