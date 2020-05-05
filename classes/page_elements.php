@@ -19,19 +19,19 @@ class PageElements {
 
 
 	public static function get_user_login() {
-		echo 	"<div class='brand-area'>".
+		return 	"<div class='brand-area'>".
 					"<h1>DREAMER</h1>".
 				"</div>".
 				"<div class='login-area'>".
-					"<form action='' autocomplete='off'>".
+					"<form action='login.inc.php' method='post' autocomplete='off'>".
 						"<div class='login-user-text'>".
-							"<input  type='text' placeholder='Email' autocomplete='off'>".
+							"<input  type='text' placeholder='Email' name='login_email_user' autocomplete='off'>".
 						"</div>".
 						"<div class='login-user-text'>".
-							"<input  type='password' placeholder='Password' autocomplete='off'>".
+							"<input  type='password' placeholder='Password' name='login_password_user' autocomplete='off'>".
 						"</div>".
 						"<div class='login-user-button'>".
-							"<input  type='submit' name='signin' value='Sign In'>".
+							"<input  type='submit' name='login_user' value='Login'>".
 							"<input  type='button' onclick='go_to_register()' value='Register'>".
 						"</div>".
 					"</form>".
