@@ -13,13 +13,17 @@
 		require_once("classes/city.php");
 		require_once("classes/page_elements.php");
 		DataAccess::CreateTables();
+
+		session_start();
 	?>
 </head>
 <body>
 
 	<?php
 		if(isset($_SESSION["user_id"])) {
-			PageElements::get_header();
+			$fullname = $_SESSION["user_fname"] ." ". strtoupper($_SESSION["user_lname"]);
+			$picture_url = $_SESSION["picture_url"];
+			PageElements::get_header($fullname, $picture_url);
 			echo
 				"<section>" .
 					"<div class='container'>" .
@@ -31,9 +35,34 @@
 					"</div>".
 				"</div>" .
 			"</section>"; 
-		} else 
-			echo PageElements::get_user_login();
+		} else {
+			$error_msg = "";
 
+			if(isset($_GET["login"]) && $_GET["login"] == "error") {
+				$error_msg = "*Wrong email or password";
+			}
+			
+			echo
+				"<div class='brand-area'>".
+					"<h1>DREAMER</h1>".
+				"</div>".
+				"<div class='login-area'>".
+					"<form action='includes/login.inc.php' method='post' autocomplete='off'>".
+						"<div class='login-user-text'>".
+							"<input  type='text' placeholder='Email' name='login_email_user' autocomplete='off'>".
+						"</div>".
+						"<div class='login-user-text'>".
+							"<input  type='password' placeholder='Password' name='login_password_user' autocomplete='off'>".
+							"<p style='visibility: visible; color: white'>$error_msg</p>".
+						"</div>".
+						"<div class='login-user-button'>".
+							"<input  type='submit' name='login_user' value='Login'>".
+							"<input  type='button' onclick='go_to_register()' value='Register'>".
+						"</div>".
+					"</form>".
+				"</div>";
+
+		} 
 	?>
 
 	<script type="text/javascript" src="js/general.js"></script>

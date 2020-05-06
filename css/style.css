@@ -43,19 +43,19 @@ body {
   text-shadow: 3px 3px 4px rgb(0, 0, 0);
 }
 
-.brand-area-register h3{
+.brand-area-register h3 {
   margin: auto;
   margin-bottom: 25px;
   font-size: 1.7em;
   font-family: "Century Gothic";
-   color:white;
-   font-style: bold;
-   text-align: center;
-   display: block;
-   font-weight: normal;
-   border-bottom: 1px solid white;
-   padding:10px;
-   width: 15%;
+  color: white;
+  font-style: bold;
+  text-align: center;
+  display: block;
+  font-weight: normal;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  width: 15%;
 }
 
 .login-area {
@@ -64,14 +64,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-.login-area p{
-  color:darkred;
-  margin:-15px 0px 3px 0px;
+.login-area p {
+  color: darkred;
+  font-weight: bold;
+  margin: -15px 0px 3px 0px;
   visibility: hidden;
 }
-
 
 .login-area form {
   width: 40%;
@@ -124,6 +123,31 @@ body {
   transition: 0.4s;
 }
 
+.login-user-file {
+  color: white;
+  outline-style: none;
+}
+.login-user-file input[type="file"]::-webkit-file-upload-button {
+  font-family: "Century Gothic";
+  border-style: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 1.2em;
+  outline-style: none;
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.login-user-file input[type="file"]::-webkit-file-upload-button:hover {
+  color: black;
+  background-color: white;
+  text-shadow: 0 0 0 rgb(0, 0, 0);
+}
+
 hr {
   margin: 10px 0 20px 0;
 }
@@ -139,8 +163,42 @@ hr {
   clear: both;
 }
 
-header nav ul {
+.profile-area {
+  padding: 30px;
+  float: left;
+  width: 30%;
+}
+
+.profile-area a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.profile-area .name {
+  font-size: 1.4em;
+  margin-top: 20px;
+}
+
+.profile-area .logout {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.profile-area img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+header nav {
   float: right;
+}
+
+header nav ul {
   margin: 50px 0 0 0;
   padding: 0;
 }
@@ -174,5 +232,5 @@ header nav ul li a:active {
   color: white;
   font-size: 2em;
   font-weight: 500px;
-  margin: 10px 0;
+  margin: 50px 0 10px 0;
 }

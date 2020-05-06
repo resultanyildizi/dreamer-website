@@ -1,14 +1,19 @@
 <?php 
 class PageElements {
-	public static function get_header() {
+	public static function get_header($fullname, $picture_url) {
 		echo "<header>"  .
 		 	 "<div class='container'>" .
 				"<div class='clearfix'>" .
+					"<div class='profile-area'>" . 
+					"<a href='#'><img src='$picture_url' alt='profile_pic'></a>" .
+					"<a class='name' href='#'>$fullname</a>".
+					"<a class='logout' href='includes/logout.inc.php'>Logout</a>" .
+					"</div>" . 
 					"<nav>" .
 						"<ul>" . 
 							"<li><a href='#'>HOME</a></li>" .
-							"<li><a href='#'>CITIES</a></li>" .
-							"<li><a href='#'>RESERVATIONS</a></li>" .
+							"<li><a href='#'>TRAVEL</a></li>" .
+							"<li><a href='#'>MY RESERVATIONS</a></li>" .
 							"<li><a href='#'>ABOUT</a></li>".
 						"</ul>".
 					"</nav>".
@@ -18,7 +23,7 @@ class PageElements {
 	}
 
 
-	public static function get_user_login() {
+	/*public static function get_user_login() {
 		return 	"<div class='brand-area'>".
 					"<h1>DREAMER</h1>".
 				"</div>".
@@ -37,7 +42,7 @@ class PageElements {
 						"</div>".
 					"</form>".
 				"</div>";
-	}
+	}*/
 }
 
 

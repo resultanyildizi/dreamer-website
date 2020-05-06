@@ -1,5 +1,5 @@
 <?php
-
+    require_once("data_access.php");
     class User {
         public static function Login($email, $password) {
             $query = "select * from users where email = '$email' and password = '$password'";
