@@ -24,7 +24,7 @@
         </div>     
                    <div class='login-area'>
                    
-				   <form action='' name='register_form' autocomplete='off' onsubmit="return validate_user_register()">
+				   <form action='includes/register.inc.php' name='register_form' method="post" autocomplete='off' onsubmit="return validate_user_register()">
            
                        <div class='login-user-text'>
 							<input  type='text' name='fname' placeholder='First Name' autocomplete='off'>
@@ -55,8 +55,6 @@
 							<input  type='reset' name='reset' value='Reset'>
 							<input  type='submit' name='register_form' value='Register'>
 						</div>
-                       
-
 					</form>
 				</div>;
 <script type="text/javascript" src="js/general.js"></script>

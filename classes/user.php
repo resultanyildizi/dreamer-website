@@ -13,8 +13,10 @@
     
      public static function InsertUser($_firstname,$_lastname,$_password,$_email){
        
-         $insert_query="insert into users(firstname,surname,password,email,picture_url)".
-            "values ('$_firstname','$_lastname','$_password','$_email','asdf')";
+         $insert_query="insert into users(firstname,surname,password,email,picture_url) ".
+            "values('$_firstname','$_lastname','$_password','$_email','asdf')";
+        
+        echo $insert_query;
           
         DataAccess::ExecuteNonQuery($insert_query);
 

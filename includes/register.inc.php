@@ -1,6 +1,5 @@
 <?php
-    include("../classes/register.php");
-    include("../classes/user.php");
+    require_once("../classes/user.php");
 
     if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register_form"])) {
      
@@ -11,5 +10,6 @@
 
        User::InsertUser($_firstname,$_lastname,$_password,$_email);
 
-         }    
+       header("Location: ../index.php");
+    }    
 ?>
