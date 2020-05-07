@@ -11,16 +11,8 @@
         $days = $_POST["traveller_days"];
         $price = (int)$people_count * (int)$days * (int)$_GET["price"];
 
-            
-
         Reservation::InsertReservation($people_count, $city_id, $user_id, $start_date, $end_date, $price);
-
-        echo '<script type="text/javascript">' .
-                 'alert("Your reservation has been added successfully"); '  .
-                 '</script>';
-                 
         header("Location: ../index.php");
-
     } else {
         header("Location: ../index.php");
     }

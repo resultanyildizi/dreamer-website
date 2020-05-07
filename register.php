@@ -24,30 +24,30 @@
         </div>     
                    <div class='login-area'>
                    
-				   <form action='includes/register.inc.php' name='register_form' method="post" autocomplete='off' onsubmit="return validate_user_register()">
+				   <form action='includes/register.inc.php' name='register_form' method="post" enctype="multipart/form-data" onsubmit="return validate_user_register()">
            
                        <div class='login-user-text'>
-							<input  type='text' name='fname' placeholder='First Name' autocomplete='off'>
+							<input  type='text' name='fname' placeholder='First Name' >
 							<p id="e_fname">*First name is required</p>
 						</div>
 						<div class='login-user-text'>
-							<input  type='text' name='lname' placeholder='Last Name' autocomplete='off'>
+							<input  type='text' name='lname' placeholder='Last Name' >
 							<p id="e_lname">*Last name is required</p>
 						</div>
 		             	<div class='login-user-text'>
-							<input  type='text' name='email' placeholder='Email' autocomplete='off'>
+							<input  type='text' name='email' placeholder='Email' >
 							<p id="e_email">*Email is required</p>
 						</div>
 						<div class='login-user-text'>
-							<input  type='password' name='password' placeholder='Password' autocomplete='off'>
+							<input  type='password' name='password' placeholder='Password' >
 							<p id="e_password">*Password is required</p>
 						</div>
 						<div class='login-user-text'>
-							<input  type='password' name='cpassword' placeholder='Confirm Password' autocomplete='off'>
+							<input  type='password' name='cpassword' placeholder='Confirm Password' >
 							<p id="e_cpassword">*Confirm the password</p>
 						</div>
 						<div class='login-user-file'>
-							<input  type='file' name='picture_url' value='Choose Picture' accept="image/*" autocomplete='off'>
+							<input  type='file' name='picture_upload' value='Choose Picture' accept="image/*">
 							<p id="e_picture_url">*Choose a picture</p>
 						</div>
 
