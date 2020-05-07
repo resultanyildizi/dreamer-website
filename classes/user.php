@@ -14,13 +14,20 @@
      public static function InsertUser($_firstname,$_lastname,$_password,$_email){
        
          $insert_query="insert into users(firstname,surname,password,email,picture_url) ".
-            "values('$_firstname','$_lastname','$_password','$_email','asdf')";
+            "values('$_firstname','$_lastname','$_password','$_email','asdf') ";
         
-        echo $insert_query;
-          
-        DataAccess::ExecuteNonQuery($insert_query);
+        $result = DataAccess::ExecuteNonQuery($insert_query);
+        return $result;
+        
+    }
 
-        }
+    public static function UpdateUser($_id, $_firstname, $_lastname, $_password, $_email, $_picture_url) {
+        $update_query = "update users set firstname='$_firstname'," . 
+                        "surname='$_lastname', password='$_password'," .
+                        "email='$_email', picture_url='$_picture_url' where id='$_id' ";
+
+        DataAccess::ExecuteNonQuery($update_query);
+    }
 }
 
 

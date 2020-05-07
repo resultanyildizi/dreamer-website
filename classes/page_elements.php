@@ -5,7 +5,7 @@ class PageElements {
 		 	 "<div class='container'>" .
 				"<div class='clearfix'>" .
 					"<div class='profile-area'>" . 
-					"<a href='#'><img src='$picture_url' alt='profile_pic'></a>" .
+					"<a href='#'><img src='resources/user_images/$picture_url' alt='profile_pic'></a>" .
 					"<a class='name' href='#'>$fullname</a>".
 					"<a class='logout' href='includes/logout.inc.php'>Logout</a>" .
 					"</div>" . 

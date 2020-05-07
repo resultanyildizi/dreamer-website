@@ -91,7 +91,10 @@
  			$conn = new PDO("mysql:host=$server_name;dbname=$db_name", $user_name, $password);
  			$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
- 			return $conn->exec($query);
+ 			$stmt = $conn->prepare($query);
+			$stmt->execute();
+			$last_insert_id = $conn->lastInsertId();
+			return $last_insert_id;
 
  		} catch(PDOException $e) {
  			echo "sql query : " . $query . "<br>";
