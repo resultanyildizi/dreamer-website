@@ -58,7 +58,7 @@ function validate_user_register() {
     document.getElementById("e_cpassword").style.visibility = "visible";
   }
 
-  return true;
+  return control;
 }
 
 function set_dates(price) {
