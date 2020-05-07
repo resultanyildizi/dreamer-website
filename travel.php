@@ -28,6 +28,7 @@
             
             $today = date('Y-m-d');
             $tomorrow = (new DateTime('tomorrow'))->format('Y-m-d');
+            
             PageElements::get_header($fullname, $picture_url);
 
             if(isset($_GET["city"]))
