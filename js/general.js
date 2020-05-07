@@ -58,7 +58,7 @@ function validate_user_register() {
     document.getElementById("e_cpassword").style.visibility = "visible";
   }
 
-  return true;
+  return control;
 }
 
 function set_dates(price) {
@@ -98,4 +98,39 @@ function validate_reservation() {
   }
 
   return true;
+}
+function validate_admin_login() {
+
+  let control = true;
+
+  let form = document.forms["admin_login_form"];
+
+  let _email = form["login_email_admin"].value;
+  let _password = form["login_password_admin"].value;
+
+
+
+  if (_email.trim() == "" || _email == null) {
+    control = false;
+    document.getElementById("e_email").innerHTML = "*Email is required";
+    document.getElementById("e_email").style.visibility = "visible";
+  }
+  if (_password.trim() == "" || _password == null) {
+    control = false;
+    document.getElementById("e_password").innerHTML = "*Password is required";
+    document.getElementById("e_password").style.visibility = "visible";
+  }
+ 
+  if (
+    /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(_email) &&
+    _email.trim() != ""
+  ) {
+  } else {
+    control = false;
+    document.getElementById("e_email").innerHTML = "*Invalid email address";
+    document.getElementById("e_email").style.visibility = "visible";
+  }
+  
+
+  return control;
 }

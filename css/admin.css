@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "great_wishesregular";
+  src: url("../resources/fonts/great_wishes-webfont.woff2") format("woff2"),
+    url("../resources/fonts/great_wishes-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: pink;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.brand-area-login {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  font-family: "great_wishesregular";
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+}
+
+.brand-area-login h3 {
+  margin: auto;
+  margin-bottom: 25px;
+  font-size: 1.7em;
+  font-family: "Century Gothic";
+  color: white;
+  font-style: bold;
+  text-align: center;
+  display: block;
+  font-weight: normal;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  width: 15%;
+}
+
+.login-area {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-area p {
+  color: darkred;
+  font-weight: bold;
+  margin: -15px 0px 3px 0px;
+  visibility: hidden;
+}
+
+.login-area form {
+  width: 40%;
+}
+
+
+
+.login-admin-text input {
+  display: block;
+  font-size: 1.4em;
+  border-style: none;
+  border-bottom: 1px solid white;
+  color: white;
+  outline-style: none;
+  margin-bottom: 20px;
+  font-family: "Century Gothic";
+  width: 100%;
+  background-color: transparent;
+}
+
+.login-admin-text input::-webkit-input-placeholder,
+.login-admin-text input::placeholder {
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  color: white;
+}
+
+.login-admin-button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+.login-admin-button input {
+  display: inline;
+  width: 35%;
+  margin: auto;
+  border-radius: 20px;
+  border-style: none;
+  background-color: white;
+  font-style: "Century Gothic";
+  font-size: 1.2em;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+  -webkit-box-shadow: 8px 8px 20px -5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 8px 8px 20px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 8px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.login-admin-button input:hover {
+  width: 45%;
+  transition: 0.4s;
+}
