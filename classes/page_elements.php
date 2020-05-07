@@ -11,10 +11,9 @@ class PageElements {
 					"</div>" . 
 					"<nav>" .
 						"<ul>" . 
-							"<li><a href='#'>HOME</a></li>" .
-							"<li><a href='#'>TRAVEL</a></li>" .
+							"<li><a href='index.php'>HOME</a></li>" .
 							"<li><a href='#'>MY RESERVATIONS</a></li>" .
-							"<li><a href='#'>ABOUT</a></li>".
+							"<li><a href=''>PROFILE</a></li>" .
 						"</ul>".
 					"</nav>".
 				"</div>".

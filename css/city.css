@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
 
-.city-cards-area {
-  box-sizing: border-box;
-  height: 700px;
-  backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, 0.1);
-  overflow-y: scroll;
-}
-
 .city-cards-row {
   width: 1260px;
   margin: auto;
@@ -30,6 +22,7 @@
   box-shadow: 14px 16px 38px -5px rgba(0, 0, 0, 0.45);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: white;
   padding: 10px 10px 10px 10px;
   position: relative;

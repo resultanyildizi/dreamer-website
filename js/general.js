@@ -60,3 +60,42 @@ function validate_user_register() {
 
   return true;
 }
+
+function set_dates(price) {
+  let start_picker = document.getElementById("start-date-picker");
+  let end_picker = document.getElementById("end-date-picker");
+
+  let start_date = new Date(start_picker.value);
+  let end_date = new Date(end_picker.value);
+
+  let millis = end_date - start_date;
+  console.log(millis);
+
+  if (millis < 0) {
+    alert("End date should come later than start date");
+    end_picker.value = start_picker.value;
+    return;
+  }
+
+  let days = Math.floor(millis / (1000 * 60 * 60 * 24)) + 1;
+  let days_count = document.getElementById("days-count");
+  days_count.value = days;
+
+  let count = parseInt(document.getElementById("people-count").value);
+
+  let total = price * days * count;
+
+  document.getElementById("total-price").innerHTML = "Total: " + total + "$";
+}
+
+function validate_reservation() {
+  let myForm = document.forms["reservation_form"];
+  let credit_card = myForm["traveller_credit"].value;
+
+  if (credit_card == "" || credit_card == null) {
+    alert("Please enter your credit card");
+    return false;
+  }
+
+  return true;
+}

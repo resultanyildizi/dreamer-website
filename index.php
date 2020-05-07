@@ -29,7 +29,7 @@
 					"<div class='container'>" .
 						"<h1 class='title-1'>Explore & Travel</h1>" .
 					"<hr>" .
-					"<div class='city-cards-area'>";
+					"<div class='blurred-area'>";
 						 echo City::CShowAllCities();
 			echo
 					"</div>".

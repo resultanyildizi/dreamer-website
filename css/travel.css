@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "great_wishesregular";
+  src: url("../resources/fonts/great_wishes-webfont.woff2") format("woff2"),
+    url("../resources/fonts/great_wishes-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.travel-area {
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  box-sizing: border-box;
+  background-color: #fff6e6;
+  overflow: hidden;
+  padding: 30px;
+  margin-bottom: 100px;
+  -webkit-box-shadow: 12px 12px 25px -5px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 12px 12px 25px -5px rgba(0, 0, 0, 0.8);
+  box-shadow: 12px 12px 25px -5px rgba(0, 0, 0, 0.8);
+}
+
+.travel-form-area {
+  margin: auto;
+  font-style: "Lucida Bright";
+  background-color: white;
+  width: 80%;
+  padding: 30px;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 8px 8px 25px -5px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 8px 8px 25px -5px rgba(0, 0, 0, 0.8);
+  box-shadow: 8px 8px 25px -5px rgba(0, 0, 0, 0.8);
+}
+
+.travel-form-area h2 {
+  margin: 0;
+}
+
+.travel-form-area hr {
+  margin-top: 30px;
+  height: 1px;
+  background-color: black;
+}
+
+.travel-form-area p {
+  margin-bottom: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 80px;
+}
+
+.travel-form-area input[type="submit"] {
+  margin-left: 10px;
+  float: left;
+  background-color: transparent;
+  border-style: none;
+  outline-style: none;
+  font-size: 1.4em;
+  color: darkred;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+.travel-form-area input[type="submit"]:hover {
+  text-decoration: underline;
+}
+
+.input-area {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.label-field {
+  float: left;
+  margin-top: 5px;
+  margin-left: 50px;
+  width: 40%;
+}
+
+.input-field {
+  float: left;
+  width: 50%;
+}
+
+.input-field input,
+.input-field input:-webkit-autofill,
+.input-field input:-webkit-autofill:focus,
+.input-field input:-webkit-autofill:hover {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  width: 80%;
+  border-style: none;
+  border-bottom: 1px dashed black;
+  outline-style: none;
+  background-color: white;
+  -webkit-box-shadow: inset 0 0 0px 9999px white;
+}
+
+.travel-city-area {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.travel-city-area h1 {
+  margin: 0;
+  font-family: "great_wishesregular";
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.travel-city-area .half-p {
+  width: 100%;
+  font-family: "Century Gothic";
+  font-size: 1.2em;
+  font-style: italic;
+  margin: 0;
+  margin-right: 30px;
+  overflow: hidden;
+}
