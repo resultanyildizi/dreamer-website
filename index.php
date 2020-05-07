@@ -43,10 +43,10 @@
 		} else {
 			$error_msg = "";
 
-			
-if(isset($_GET["login"]) && $_GET["login"] == "error") {
+			if(isset($_GET["login"]) && $_GET["login"] == "error") {
 				$error_msg = "*Wrong email or password";
 			}
+
 
 		
 			

@@ -15,16 +15,7 @@
 	?>
 </head>
 <body>
-	<?php
-
-	$error_msg = "";
-
-			
-if(isset($_GET["login"]) && $_GET["login"] == "error") {
-				$error_msg = "*Wrong email or password";
-			}
-
-			?>
+	
 			
 			
 				<div class='brand-area-login'>
@@ -34,7 +25,7 @@ if(isset($_GET["login"]) && $_GET["login"] == "error") {
 
 				<div class='login-area'>
 
-					<form name='admin_login_form' action='includes/admin.login.in.php' method='post' onsubmit="return validate_admin_login()">
+					<form name='admin_login_form' action='includes/admin.login.in.php' method='post' onsubmit="return validate_admin_login();">
 
 						<div class='login-admin-text'>
 							<input  type='text' placeholder='Email' name='login_email_admin' >
@@ -44,11 +35,10 @@ if(isset($_GET["login"]) && $_GET["login"] == "error") {
 						<div class='login-admin-text'>
 							<input  type='password' placeholder='Password' name='login_password_admin'>
 							<p id="e_password">*Password is required</p>
-							<?php echo "<p style='visibility: visible; color: white'>$error_msg</p>"; ?>
 						</div>
 
 						<div class='login-admin-button'>
-							<input  type='submit' name='admin_login_form' value='Login'>
+							<input  type='submit' name='login_admin' value='Login'>
 						</div>
 
 
