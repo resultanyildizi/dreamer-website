@@ -24,6 +24,7 @@
 			$fullname = $_SESSION["user_fname"] ." ". strtoupper($_SESSION["user_lname"]);
 			$picture_url = $_SESSION["picture_url"];
 			PageElements::get_header($fullname, $picture_url);
+
 			echo
 				"<section>" .
 					"<div class='container'>" .
@@ -35,12 +36,19 @@
 					"</div>".
 				"</div>" .
 			"</section>"; 
+
+
+		
+
 		} else {
 			$error_msg = "";
 
 			if(isset($_GET["login"]) && $_GET["login"] == "error") {
 				$error_msg = "*Wrong email or password";
 			}
+
+
+		
 			
 			echo
 				"<div class='brand-area'>".

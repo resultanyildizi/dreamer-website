@@ -1,6 +1,5 @@
 <?php
     require_once("../classes/user.php");
-
     if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register_form"])) {
      
               $_firstname=$_POST["fname"];

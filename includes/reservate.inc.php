@@ -1,4 +1,6 @@
 <?php
+    require_once("../classes/reservation.php");
+
     session_start();
     if(isset($_SESSION["user_id"]) && isset($_GET["city"]) && isset($_POST["reservation_form"])) {
         $user_id = $_SESSION["user_id"];
@@ -7,9 +9,16 @@
         $start_date = $_POST["traveller_sdate"];
         $end_date = $_POST["traveller_edate"];
         $days = $_POST["traveller_days"];
-        $price = (int)$people_count * (int)$days * (int)$_GET["price"];;
+        $price = (int)$people_count * (int)$days * (int)$_GET["price"];
 
-        echo "Successful";
+            
+
+        Reservation::InsertReservation($people_count, $city_id, $user_id, $start_date, $end_date, $price);
+
+        echo '<script type="text/javascript">' .
+                 'alert("Your reservation has been added successfully"); '  .
+                 '</script>';
+                 
         header("Location: ../index.php");
 
     } else {
