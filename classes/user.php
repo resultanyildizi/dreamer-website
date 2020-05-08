@@ -14,7 +14,7 @@
      public static function InsertUser($_firstname,$_lastname,$_password,$_email){
        
          $insert_query="insert into users(firstname,surname,password,email,picture_url) ".
-            "values('$_firstname','$_lastname','$_password','$_email','asdf') ";
+            "values('$_firstname','$_lastname','$_password','$_email','unknown') ";
         
         $result = DataAccess::ExecuteNonQuery($insert_query);
         return $result;
@@ -27,6 +27,12 @@
                         "email='$_email', picture_url='$_picture_url' where id='$_id' ";
 
         DataAccess::ExecuteNonQuery($update_query);
+    }
+
+    public static function DeleteUser($_id) {
+        $query_delete = "delete from users where id='$_id'";
+        DataAccess::ExecuteNonQuery($query_delete);
+
     }
 }
 

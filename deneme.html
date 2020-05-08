@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel</title>
+    <link rel="stylesheet" href="css/reservation.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/travel.css" />
 
@@ -12,186 +12,85 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Reservations</title>
 
     <?php
 		require_once("classes/data_access.php");
-		require_once("classes/city.php");
+		require_once("classes/reservation.php");
 		require_once("classes/page_elements.php");
 		DataAccess::CreateTables();
-        session_start();
-    ?>
-
-    <?php 
-        if(isset($_SESSION["user_id"])) {
-            $fullname = $_SESSION["user_fname"] ." ". strtoupper($_SESSION["user_lname"]);
-            $picture_url = $_SESSION["picture_url"];
-            $today = date('Y-m-d');
-            PageElements::get_header($fullname, $picture_url);
-
-            if(isset($_GET["city"]))
-            {
-                $current_city = City::GetCity($_GET["city"]);
-                if($current_city == null)
-                    header("Location: index.php");
-                else {
-                    $city_name = $current_city["name"];
-                    $city_country = $current_city["country"]; 
-                    $city_pic = $current_city["back_picture_url"];
-
-                }
-
-            } else {
-                header("Location: index.php");
-            }
-        } else {
-            header("Location: index.php");
-        }
-    ?>
+		session_start();
+	?>
   </head>
-  <body
-    style="
-      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
-        url('<?php echo $city_pic; ?>');
-    "
-  >
+  <body>
+    <?php 
+
+if(isset($_SESSION["user_id"])) {
+    $fullname = $_SESSION["user_fname"] ." ". $_SESSION["user_lname"];
+    $picture_url = $_SESSION["picture_url"];
+    
+    PageElements::get_header($fullname, $picture_url);
+    
+} else {
+    header("Location: index.php");
+}?>
+
     <section>
       <div class="container">
-        <h1 class="title-1">Make a Reservation</h1>
+        <h1 class="title-1">My Reservations</h1>
         <hr />
-
-        <div class="travel-area">
-          <div class="travel-city-area">
-            <h1><?php echo $city_name . ' - ' . $city_country ?></h1>
-            <p class="half-p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
-              officia porro. Non, nostrum illum! Maiores repellat dolores culpa
-              impedit error ut dolorum. Sunt eligendi repellendus tempora
-              dolores suscipit. Esse, quibusdam? Lorem ipsum dolor, sit amet
-              consectetur adipisicing elit. Ratione laudantium nisi accusantium
-              porro dolorum error rerum ab hic at. Temporibus!
-            </p>
-          </div>
-          <div class="travel-form-area">
-            <form action="" name="reservation_form">
-              <h2>Traveller's,</h2>
-              <div class="input-area">
+        <div class="blurred-area">
+          <div class="reservation-cards-row">
+            <div class="clearfix">
+              <div class="reservation-card" style="">
                 <div class="clearfix">
-                  <div class="label-field">
-                    <label>Name:</label>
-                  </div>
-                  <div class="input-field">
-                    <input
-                      type="text"
-                      name="traveller_name"
-                      value="<?php echo $_SESSION['user_fname'];?>"
-                      readonly
-                    />
-                  </div>
+                  <p class="rsv-id">Reservation ID: 3</p>
+                  <p class="rsv-reg-date">Registeration Date: 22/12/2020</p>
+                </div>
+                <hr />
+                <div class="clearfix">
+                  <p class="rsv-label">Name:</p>
+                  <p class="rsv-val">Nurettin Resul</p>
                 </div>
                 <div class="clearfix">
-                  <div class="label-field">
-                    <label>Surname:</label>
-                  </div>
-                  <div class="input-field">
-                    <input
-                      type="text"
-                      name="traveller_lname"
-                      value="<?php echo strtoupper($_SESSION['user_lname']);?>"
-                      readonly
-                    />
-                  </div>
+                  <p class="rsv-label">Surname:</p>
+                  <p class="rsv-val">Tanyıldızı</p>
                 </div>
                 <div class="clearfix">
-                  <div class="label-field">
-                    <label>Email:</label>
-                  </div>
-                  <div class="input-field">
-                    <input
-                      type="text"
-                      name="traveller_email"
-                      value="<?php echo $_SESSION['user_email'];?>"
-                      readonly
-                    />
-                  </div>
+                  <p class="rsv-label">Email:</p>
+                  <p class="rsv-val">tanyildizi@gmail.com</p>
                 </div>
+                <div class="clearfix">
+                  <p class="rsv-label">People Count:</p>
+                  <p class="rsv-val">3</p>
+                </div>
+                <hr />
+                <div class="clearfix">
+                  <p class="rsv-label">Country:</p>
+                  <p class="rsv-val">England</p>
+                </div>
+                <div class="clearfix">
+                  <p class="rsv-label">City:</p>
+                  <p class="rsv-val">London</p>
+                </div>
+                <div class="clearfix">
+                  <p class="rsv-label">Start Date:</p>
+                  <p class="rsv-val">23/12/2020</p>
+                </div>
+                <div class="clearfix">
+                  <p class="rsv-label">End Date:</p>
+                  <p class="rsv-val">26/12/2020</p>
+                </div>
+                <div class="clearfix">
+                  <p class="rsv-label">Total Price:</p>
+                  <p class="rsv-val">740$</p>
+                </div>
+                <a href="cancel-rsv.inc.php">Cancel Reservation</a>
               </div>
-              <h2>Passengers,</h2>
-              <div class="input-area">
-                <div class="clearfix">
-                  <div class="label-field">
-                    <label>Count:</label>
-                  </div>
-                  <div class="input-field">
-                    <input
-                      type="number"
-                      value="1"
-                      min="1"
-                      max="6"
-                      name="traveller_count"
-                      autocomplete="off"
-                    />
-                  </div>
-                </div>
-              </div>
-              <h2>Travel's</h2>
-              <div class="input-area">
-                <div class="clearfix">
-                  <div class="label-field">
-                    <label>Start Date:</label>
-                  </div>
-                  <div class="input-field">
-                    <input
-                      type="date"
-                      name="traveller_sdate"
-                      value="<?php echo $today;?>"
-                    />
-                  </div>
-                </div>
-                <div class="clearfix">
-                  <div class="label-field">
-                    <label>Start Date:</label>
-                  </div>
-                  <div class="input-field">
-                    <input
-                      type="date"
-                      name="traveller_sdate"
-                      value="<?php echo $today;?>"
-                    />
-                  </div>
-                </div>
-
-                <div class="clearfix">
-                  <div class="label-field">
-                    <label>End Date:</label>
-                  </div>
-                  <div class="input-field">
-                    <input
-                      type="date"
-                      name="traveller_edate"
-                      value="<?php echo $today;?>"
-                    />
-                  </div>
-                </div>
-                <div class="clearfix">
-                  <div class="label-field">
-                    <label>Days:</label>
-                  </div>
-                  <div class="input-field">
-                    <input type="number" name="traveller_name" readonly />
-                  </div>
-                </div>
-              </div>
-
-              <hr />
-
-              <div class="clearfix">
-                <p tyoe>Total: 230$</p>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <script type="text/javascript" src="js/general.js"></script>
   </body>
 </html>

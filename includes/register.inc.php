@@ -14,18 +14,16 @@
         $_password=$_POST["password"]; 
 
        $result = User::InsertUser($_firstname,$_lastname,$_password,$_email);
-       $_picture_url = validate_picture($_FILES["picture_upload"], $result);
+       $_picture_url = validate_picture($_FILES["picture_upload"], $result, $_firstname,  $_lastname, $_email);
        User::UpdateUser($result, $_firstname, $_lastname, $_password, $_email, $_picture_url);
-       header("Location: ../index.php");
+       header("Location: ../index.php?register=successful");
+       exit();
     } else {
         header("Location: ../register.php");
+        exit();
     }  
 
-
-
-
-
-    function validate_picture($file, $id) {
+    function validate_picture($file, $id, $firstname, $lastname, $email) {
         $file_name = $file["name"];
         $file_tmp_name = $file["tmp_name"];
         $file_size = $file["size"];
@@ -43,10 +41,17 @@
                 chmod($target_dir . $target_name, 0755);
                 return $target_name;
             } else {
-                header("Location: ../register.php?error=upload_error");
+                User::DeleteUser($id);
+                header("Location: ../register.php?error=upload_error&fname=$firstname&lname=$lastname&email=$email");
+                exit();
+
             }
         } else {
-            header("Location: ../register.php?error=invalid_file_format");
+            User::DeleteUser($id);
+
+            header("Location: ../register.php?error=invalid_file_format&fname=".$firstname."&lname=".$lastname."&email=".$email);
+
+            exit();
         }
     }
 ?>

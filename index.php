@@ -21,7 +21,7 @@
 
 	<?php
 		if(isset($_SESSION["user_id"])) {
-			$fullname = $_SESSION["user_fname"] ." ". strtoupper($_SESSION["user_lname"]);
+			$fullname = $_SESSION["user_fname"] ." ". $_SESSION["user_lname"];
 			$picture_url = $_SESSION["picture_url"];
 			PageElements::get_header($fullname, $picture_url);
 
@@ -42,10 +42,11 @@
 
 		} else {
 			$error_msg = "";
-
+			$tmp_email = "";
 			
-if(isset($_GET["login"]) && $_GET["login"] == "error") {
+if(isset($_GET["login"]) && $_GET["login"] == "error" && $_GET["tmp_email"]) {
 				$error_msg = "*Wrong email or password";
+				$tmp_email = $_GET["tmp_email"];
 			}
 
 		
@@ -55,9 +56,9 @@ if(isset($_GET["login"]) && $_GET["login"] == "error") {
 					"<h1>DREAMER</h1>".
 				"</div>".
 				"<div class='login-area'>".
-					"<form action='includes/login.inc.php' method='post' autocomplete='off'>".
+					"<form action='includes/login.inc.php' method='post' >".
 						"<div class='login-user-text'>".
-							"<input  type='text' placeholder='Email' name='login_email_user' autocomplete='off'>".
+							"<input  type='text' placeholder='Email' name='login_email_user' value='$tmp_email'>".
 						"</div>".
 						"<div class='login-user-text'>".
 							"<input  type='password' placeholder='Password' name='login_password_user' autocomplete='off'>".
