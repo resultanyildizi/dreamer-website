@@ -18,6 +18,7 @@ body {
 body {
   background-image: none;
   background-color: white;
+  position: fixed;
 }
 
 #login-body {
@@ -173,9 +174,9 @@ body {
 .title {
   width: 93%;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 30px;
   font-family: "Dubai";
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .title h2 {
@@ -183,7 +184,8 @@ body {
 }
 
 .main-content {
-  height: 750px;
+  box-sizing: border-box;
+  height: 600px;
   width: 93%;
   background-color: #fff9f2;
   margin: auto;
@@ -192,6 +194,104 @@ body {
   -moz-box-shadow: 2px 4px 10px -5px rgba(0, 0, 0, 0.4);
   box-shadow: 2px 4px 10px -5px rgba(0, 0, 0, 0.4);
   border: 1px solid #fcedde;
+  padding: 30px;
+}
+
+.show-area {
+  width: 100%;
+}
+
+.show-area .profile-form {
+  float: left;
+  width: 50%;
+}
+
+.profile-form .image-area {
+  width: 130px;
+  height: 160px;
+  margin: auto;
+
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
+  box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
+}
+
+.show-area .profile-show-area {
+  float: left;
+  width: 50%;
+}
+
+.row {
+  margin-bottom: 15px;
+}
+
+.row .profile-label {
+  float: left;
+  width: 20%;
+  font-family: "Century Gothic";
+}
+
+.row .profile-textB {
+  float: left;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.row .profile-file {
+  float: left;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-file input[type="file"] {
+  width: 80%;
+  outline-style: none;
+  padding: 10px;
+  margin-top: -10px;
+}
+
+.profile-file input[type="file"]::-webkit-file-upload-button {
+  border-radius: 10px;
+  background-color: white;
+  border-style: none;
+  -webkit-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+  outline-style: none;
+}
+.row .profile-textB input {
+  width: 80%;
+  border-radius: 10px;
+  border-style: none;
+  -webkit-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  font-size: 0.7em;
+  outline-style: none;
+}
+
+.row .profile-textB input::-webkit-input-placeholder {
+  font-family: "Century Gothic";
+}
+
+.row .error {
+  float: left;
+  width: 35%;
+}
+
+.row .error p {
+  font-family: "Century Gothic";
+  margin: 0;
+  font-size: 0.6em;
+  color: #b70000;
 }
 
 .clearfix::after {
