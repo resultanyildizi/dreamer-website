@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <title>Dreamer - Admin Login</title>
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/admin.css" />
     <link
       rel="stylesheet"
@@ -28,8 +27,6 @@
             header("Location: dashboard.php");
 
           } else {
-
-            header("Location: login.php");
         }
     ?>
 
