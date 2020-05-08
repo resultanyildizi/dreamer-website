@@ -35,7 +35,7 @@
       <div class="show-area">
         <div class="clearfix">
           <div class="profile-form">
-            <form name="profile-form-area">
+            <form name="profile-form-area" onsubmit="return=validate_admin_profile()">
               <div class="row">
                 <div class="clearfix">
                   <div class="profile-label">
@@ -44,7 +44,7 @@
                   <div class="profile-textB">
                     <input type="text" id="name" name="name" />
                     <div class="error">
-                      <p id="e_name">*Name is required</p>
+                      <p id="e_a_name">*Name is required</p>
                     </div>
                   </div>
                 </div>
@@ -57,20 +57,20 @@
                   <div class="profile-textB">
                     <input type="text" id="surname" name="surname" />
                     <div class="error">
-                      <p id="e_surname">*Surname is required</p>
+                      <p id="e_a_surname">*Surname is required</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="row">
+               <div class="row">
                 <div class="clearfix">
                   <div class="profile-label">
                     <label for="password">PASSWORD:</label>
                   </div>
                   <div class="profile-textB">
                     <input type="text" id="password" name="password" />
-                    <div class="error">
-                      <p id="e_password">*Password is required</p>
+                      <div class="error">
+                      <p id="e_a_password">*Password is required</p>
                     </div>
                   </div>
                 </div>
@@ -82,6 +82,9 @@
                   </div>
                   <div class="profile-textB">
                     <input type="text" id="cpassword" name="cpassword" />
+                      <div class="error">
+                      <p id="e_a_cpassword">*Confirm is required</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -148,13 +151,13 @@
             </div>
           </div>
 
-          <form name="update-area">
+        </div>
+      </div>
+       <form name="update-area">
             <div class="update-button">
               <input type="submit" name="update-area" value="UPDATE" />
             </div>
           </form>
-        </div>
-      </div>
     </div>
 		</div>
 	</div>

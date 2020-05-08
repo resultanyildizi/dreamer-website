@@ -151,3 +151,61 @@ function confirm_cancel_reservation() {
     return false;
   }
 }
+
+function validate_admin_profile() {
+  let control = true;
+
+  let form = document.forms["profile-form-area"];
+
+  let _name = form["name"].value;
+  let _surname = form["surname"].value;
+  let _password = form["password"].value;
+  let _cpassword = form["cpassword"].value;
+
+
+  document.getElementById("e_a_name").style.visibility = "hidden";
+  document.getElementById("e_a_surname").style.visibility = "hidden";
+  document.getElementById("e_a_password").style.visibility = "hidden";
+  document.getElementById("e_a_cpassword").style.visibility = "hidden";
+
+
+if (_name.trim() == "" || _name == null) {
+    control = false;
+    document.getElementById("e_a_name").innerHTML = "*Name is required";
+    document.getElementById("e_a_name").style.visibility = "visible";
+  }
+  if (_surname.trim() == "" || _surname == null) {
+    control = false;
+    document.getElementById("e_a_surname").innerHTML = "*Surname is required";
+    document.getElementById("e_a_surname").style.visibility = "visible";
+  }
+  
+  if (_password.trim() == "" || _password == null) {
+    control = false;
+    document.getElementById("e_a_password").innerHTML = "*Password is required";
+    document.getElementById("e_a_password").style.visibility = "visible";
+  }
+  if (_cpassword.trim() == "" || _cpassword == null) {
+    control = false;
+    document.getElementById("e_a_cpassword").innerHTML = "*Confirm is required";
+    document.getElementById("e_a_cpassword").style.visibility = "visible";
+  }
+  if (_password.trim().length < 6 && _password.trim() != "") {
+    control = false;
+    document.getElementById("e_a_password").innerHTML =
+      "*Password can not be smaller than 6 characters";
+    document.getElementById("e_a_password").style.visibility = "visible";
+  }
+  if (_password != _cpassword && _cpassword.trim() != "" && _password.trim) {
+    control = false;
+    document.getElementById("e_a_cpassword").innerHTML =
+      "*Passwords should be same";
+    document.getElementById("e_a_cpassword").style.visibility = "visible";
+  }
+
+   if(control==true){
+
+    profile-form-area.submit();
+
+   }
+}
