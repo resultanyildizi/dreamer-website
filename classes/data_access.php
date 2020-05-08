@@ -72,7 +72,7 @@
  				 "user_id int(6) unsigned not null ," .
  				 "start_date date not null, " .
  				 "end_date date not null, " .
-				 "price float not null) " .
+				 "price float not null, " .
 				 "reg_date timestamp default current_timestamp on update current_timestamp)";
 
  		// Non-query nin çalıştırılması

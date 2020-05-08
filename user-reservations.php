@@ -37,6 +37,10 @@ if(isset($_SESSION["user_id"])) {
 
     <section>
       <div class="container">
+        <div id="message" class="message" style="<?php if(isset($_GET["cancel"]) ||  isset($_GET["reservate"]))  echo 'display: block';?>">
+          <h3><?php if(isset($_GET["cancel"]) && $_GET["cancel"] =="successful")  echo 'CANCEL SUCCESSFUL'; else if(isset($_GET["reservate"]) && $_GET["reservate"] =="successful") echo 'RESERVATION SUCCESSFUL';?></h3>
+          <button onclick="document.getElementById('message').style.display = 'none'; location.href='user-reservations.php';">OK</button>
+        </div>
         <h1 class="title-1">My Reservations</h1>
         <hr />
         <div class="blurred-area">
@@ -44,5 +48,8 @@ if(isset($_SESSION["user_id"])) {
         </div>
       </div>
     </section>
+
+<script type="text/javascript" src="js/general.js"></script>
+
   </body>
 </html>

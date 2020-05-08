@@ -12,7 +12,7 @@
         $price = (int)$people_count * (int)$days * (int)$_GET["price"];
 
         Reservation::InsertReservation($people_count, $city_id, $user_id, $start_date, $end_date, $price);
-        header("Location: ../index.php");
+        header("Location: ../user-reservations.php?reservate=successful");
     } else {
         header("Location: ../index.php");
     }

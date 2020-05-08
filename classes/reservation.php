@@ -12,6 +12,12 @@ class Reservation{
 
     }
 
+    public static function DeleteReservation($id) {
+      $delete_query = "delete from reservations where id = $id";
+
+      DataAccess::ExecuteNonQuery($delete_query);
+    }
+
     public static function ShowReservations($user_id) {
         $query = "select reservations.id, users.firstname, users.surname, users.email, city.country, city.name as 'city_name', reservations.start_date, reservations.end_date, reservations.price, reservations.people_count, reservations.reg_date from reservations inner join users on reservations.user_id = users.id inner join city on reservations.city_id = city.id where users.id =" . $user_id;
 
@@ -89,7 +95,7 @@ class Reservation{
                   '<p class="rsv-label">Total Price:</p>'.
                   '<p class="rsv-val">'. $price .'$</p>'.
                 '</div>'.
-                '<a href="cancel-rsv.inc.php">Cancel Reservation</a>'.
+                '<a href="includes/cancel.inc.php?rsv='. $rsvid. '" onclick="return confirm_cancel_reservation();">Cancel Reservation</a>'.
                 '</div>';
             }
 
@@ -103,3 +109,4 @@ class Reservation{
 	
 }
 ?>
+
