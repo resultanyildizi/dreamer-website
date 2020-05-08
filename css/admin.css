@@ -16,6 +16,11 @@ body {
 
 body {
   background-image: none;
+  background-color: white;
+}
+
+#login-body {
+  background-image: none;
   background-color: #fff9f2;
 }
 
@@ -109,4 +114,87 @@ body {
 .container {
   width: 80%;
   margin: auto;
+}
+
+.menu-side {
+  float: left;
+  display: block;
+  width: 15%;
+  background-color: #211d18;
+  margin: 0;
+  height: 100vh;
+  -webkit-box-shadow: 8px 3px 20px -5px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 8px 3px 20px -5px rgba(0, 0, 0, 0.8);
+  box-shadow: 8px 3px 20px -5px rgba(0, 0, 0, 0.8);
+}
+
+.menu-side .profile-menu {
+  padding: 25px 15px;
+  background-color: black;
+}
+
+.menu-side .profile-menu img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+.menu-side .profile-menu .profile-text {
+  float: left;
+}
+
+.profile-menu a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-family: "Century Gothic";
+}
+
+.profile-menu .name {
+  font-size: 0.8em;
+}
+
+.profile-menu .logout {
+  font-size: 0.6em;
+  margin-top: 5px;
+}
+
+.content {
+  float: left;
+  background-color: transparent;
+  height: 100vh;
+  width: 85%;
+}
+
+.title {
+  width: 93%;
+  margin: auto;
+  margin-top: 40px;
+  font-family: "Dubai";
+  font-size: 1.4em;
+}
+
+.title h2 {
+  margin-bottom: 10px;
+}
+
+.main-content {
+  height: 750px;
+  width: 93%;
+  background-color: #fff9f2;
+  margin: auto;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 4px 10px -5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 4px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 4px 10px -5px rgba(0, 0, 0, 0.4);
+  border: 1px solid #fcedde;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }

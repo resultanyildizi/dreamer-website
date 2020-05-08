@@ -17,7 +17,7 @@
 		session_start();
 	?>
 </head>
-<body>
+<body id="login-body">
 
     <?php
         if(isset($_SESSION["admin_id"])) {
