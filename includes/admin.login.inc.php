@@ -10,7 +10,7 @@
         $admin = Admin::Login($email, $pwd);
 
         if($admin == null) {
-            header("Location: ../login.php?login=error");
+            header("Location: ../login.php?login=error&email=" . $email);
             exit();
         } else {
             session_start();
