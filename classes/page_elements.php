@@ -12,7 +12,7 @@ class PageElements {
 					"<nav>" .
 						"<ul>" . 
 							"<li><a href='index.php'>HOME</a></li>" .
-							"<li><a href='#'>MY RESERVATIONS</a></li>" .
+							"<li><a href='user-reservations.php'>MY RESERVATIONS</a></li>" .
 							"<li><a href=''>PROFILE</a></li>" .
 						"</ul>".
 					"</nav>".

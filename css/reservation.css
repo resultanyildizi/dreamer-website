@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap");
+.reservation-cards-row {
+  width: 1260px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.reservation-card {
+  box-sizing: border-box;
+  min-width: 550px;
+  max-width: 550px;
+  height: 380px;
+  display: inline-block;
+  float: left;
+  padding: 0;
+  border: 2px solid white;
+  margin: 0 40px 0 40px;
+  -webkit-box-shadow: 14px 16px 38px -5px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 14px 16px 38px -5px rgba(0, 0, 0, 0.45);
+  box-shadow: 14px 16px 38px -5px rgba(0, 0, 0, 0.45);
+  background-color: rgba(255, 255, 255, 0.6);
+  color: white;
+  padding: 10px 10px 10px 10px;
+  position: relative;
+}
+
+.reservation-card .rsv-id {
+  width: 50%;
+  margin: 0;
+  float: left;
+  color: black;
+  font-weight: bold;
+}
+
+.reservation-card .rsv-reg-date {
+  margin: 0;
+  width: 50%;
+  color: black;
+  font-weight: bold;
+  float: right;
+  text-align: right;
+}
+
+.reservation-card hr {
+  height: 2px;
+  background-color: black;
+}
+
+.reservation-card .rsv-label,
+.reservation-card .rsv-val {
+  font-size: 1.2em;
+  font-family: "Zilla Slab", serif;
+  color: black;
+  margin: 0;
+  margin-bottom: 5px;
+  float: left;
+  width: 30%;
+  padding-left: 10px;
+}
+
+.reservation-card .rsv-label {
+  font-weight: bold;
+}
+
+.reservation-card a {
+  display: block;
+  text-align: right;
+  font-size: 1.2em;
+  color: #727272;
+  text-decoration: none;
+}
+
+.reservation-card a:hover {
+  color: darkred;
+  text-decoration: underline;
+}
+.reservation-card a:visited {
+  color: #727272;
+}

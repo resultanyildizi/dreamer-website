@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/travel.css" />
 
@@ -23,11 +23,12 @@
 
     <?php 
         if(isset($_SESSION["user_id"])) {
-            $fullname = $_SESSION["user_fname"] ." ". strtoupper($_SESSION["user_lname"]);
+            $fullname = $_SESSION["user_fname"] ." ". $_SESSION["user_lname"];
             $picture_url = $_SESSION["picture_url"];
             
             $today = date('Y-m-d');
             $tomorrow = (new DateTime('tomorrow'))->format('Y-m-d');
+            
             PageElements::get_header($fullname, $picture_url);
 
             if(isset($_GET["city"]))
@@ -98,7 +99,7 @@
                     <input
                       type="text"
                       name="traveller_lname"
-                      value="<?php echo strtoupper($_SESSION['user_lname']);?>"
+                      value="<?php echo $_SESSION['user_lname'];?>"
                       readonly
                     />
                   </div>

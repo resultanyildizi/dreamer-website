@@ -8,7 +8,7 @@
         $user = User::Login($email, $pwd);
 
         if($user == null) {
-            header("Location: ../index.php?login=error");
+            header("Location: ../index.php?login=error&tmp_email=$email");
             exit();
         } else {
             session_start();
@@ -18,7 +18,7 @@
             $_SESSION["user_lname"] = $user["surname"];
             $_SESSION["user_email"] = $user["email"];
             $_SESSION["picture_url"] = $user["picture_url"];
-
+            $_SESSION["reg_date"] = $user["reg_date"];
             header("Location: ../index.php?login=success");
             exit();
         }
