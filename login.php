@@ -15,6 +15,20 @@
 	?>
 </head>
 <body>
+
+    <?php 
+        if(isset($_SESSION["admin_id"])) {
+            $fullname = $_SESSION["admin_fname"] ." ". $_SESSION["admin_lname"];
+            $picture_url = $_SESSION["picture_url"];
+
+            header("Location: dashboard.php");
+                   
+          } else {
+
+            header("Location: login.php");
+        }
+    ?>
+
 	<?php
 
 	$error_msg = "";
@@ -34,7 +48,7 @@
 
 				<div class='login-area'>
 
-					<form name='admin_login_form' action='includes/admin.login.in.php' method='post' onsubmit="return validate_admin_login()">
+					<form name='admin_login_form' action='includes/admin.login.inc.php' method='post' onsubmit="return validate_admin_login()">
 
 						<div class='login-admin-text'>
 							<input  type='text' placeholder='Email' name='login_email_admin' >

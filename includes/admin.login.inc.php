@@ -16,8 +16,14 @@
             session_start();
 
             $_SESSION["admin_email"] = $admin["email"];
+            $_SESSION["admin_id"] = $admin["id"];
+            $_SESSION["admin_fname"] = $admin["firstname"];
+            $_SESSION["admin_lname"] = $admin["surname"];
+            $_SESSION["picture_url"] = $admin["picture_url"];
+            $_SESSION["reg_date"] = $admin["reg_date"];
 
-            header("Location: ../login.php?login=success");
+
+            header("Location: ../dashboard.php?login=success");
             exit();
         }
 

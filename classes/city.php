@@ -73,6 +73,12 @@
             if($result==0){
             	echo "hata!";
             }
+      
+
+
+
+
+
 		}
 	
 	
