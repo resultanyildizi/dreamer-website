@@ -37,13 +37,14 @@
 			$_details = $city["details"];
 			$_style = 'background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("' . $_smallpic. '"); ';
 
-			$html_current_city = "<div class='city-card' style='$_style'>" .
-								"<h3 class='city-card-country'>$_country</h3>" .
-								"<h1 class='city-card-title'>$_name</h1>" .
-								"<p  class='city-card-p'>$_details</p>" .
-								"<h2 class='city-card-price'>$_price$</h2>" .
-								"<a class='city-card-purchase' href='travel.php?city=$_id'>Travel</a>" .
-								"</div>" ;
+			$html_current_city = "<a class='card-link' href='travel.php?city=$_id'>" . 
+								 "<div class='city-card' style='$_style'>" .
+								 "<h3 class='city-card-country'>$_country</h3>" .
+								 "<h1 class='city-card-title'>$_name</h1>" .
+								 "<p  class='city-card-p'>$_details</p>" .
+								 "<h2 class='city-card-price'>$_price$</h2>" .
+								 "<a class='city-card-purchase' href='travel.php?city=$_id'>Travel</a>" .
+								 "</div></a>" ;
 
 			return $html_current_city;
 		}

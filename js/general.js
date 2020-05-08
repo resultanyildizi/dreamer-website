@@ -100,15 +100,12 @@ function validate_reservation() {
   return true;
 }
 function validate_admin_login() {
-
   let control = true;
 
   let form = document.forms["admin_login_form"];
 
   let _email = form["login_email_admin"].value;
   let _password = form["login_password_admin"].value;
-
-
 
   if (_email.trim() == "" || _email == null) {
     control = false;
@@ -120,7 +117,7 @@ function validate_admin_login() {
     document.getElementById("e_password").innerHTML = "*Password is required";
     document.getElementById("e_password").style.visibility = "visible";
   }
- 
+
   if (
     /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(_email) &&
     _email.trim() != ""
@@ -130,7 +127,16 @@ function validate_admin_login() {
     document.getElementById("e_email").innerHTML = "*Invalid email address";
     document.getElementById("e_email").style.visibility = "visible";
   }
-  
 
   return control;
+}
+
+function confirm_cancel_reservation() {
+  let control = confirm("Are you sure to cancel your reservation?");
+
+  if (control == true) {
+    location.href = this.href;
+  } else {
+    return false;
+  }
 }

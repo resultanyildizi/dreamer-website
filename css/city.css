@@ -91,3 +91,8 @@
   font-weight: bold;
   border-bottom: 1px solid white;
 }
+
+.card-link {
+  text-decoration: none;
+  color: white;
+}
