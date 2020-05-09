@@ -162,14 +162,12 @@ function validate_admin_profile() {
   let _password = form["password"].value;
   let _cpassword = form["cpassword"].value;
 
-
   document.getElementById("e_a_name").style.visibility = "hidden";
   document.getElementById("e_a_surname").style.visibility = "hidden";
   document.getElementById("e_a_password").style.visibility = "hidden";
   document.getElementById("e_a_cpassword").style.visibility = "hidden";
 
-
-if (_name.trim() == "" || _name == null) {
+  if (_name.trim() == "" || _name == null) {
     control = false;
     document.getElementById("e_a_name").innerHTML = "*Name is required";
     document.getElementById("e_a_name").style.visibility = "visible";
@@ -179,7 +177,7 @@ if (_name.trim() == "" || _name == null) {
     document.getElementById("e_a_surname").innerHTML = "*Surname is required";
     document.getElementById("e_a_surname").style.visibility = "visible";
   }
-  
+
   if (_password.trim() == "" || _password == null) {
     control = false;
     document.getElementById("e_a_password").innerHTML = "*Password is required";
@@ -203,9 +201,7 @@ if (_name.trim() == "" || _name == null) {
     document.getElementById("e_a_cpassword").style.visibility = "visible";
   }
 
-   if(control==true){
-
-    profile-form-area.submit();
-
-   }
+  if (control == true) {
+    profile - form - area.submit();
+  }
 }
