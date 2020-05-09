@@ -12,6 +12,18 @@
       crossorigin="anonymous"
     ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+      <?php
+    require_once("classes/data_access.php");
+    require_once("classes/city.php");
+
+  ?>
+ 
+
+
+
   </head>
   <body>
     <div class="clearfix">
@@ -132,7 +144,8 @@
             </div>
 
             <div class="city-area">
-              <form
+			  <form
+			  	action="includes/city-add.inc.php"
                 class="city-form-area"
                 name="city_form_area"
                 onclick="return validate_city()"
