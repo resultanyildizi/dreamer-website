@@ -1,4 +1,5 @@
 <?php 
+    require_once("data_access.php");   
     class City {
  
         public static function CShowAllCities() {
@@ -59,10 +60,10 @@
 				return null;
 		}
 
-        public static function InsertCity(){
- 
-            $insert_query="insert into city(name,country,price,small_picture_url,back_picture_url,details)".
-            "values ('izmir','Turkiye','4444','resources/city_images/tablo.jpg','asdf','amazing city ' )";
+        public static function InsertCity($name,$country,$price,$smallText,$details){
+            
+            $insert_query="insert into city(name,country,price,small_text,details)".
+            "values ('$name','$country','$price','$smallText','$details')";
  
             DataAccess::ExecuteNonQuery($insert_query);
         }

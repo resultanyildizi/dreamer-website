@@ -9,6 +9,18 @@
 	/>
 	<script src="https://kit.fontawesome.com/445d2804ca.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+      <?php
+    require_once("classes/data_access.php");
+    require_once("classes/city.php");
+
+  ?>
+ 
+
+
+
   </head>
   <body>
 	  <div class="clearfix">
@@ -52,7 +64,7 @@
                  	</div>
 
                  	<div class='city-area'>
-                       <form class='city-form-area' name='city_form_area'onclick='return validate_city()'>
+                       <form action='includes/cityAdd.inc.php' class='city-form-area' method='POST'name='city_form_area' onclick='return validate_city()'>
 
                        <div class='city-add-area'>
          
