@@ -379,8 +379,128 @@ body {
   text-decoration: none;
   font-size: 1.4em;
 }
+
+.admin-navbar label {
+  margin-left: 20px;
+}
+
+.table-area {
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.table-area table {
+  width: 90%;
+  margin: auto;
+  font-family: "Century Gothic";
+  border-collapse: collapse;
+}
+
+.odd {
+  background-color: #ffeae1;
+}
+
+.even {
+  background-color: #fff9f2;
+}
+
+.table-area th {
+  padding: 5px;
+  border-bottom: 1px black solid;
+}
+
+.table-area td {
+  padding: 10px 5px;
+  word-wrap: break-word;
+}
+.city-area {
+  box-sizing: border-box;
+  background-color: #ffeae1;
+  padding: 30px;
+  -webkit-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+}
+
+.city-area .city-add-area {
+  float: left;
+  width: 50%;
+}
+
+.city-row {
+  margin-bottom: 10px;
+}
+.city-row .city-label {
+  float: left;
+  width: 17%;
+}
+
+.city-row .city-textB {
+  width: 38%;
+  float: left;
+}
+
+.city-row .error {
+  float: left;
+  width: 35%;
+}
+
+.city-row .error p {
+  font-family: "Century Gothic";
+  margin: 0;
+  font-size: 0.6em;
+  color: #b70000;
+}
+
+.city-row .city-textB input {
+  width: 80%;
+  border-radius: 10px;
+  border-style: none;
+  -webkit-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  font-size: 0.7em;
+  margin: auto;
+  outline-style: none;
+}
+
+.city-row .city-textB textarea {
+  width: 80%;
+  border-radius: 10px;
+  border-style: none;
+  -webkit-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+
+  outline-style: none;
+  resize: none;
+}
+
+.city-row .city-textB input::-webkit-input-placeholder {
+  font-family: "Century Gothic";
+}
+
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
+}
+
+#action {
+  text-align: center;
+  font-size: 1.4em;
+}
+
+#action i {
+  cursor: pointer;
+}
+
+#action i:hover {
+  color: darkred;
 }

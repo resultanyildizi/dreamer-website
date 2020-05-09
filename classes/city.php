@@ -61,10 +61,10 @@
 
         public static function InsertCity(){
  
-            $insert_query="insert into city(name,country,price,small_picture_url,back_picture_url,details)".
-            "values ('izmir','Turkiye','4444','resources/city_images/tablo.jpg','asdf','amazing city ' )";
- 
-            DataAccess::ExecuteNonQuery($insert_query);
+            $insert_query="insert into city(name,country,price,small_picture_url,back_picture_url,small_text, details)".
+            "values ('izmir','Turkiye','4444','resources/city_images/tablo.jpg','asdf','amazing city', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis veritatis aliquam ipsa, odit animi error iste delectus, recusandae cupiditate unde neque! Sequi assumenda impedit totam animi nesciunt, itaque iste architecto, quam in tempora ducimus sed atque debitis beatae hic aut, ea deserunt nemo ipsa. Esse ipsa aspernatur minus voluptas neque.')";
+			DataAccess::ExecuteNonQuery($insert_query);
+
         }
  
        public static function DeleteCity($id){
