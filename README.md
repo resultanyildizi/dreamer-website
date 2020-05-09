@@ -1,2 +1,2 @@
 # Dreamer
-Dreamer is a commericial travelling web page cretaed with html, css, php and javascript
+Dreamer is a commercial travelling web page cretaed with html, css, php and javascript
