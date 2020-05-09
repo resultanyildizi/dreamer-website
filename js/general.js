@@ -217,7 +217,6 @@ function validate_city() {
   let _small_text = form["small_text"].value;
   let _details = form["details"].value;
 
-
   document.getElementById("e_c_name").style.visibility = "hidden";
   document.getElementById("e_c_country").style.visibility = "hidden";
   document.getElementById("e_c_cost").style.visibility = "hidden";
@@ -231,7 +230,8 @@ function validate_city() {
   }
   if (_country.trim() == "" || _country == null) {
     control = false;
-    document.getElementById("e_c_country").innerHTML = "*Country name is required";
+    document.getElementById("e_c_country").innerHTML =
+      "*Country name is required";
     document.getElementById("e_c_country").style.visibility = "visible";
   }
 
@@ -240,14 +240,16 @@ function validate_city() {
     document.getElementById("e_c_cost").innerHTML = "*Cost is required";
     document.getElementById("e_c_cost").style.visibility = "visible";
   }
-   if (_small_text.trim() == "" || _small_text == null) {
+  if (_small_text.trim() == "" || _small_text == null) {
     control = false;
-    document.getElementById("e_c_small_text").innerHTML = "*Small text is required";
+    document.getElementById("e_c_small_text").innerHTML =
+      "*Small text is required";
     document.getElementById("e_c_small_text").style.visibility = "visible";
   }
-   if (_details.trim() == "" || _details == null) {
+  if (_details.trim() == "" || _details == null) {
     control = false;
-    document.getElementById("e_c_details").innerHTML = "*Small text is required";
+    document.getElementById("e_c_details").innerHTML =
+      "*Small text is required";
     document.getElementById("e_c_details").style.visibility = "visible";
   }
 
