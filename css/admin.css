@@ -12,13 +12,15 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: pink;
 }
 
 body {
   background-image: none;
   background-color: white;
-  position: fixed;
+}
+
+.clearfix {
+  height: 100%;
 }
 
 #login-body {
@@ -124,7 +126,7 @@ body {
   width: 15%;
   background-color: #211d18;
   margin: 0;
-  height: 100vh;
+  height: 100%;
   -webkit-box-shadow: 8px 3px 20px -5px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 8px 3px 20px -5px rgba(0, 0, 0, 0.8);
   box-shadow: 8px 3px 20px -5px rgba(0, 0, 0, 0.8);
@@ -167,7 +169,7 @@ body {
 .content {
   float: left;
   background-color: transparent;
-  height: 100vh;
+  height: 100%;
   width: 85%;
 }
 
@@ -195,6 +197,7 @@ body {
   box-shadow: 2px 4px 10px -5px rgba(0, 0, 0, 0.4);
   border: 1px solid #fcedde;
   padding: 30px;
+  position: relative;
 }
 
 .show-area {
@@ -210,7 +213,6 @@ body {
   width: 130px;
   height: 160px;
   margin: auto;
-
   background-position: center;
   background-size: cover;
   -webkit-box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
@@ -219,8 +221,50 @@ body {
 }
 
 .show-area .profile-show-area {
+  box-sizing: border-box;
   float: left;
   width: 50%;
+  background-color: #ffeae1;
+  -webkit-box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
+  box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.profile-show-area hr {
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.small-title h3 {
+  margin: 0;
+  font-family: "Dubai", serif;
+}
+
+.row .profile-show-label {
+  float: left;
+  width: 30%;
+  font-weight: bold;
+}
+
+.row .profile-show-text {
+  float: left;
+  width: 70%;
+}
+
+.profile-show-text p {
+  margin: 0;
+}
+
+.profile-show-text .img-area {
+  width: 100px;
+  height: 120px;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
+  box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
 }
 
 .row {
@@ -252,6 +296,7 @@ body {
   outline-style: none;
   padding: 10px;
   margin-top: -10px;
+  cursor: pointer;
 }
 
 .profile-file input[type="file"]::-webkit-file-upload-button {
@@ -294,6 +339,46 @@ body {
   color: #b70000;
 }
 
+.update-area {
+  box-sizing: border-box;
+  width: 95%;
+  position: absolute;
+  bottom: 30px;
+}
+.update-area button {
+  padding: 5px;
+  width: 100%;
+  margin: auto;
+  background-color: #ff7d7d;
+  border-style: none;
+  border-radius: 10px;
+  color: white;
+  font-family: "Century Gothic";
+  font-size: 1.2em;
+  -webkit-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.admin-navbar {
+}
+
+.admin-navbar ul {
+  margin-top: 100px;
+  list-style-type: none;
+}
+
+.admin-navbar ul li {
+  margin: 30px 0;
+  text-align: left;
+  padding-left: 30px;
+}
+.admin-navbar li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4em;
+}
 .clearfix::after {
   content: "";
   display: table;

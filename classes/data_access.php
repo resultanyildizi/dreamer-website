@@ -58,7 +58,8 @@
  		         "country varchar(40) not null, ".
  		         "price float not null, " . 
  		         "small_picture_url text not null, " . 
- 		         "back_picture_url text not null, " .
+				 "back_picture_url text not null, " .
+				 "small_text text not null, ".
  		         "details text not null, ".
  		         "reg_date timestamp default current_timestamp on update current_timestamp)";
 

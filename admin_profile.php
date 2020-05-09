@@ -103,7 +103,7 @@
               </div>
 
               <div class="profile-show-area">
-                <div class="small-tittle-area">
+                <div class="small-title">
                   <h3>ACCOUNT</h3>
                 </div>
                 <hr />
@@ -114,7 +114,7 @@
                       <div class="profile-show-label">
                         <label for="id">ID:</label>
                       </div>
-                      <div class="profile-show-textB">
+                      <div class="profile-show-text">
                         <p id="id " name="id">12</p>
                       </div>
                     </div>
@@ -124,7 +124,7 @@
                       <div class="profile-show-label">
                         <label for="name">NAME:</label>
                       </div>
-                      <div class="profile-show-textB">
+                      <div class="profile-show-text">
                         <p id="name" name="name">EBRU</p>
                       </div>
                     </div>
@@ -134,7 +134,7 @@
                       <div class="profile-show-label">
                         <label for="surname">SURNAME:</label>
                       </div>
-                      <div class="profile-show-textB">
+                      <div class="profile-show-text">
                         <p id="surname" name="surname">KUBRA</p>
                       </div>
                     </div>
@@ -142,9 +142,9 @@
                   <div class="row">
                     <div class="clearfix">
                       <div class="profile-show-label">
-                        <label for="email">EMAİL:</label>
+                        <label for="email">EMAIL:</label>
                       </div>
-                      <div class="profile-show-textB">
+                      <div class="profile-show-text">
                         <p id="email" name="email">ebrukubra@gmail.com</p>
                       </div>
                     </div>
@@ -154,8 +154,20 @@
                       <div class="profile-show-label">
                         <label for="reg_date">REG. DATE:</label>
                       </div>
-                      <div class="profile-show-textB">
+                      <div class="profile-show-text">
                         <p d="reg_date" name="reg_date">12.05.2020</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="clearfix">
+                      <div class="profile-show-label">
+                        <label for="reg_date">REG. DATE:</label>
+                      </div>
+                      <div class="profile-show-text">
+
+                        <div class="img-area" style="background-image: url('resources/user_images/31.jpeg');"></div>
+
                       </div>
                     </div>
                   </div>
@@ -166,7 +178,7 @@
 
 
           <div class="update-area">
-            <button>Update</button>
+            <button>UPDATE</button>
           </div>
         </div>
       </div>
