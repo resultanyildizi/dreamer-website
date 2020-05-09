@@ -3,51 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/admin.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.3/css/font-awesome.min.css"
-    />
     <script
       src="https://kit.fontawesome.com/445d2804ca.js"
       crossorigin="anonymous"
     ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
-
-      <?php
+    <?php
     require_once("classes/data_access.php");
     require_once("classes/city.php");
 
-  ?>
- 
-
-
-
-  </head>
+  ?></head>
   <body>
     <div class="clearfix">
       <div class="menu-side">
         <div class="profile-menu">
           <div class="clearfix">
-            <a href="#"
+            <a href="admin_profile.php"
               ><img src="resources/user_images/31.jpeg" alt="profile_pic"
             /></a>
             <div class="profile-text">
-              <a class="name" href="#">Nurettin Resul</a>
-              <a class="name" href="#">Tanyıldızı</a>
-              <a class="logout" href="includes/logout.inc.php">Logout</a>
+              <a class="name" href="admin_profile.php">Nurettin Resul</a>
+              <a class="name" href="admin_profile.php">Tanyıldızı</a>
+              <a class="logout" href="includes/admin.logout.inc.php">Logout</a>
             </div>
           </div>
         </div>
 
         <nav class="admin-navbar">
           <ul>
-            <li>
-              <a href="#"><i class="fas fa-city"></i><label>Cities</label></a>
+            <li id="current-page">
+              <a  href="dashboard.php"><i class="fas fa-city"></i><label>Cities</label></a>
             </li>
             <li>
-              <a href="#"
+              <a href="admin_profile.php"
                 ><i class="fas fa-user-alt"></i><label>Profile</label></a
               >
             </li>
@@ -73,8 +62,8 @@
                   <th>Back Picture</th>
                   <th>Small Text</th>
                   <th>Details</th>
-				  <th>Reg. Date</th>
-				  <th>Action</th>
+                  <th>Reg. Date</th>
+                  <th>Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -87,8 +76,8 @@
                   <td>istanbul-back.jpg</td>
                   <td>Istabul is a great city to travel</td>
                   <td>Istabul is a great city to travel lorem20</td>
-				  <td>2020-05-09 17:51:54</td>
-				  <td id="action"><i class="fas fa-trash-alt"></i></td>
+                  <td>2020-05-09 17:51:54</td>
+                  <td id="action"><i class="fas fa-trash-alt"></i></td>
                 </tr>
                 <tr class="even">
                   <td>1</td>
@@ -139,16 +128,17 @@
           </div>
 
           <div class="city-input-area">
-            <div class="city-small-title">
+            <div class="small-title">
               <h3>Add New City</h3>
             </div>
 
             <div class="city-area">
-			  <form
-			  	action="includes/city-add.inc.php"
+              <form
+                action="includes/city-add.inc.php"
                 class="city-form-area"
                 name="city_form_area"
-                onclick="return validate_city()"
+                method="post"
+                onsubmit="return validate_city()"
               >
                 <div class="clearfix">
                   <div class="city-add-area">
@@ -214,7 +204,8 @@
                           <label for="deatails">DETAILS:</label>
                         </div>
                         <div class="city-textB">
-                          <textarea id="details" name="details" rows="4"> </textarea>
+                          <textarea id="details" name="details" rows="4">
+                          </textarea>
                         </div>
                         <div class="error">
                           <p id="e_c_details">*Details are required</p>
@@ -223,7 +214,28 @@
                     </div>
 
                     <div class="add-button">
-                      <input type="submit" name="city_form_area" value="Add" />
+						<div class="clearfix">
+							<input type="submit" name="city_form_area" value="ADD" />
+						</div>
+					</div>
+                  </div>
+
+                  <div class="city-pic-area">
+                    <div class="clearfix">
+                      <div class="small-img-field">
+                        <div class="small-img"></div>
+						<input type="file" name="small_img" />
+						<div class="error">
+							<p>*Small picture is required</p>
+						</div>
+                      </div>
+                      <div class="back-img-field">
+                        <div class="back-img"></div>
+						<input type="file" name="back_img" />
+						<div class="error">
+							<p>*Small picture is required</p>
+						</div>
+                      </div>
                     </div>
                   </div>
                 </div>

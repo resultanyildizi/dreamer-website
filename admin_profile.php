@@ -3,27 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/admin.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/445d2804ca.js"
+      crossorigin="anonymous"
+    ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <div class="clearfix">
-      <div class="menu-side">
+    <div class="menu-side">
         <div class="profile-menu">
           <div class="clearfix">
-            <a href="#"
+            <a href="admin_profile.php"
               ><img src="resources/user_images/31.jpeg" alt="profile_pic"
             /></a>
             <div class="profile-text">
-              <a class="name" href="#">Nurettin Resul</a>
-              <a class="name" href="#">Tanyıldızı</a>
-              <a class="logout" href="includes/logout.inc.php">Logout</a>
+              <a class="name" href="admin_profile.php">Nurettin Resul</a>
+              <a class="name" href="admin_profile.php">Tanyıldızı</a>
+              <a class="logout" href="includes/admin.logout.inc.php">Logout</a>
             </div>
           </div>
         </div>
+
+        <nav class="admin-navbar">
+          <ul>
+            <li >
+              <a  href="dashboard.php"><i class="fas fa-city"></i><label>Cities</label></a>
+            </li>
+            <li id="current-page">
+              <a href="admin_profile.php"
+                ><i class="fas fa-user-alt"></i><label>Profile</label></a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
 
       <div class="content">
@@ -45,8 +58,8 @@
                         <input type="text" id="name" name="name" />
                       </div>
                       <div class="error">
-                          <p id="e_name">*Name is required</p>
-                        </div>
+                        <p id="e_name">*Name is required</p>
+                      </div>
                     </div>
                   </div>
                   <div class="row">
@@ -58,8 +71,8 @@
                         <input type="text" id="surname" name="surname" />
                       </div>
                       <div class="error">
-                          <p id="e_surname">*Surname is required</p>
-                        </div>
+                        <p id="e_surname">*Surname is required</p>
+                      </div>
                     </div>
                   </div>
                   <div class="row">
@@ -71,8 +84,8 @@
                         <input type="text" id="password" name="password" />
                       </div>
                       <div class="error">
-                          <p id="e__password">*Password is required</p>
-                        </div>
+                        <p id="e__password">*Password is required</p>
+                      </div>
                     </div>
                   </div>
                   <div class="row">
@@ -81,7 +94,12 @@
                         <label for="cpassword">CONFIRM:</label>
                       </div>
                       <div class="profile-textB">
-                        <input type="text" id="cpassword" name="cpassword" placeholder="Confirm Password" />
+                        <input
+                          type="text"
+                          id="cpassword"
+                          name="cpassword"
+                          placeholder="Confirm Password"
+                        />
                       </div>
                     </div>
                   </div>
@@ -92,14 +110,15 @@
                         <label for="cpassword">PICTURE:</label>
                       </div>
                       <div class="profile-file">
-                        <input type="file" id="cpassword" name="picture_upload" />
+                        <input
+                          type="file"
+                          id="cpassword"
+                          name="picture_upload"
+                        />
                       </div>
                     </div>
                   </div>
                 </form>
-                
-                
-                <div class="image-area" style="background-image: url('resources/user_images/31.jpeg');"></div>
               </div>
 
               <div class="profile-show-area">
@@ -165,9 +184,12 @@
                         <label for="reg_date">REG. DATE:</label>
                       </div>
                       <div class="profile-show-text">
-
-                        <div class="img-area" style="background-image: url('resources/user_images/31.jpeg');"></div>
-
+                        <div
+                          class="img-area"
+                          style="
+                            background-image: url('resources/user_images/31.jpeg');
+                          "
+                        ></div>
                       </div>
                     </div>
                   </div>
@@ -175,7 +197,6 @@
               </div>
             </div>
           </div>
-
 
           <div class="update-area">
             <button>UPDATE</button>

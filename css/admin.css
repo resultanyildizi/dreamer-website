@@ -207,17 +207,7 @@ body {
 .show-area .profile-form {
   float: left;
   width: 50%;
-}
-
-.profile-form .image-area {
-  width: 130px;
-  height: 160px;
-  margin: auto;
-  background-position: center;
-  background-size: cover;
-  -webkit-box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
-  box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
 }
 
 .show-area .profile-show-area {
@@ -327,6 +317,18 @@ body {
   font-family: "Century Gothic";
 }
 
+.error {
+  margin: auto;
+  width: 35%;
+}
+
+.error p {
+  font-family: "Century Gothic";
+  margin: 0;
+  font-size: 0.6em;
+  color: #b70000;
+}
+
 .row .error {
   float: left;
   width: 35%;
@@ -370,9 +372,9 @@ body {
 }
 
 .admin-navbar ul li {
-  margin: 30px 0;
+  margin: 10px 0;
   text-align: left;
-  padding-left: 30px;
+  padding: 30px;
 }
 .admin-navbar li a {
   color: white;
@@ -382,6 +384,11 @@ body {
 
 .admin-navbar label {
   margin-left: 20px;
+  cursor: pointer;
+}
+
+#current-page {
+  background-color: black;
 }
 
 .table-area {
@@ -391,6 +398,7 @@ body {
   height: 200px;
   overflow-y: scroll;
   overflow-x: hidden;
+  margin-bottom: 10px;
 }
 
 .table-area table {
@@ -503,4 +511,84 @@ body {
 
 #action i:hover {
   color: darkred;
+}
+
+.city-pic-area {
+  width: 50%;
+  float: left;
+}
+
+.small-img-field {
+  width: 50%;
+  float: left;
+}
+
+.small-img-field .small-img {
+  width: 130px;
+  height: 160px;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
+  box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
+}
+
+.back-img-field {
+  width: 50%;
+  float: left;
+}
+
+.back-img-field .back-img {
+  width: 130px;
+  height: 160px;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
+  box-shadow: -1px 4px 13px -5px rgba(0, 0, 0, 0.7);
+}
+
+.city-pic-area input[type="file"] {
+  display: block;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  outline-style: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.city-pic-area input[type="file"]::-webkit-file-upload-button {
+  border-radius: 10px;
+  background-color: white;
+  border-style: none;
+  -webkit-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+  outline-style: none;
+}
+
+.add-button {
+  width: 40%;
+  margin: auto;
+}
+.add-button input[type="submit"] {
+  border-radius: 10px;
+  background-color: #ff7d7d;
+  border-style: none;
+  -webkit-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+  outline-style: none;
+  width: 40%;
+  float: right;
+  color: white;
 }
