@@ -10,21 +10,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <?php
-    require_once("classes/data_access.php");
-    require_once("classes/city.php");
-
-  ?></head>
+      require_once("classes/data_access.php");
+      require_once("classes/city.php");
+      require_once("classes/admin.php");
+    ?>
+  
+  <?php 
+    session_start();
+    if(isset($_SESSION["admin_id"])) {
+      $admin_name = $_SESSION["admin_fname"];
+      $admin_surname = $_SESSION["admin_lname"];
+      $picture_url = $_SESSION["admin_picture_url"];
+    } else {
+      header("Location: login.php");
+    }
+  
+  ?>
+</head>
   <body>
     <div class="clearfix">
       <div class="menu-side">
         <div class="profile-menu">
           <div class="clearfix">
             <a href="admin_profile.php"
-              ><img src="resources/user_images/31.jpeg" alt="profile_pic"
+              ><img src="<?php echo 'resources/admin_images/'.$picture_url;?>" alt="profile_pic"
             /></a>
             <div class="profile-text">
-              <a class="name" href="admin_profile.php">Nurettin Resul</a>
-              <a class="name" href="admin_profile.php">Tanyıldızı</a>
+              <a class="name" href="admin_profile.php"><?php echo $admin_name; ?></a>
+              <a class="name" href="admin_profile.php"><?php echo $admin_surname; ?></a>
               <a class="logout" href="includes/admin.logout.inc.php">Logout</a>
             </div>
           </div>
@@ -51,80 +64,7 @@
 
         <div class="main-content">
           <div class="table-area">
-            <table>
-              <thead>
-                <tr>
-                  <th>Id</th>
-                  <th>Name</th>
-                  <th>Country</th>
-                  <th>Price</th>
-                  <th>Small Picture</th>
-                  <th>Back Picture</th>
-                  <th>Small Text</th>
-                  <th>Details</th>
-                  <th>Reg. Date</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="odd">
-                  <td>1</td>
-                  <td>Istanbul</td>
-                  <td>Turkey</td>
-                  <td>70</td>
-                  <td>istanbul.jpg</td>
-                  <td>istanbul-back.jpg</td>
-                  <td>Istabul is a great city to travel</td>
-                  <td>Istabul is a great city to travel lorem20</td>
-                  <td>2020-05-09 17:51:54</td>
-                  <td id="action"><i class="fas fa-trash-alt"></i></td>
-                </tr>
-                <tr class="even">
-                  <td>1</td>
-                  <td>Istanbul</td>
-                  <td>Turkey</td>
-                  <td>70</td>
-                  <td>istanbul.jpg</td>
-                  <td>istanbul-back.jpg</td>
-                  <td>Istabul is a great city to travel</td>
-                  <td>Istabul is a great city to travel lorem20</td>
-                  <td>2020-05-09 17:51:54</td>
-                </tr>
-                <tr class="odd">
-                  <td>1</td>
-                  <td>Istanbul</td>
-                  <td>Turkey</td>
-                  <td>70</td>
-                  <td>istanbul.jpg</td>
-                  <td>istanbul-back.jpg</td>
-                  <td>Istabul is a great city to travel</td>
-                  <td>Istabul is a great city to travel lorem20</td>
-                  <td>2020-05-09 17:51:54</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Istanbul</td>
-                  <td>Turkey</td>
-                  <td>70</td>
-                  <td>istanbul.jpg</td>
-                  <td>istanbul-back.jpg</td>
-                  <td>Istabul is a great city to travel</td>
-                  <td>Istabul is a great city to travel lorem20</td>
-                  <td>2020-05-09 17:51:54</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Istanbul</td>
-                  <td>Turkey</td>
-                  <td>70</td>
-                  <td>istanbul.jpg</td>
-                  <td>istanbul-back.jpg</td>
-                  <td>Istabul is a great city to travel</td>
-                  <td>Istabul is a great city to travel lorem20</td>
-                  <td>2020-05-09 17:51:54</td>
-                </tr>
-              </tbody>
-            </table>
+            <?php echo City::TShowAllCities(); ?>
           </div>
 
           <div class="city-input-area">
@@ -138,6 +78,7 @@
                 class="city-form-area"
                 name="city_form_area"
                 method="post"
+                enctype="multipart/form-data"
                 onsubmit="return validate_city()"
               >
                 <div class="clearfix">
@@ -148,7 +89,7 @@
                           <label for="name">NAME:</label>
                         </div>
                         <div class="city-textB">
-                          <input type="text" id="name" name="name" />
+                          <input type="text" id="name" name="name" value="<?php if(isset($_GET['c_name'])) echo $_GET['c_name'];?>"/>
                         </div>
                         <div class="error">
                           <p id="e_c_name">*City name is required</p>
@@ -161,7 +102,7 @@
                           <label for="country">COUNTRY:</label>
                         </div>
                         <div class="city-textB">
-                          <input type="text" id="country" name="country" />
+                          <input type="text" id="country" name="country" value="<?php if(isset($_GET['c_country'])) echo $_GET['c_country'];?>"/>
                         </div>
                         <div class="error">
                           <p id="e_c_country">*Country name is required</p>
@@ -174,7 +115,7 @@
                           <label for="cost">COST:</label>
                         </div>
                         <div class="city-textB">
-                          <input type="text" id="cost" name="cost" />
+                          <input type="text" id="cost" name="cost"  value="<?php if(isset($_GET['c_price'])) echo $_GET['c_price'];?>"/>
                         </div>
                         <div class="error">
                           <p id="e_c_cost">*Costname is required</p>
@@ -191,6 +132,7 @@
                             type="text"
                             id="small_text"
                             name="small_text"
+                            value="<?php if(isset($_GET['smtxt'])) echo $_GET['smtxt'];?>"
                           />
                         </div>
                         <div class="error">
@@ -204,7 +146,7 @@
                           <label for="deatails">DETAILS:</label>
                         </div>
                         <div class="city-textB">
-                          <textarea id="details" name="details" rows="4">
+                          <textarea id="details" name="details" rows="4" ><?php if(isset($_GET['details'])) echo $_GET['details'];?>
                           </textarea>
                         </div>
                         <div class="error">
@@ -212,29 +154,36 @@
                         </div>
                       </div>
                     </div>
+                    
+                    <div class="city-row">
+                      <div class="clearfix">
+                        <div style="height: 20px" class="city-label">
+                          
+                        </div>
+                        <div class="add-button">
+                          <input type="submit" name="city_form_area" value="ADD" />
+					              </div>
+                        <div class="error">
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
 
-                    <div class="add-button">
-						<div class="clearfix">
-							<input type="submit" name="city_form_area" value="ADD" />
-						</div>
-					</div>
-                  </div>
+                    
+              </div>
 
                   <div class="city-pic-area">
                     <div class="clearfix">
                       <div class="small-img-field">
-                        <div class="small-img"></div>
-						<input type="file" name="small_img" />
-						<div class="error">
-							<p>*Small picture is required</p>
-						</div>
+                        <div id="city_small_img" class="small-img"  style="background-image: url('resources/undefined_image.jpg')"></div>
+                          <input id="small_img_inp" type="file" name="small_img"/>
+                          <div class="error">
+                            <p><?php if(isset($_GET["error"])) echo "*Error has occured. One of the pictures has invalid image format"?></p>
+                          </div>
                       </div>
-                      <div class="back-img-field">
-                        <div class="back-img"></div>
-						<input type="file" name="back_img" />
-						<div class="error">
-							<p>*Small picture is required</p>
-						</div>
+                      <div class="back-img-field" >
+                        <div id="city_back_img" class="back-img"  style="background-image: url('resources/undefined_image.jpg')"></div>
+                        <input id="back_img_inp" type="file" name="back_img"  />
                       </div>
                     </div>
                   </div>
@@ -246,5 +195,6 @@
       </div>
     </div>
     <script type="text/javascript" src="js/general.js"></script>
+    <script> image_preview(); </script>
   </body>
 </html>

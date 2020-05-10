@@ -157,10 +157,10 @@ function validate_admin_profile() {
 
   let form = document.forms["profile-form-area"];
 
-  let _name = form["name"].value;
-  let _surname = form["surname"].value;
-  let _password = form["password"].value;
-  let _cpassword = form["cpassword"].value;
+  let _name = form["a_name"].value;
+  let _surname = form["a_surname"].value;
+  let _password = form["a_password"].value;
+  let _cpassword = form["a_cpassword"].value;
 
   document.getElementById("e_a_name").style.visibility = "hidden";
   document.getElementById("e_a_surname").style.visibility = "hidden";
@@ -185,7 +185,8 @@ function validate_admin_profile() {
   }
   if (_cpassword.trim() == "" || _cpassword == null) {
     control = false;
-    document.getElementById("e_a_cpassword").innerHTML = "*Confirm is required";
+    document.getElementById("e_a_cpassword").innerHTML =
+      "*Confirm the password";
     document.getElementById("e_a_cpassword").style.visibility = "visible";
   }
   if (_password.trim().length < 6 && _password.trim() != "") {
@@ -194,15 +195,21 @@ function validate_admin_profile() {
       "*Password can not be smaller than 6 characters";
     document.getElementById("e_a_password").style.visibility = "visible";
   }
-  if (_password != _cpassword && _cpassword.trim() != "" && _password.trim) {
+  if (
+    _password != "" &&
+    _cpassword != "" &&
+    _cpassword.trim() != _password.trim()
+  ) {
     control = false;
     document.getElementById("e_a_cpassword").innerHTML =
       "*Passwords should be same";
     document.getElementById("e_a_cpassword").style.visibility = "visible";
   }
 
+  console.log(_cpassword.trim() == _password.trim());
+
   if (control == true) {
-    profile - form - area.submit();
+    form.submit();
   }
 }
 
@@ -246,12 +253,61 @@ function validate_city() {
       "*Small text is required";
     document.getElementById("e_c_small_text").style.visibility = "visible";
   }
+  if (_small_text.trim().length > 50) {
+    control = false;
+    document.getElementById("e_c_small_text").innerHTML =
+      "*Small text cannot be longer than 50 characters";
+    document.getElementById("e_c_small_text").style.visibility = "visible";
+  }
   if (_details.trim() == "" || _details == null) {
     control = false;
-    document.getElementById("e_c_details").innerHTML =
-      "*Small text is required";
+    document.getElementById("e_c_details").innerHTML = "*Details are required";
     document.getElementById("e_c_details").style.visibility = "visible";
   }
 
   return control;
+}
+
+function image_preview() {
+  let small_img_inp = document.getElementById("small_img_inp");
+  let back_img_inp = document.getElementById("back_img_inp");
+
+  console.log(small_img_inp);
+
+  small_img_inp.addEventListener("change", function () {
+    let file = this.files[0];
+    if (file) {
+      let reader = new FileReader();
+
+      reader.addEventListener("load", function () {
+        document.getElementById("city_small_img").style.backgroundImage =
+          "url(" + this.result + ")";
+      });
+
+      reader.readAsDataURL(file);
+    } else {
+      console.log(file);
+      document.getElementById("city_small_img").style.backgroundImage = "";
+      document.getElementById("city_small_img").style.backgroundImage =
+        "url(resources/undefined_image.jpg)";
+    }
+  });
+
+  back_img_inp.addEventListener("change", function () {
+    let file = this.files[0];
+    if (file) {
+      let reader = new FileReader();
+
+      reader.addEventListener("load", function () {
+        document.getElementById("city_back_img").style.backgroundImage =
+          "url(" + this.result + ")";
+      });
+
+      reader.readAsDataURL(file);
+    } else {
+      document.getElementById("city_back_img").style.backgroundImage = "";
+      document.getElementById("city_back_img").style.backgroundImage =
+        "url(resources/undefined_image.jpg)";
+    }
+  });
 }

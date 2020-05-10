@@ -111,7 +111,16 @@ body {
 }
 
 #e_email,
-#e_password {
+#e_password,
+#e_a_name,
+#e_a_surname,
+#e_a_password,
+#e_a_cpassword,
+#e_c_name,
+#e_c_country,
+#e_c_cost,
+#e_c_small_text,
+#e_c_details {
   visibility: hidden;
 }
 
@@ -361,6 +370,7 @@ body {
   -moz-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
   cursor: pointer;
+  outline-style: none;
 }
 
 .admin-navbar {
@@ -408,6 +418,10 @@ body {
   border-collapse: collapse;
 }
 
+.table-area td {
+  text-align: center;
+}
+
 .odd {
   background-color: #ffeae1;
 }
@@ -429,6 +443,7 @@ body {
   box-sizing: border-box;
   background-color: #ffeae1;
   padding: 30px;
+  padding-bottom: 15px;
   -webkit-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.6);
@@ -574,6 +589,7 @@ body {
 }
 
 .add-button {
+  float: left;
   width: 40%;
   margin: auto;
 }
@@ -588,7 +604,6 @@ body {
   font-size: 0.9em;
   cursor: pointer;
   outline-style: none;
-  width: 40%;
-  float: right;
   color: white;
+  width: 40%;
 }

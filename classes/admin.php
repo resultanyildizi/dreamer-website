@@ -11,6 +11,12 @@
             else
                 return null;
         }
+
+        public static function UpdateAdmin($id, $name, $surname, $password, $picture_url) {
+            $query = "update admin set firstname = '$name', surname='$surname', password='$password', picture_url='$picture_url' where id='$id'";
+
+            DataAccess::ExecuteNonQuery($query);
+        }
     
   }
   ?>

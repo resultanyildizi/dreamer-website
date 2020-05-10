@@ -39,7 +39,7 @@
                 else {
                     $city_name = $current_city["name"];
                     $city_country = $current_city["country"]; 
-                    $city_pic = $current_city["back_picture_url"];
+                    $city_pic = "resources/city_images/" . $current_city["back_picture_url"];
                     $city_price = $current_city["price"];
                 }
 
