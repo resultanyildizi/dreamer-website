@@ -31,6 +31,7 @@
         exit();
     }  
 
+    // Uploading picture into server with user's unique ID
     function validate_picture($file, $id, $firstname, $lastname, $email) {
         $file_name = $file["name"];
         $file_tmp_name = $file["tmp_name"];

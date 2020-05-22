@@ -30,6 +30,8 @@
     
 
 
+
+    // Uploading picture into server with city's unique ID
     function validate_picture($file, $id, $name, $country, $price, $small_text, $details, $type) {
         $file_name = $file["name"];
         $file_tmp_name = $file["tmp_name"];
