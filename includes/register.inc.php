@@ -13,6 +13,14 @@
         $_email=$_POST["email"];
         $_password=$_POST["password"]; 
 
+        // Böyle bir email olup olmadığını kontrol et
+        $email_exists = User::EmailKontrol($_email);
+
+        if($email_exists == true) {
+            header("Location: ../register.php?error=email_exists");
+            exit();
+        }
+
        $result = User::InsertUser($_firstname,$_lastname,$_password,$_email);
        $_picture_url = validate_picture($_FILES["picture_upload"], $result, $_firstname,  $_lastname, $_email);
        User::UpdateUser($result, $_firstname, $_lastname, $_password, $_email, $_picture_url);

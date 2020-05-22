@@ -5,15 +5,15 @@ class PageElements {
 		 	 "<div class='container'>" .
 				"<div class='clearfix'>" .
 					"<div class='profile-area'>" . 
-					"<a href='#'><img src='resources/user_images/$picture_url' alt='profile_pic'></a>" .
-					"<a class='name' href='#'>$fullname</a>".
+					"<a href='profile.php'><img src='resources/user_images/$picture_url' alt='profile_pic'></a>" .
+					"<a class='name' href='profile.php'>$fullname</a>".
 					"<a class='logout' href='includes/logout.inc.php'>Logout</a>" .
 					"</div>" . 
 					"<nav>" .
 						"<ul>" . 
 							"<li><a href='index.php'>HOME</a></li>" .
 							"<li><a href='user-reservations.php'>MY RESERVATIONS</a></li>" .
-							"<li><a href=''>PROFILE</a></li>" .
+							"<li><a href='profile.php'>PROFILE</a></li>" .
 						"</ul>".
 					"</nav>".
 				"</div>".

@@ -34,6 +34,16 @@
         DataAccess::ExecuteNonQuery($query_delete);
 
     }
+
+    public static function EmailKontrol($email) {
+        $query = "select * from users where email = '$email'";
+        $result = DataAccess::ExecuteQuery($query);
+
+        if(sizeof($result) > 0)
+            return true; // email exists
+        else 
+            return false; // email doesnt exists
+    }
 }
 
 
